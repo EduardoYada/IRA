@@ -1,0 +1,421 @@
+---
+title: "Modelagem"
+output: pdf_document
+---
+
+```{r echo=FALSE, warning=FALSE, results=FALSE, message=FALSE}
+library(tidyverse)
+library(broom)
+library(xtable)
+library(kableExtra)
+library(gridExtra)
+library(yaml)
+```
+
+```{r echo = F, results = F}
+constants = yaml.load_file("constants.yaml")
+
+categorical_columns = constants$categorical_columns
+
+daily_columns = constants$daily_columns
+
+numerical_columns = constants$numerical_columns
+
+solutos_columns = constants$solutos_columns
+
+all_columns = c(numerical_columns, categorical_columns)
+
+original_columns = constants$original_columns
+
+derived_columns = setdiff(daily_columns, original_columns)
+```
+
+
+```{r echo = F, results = F}
+df = readRDS('./data/processed_data_mean_v2.rds') %>%
+    mutate_at(categorical_columns, list(~factor(.)))
+```
+
+```{r echo = FALSE}
+camila_numerical_columns = c('sofa',
+                             'una',
+                             'fek',
+                             'su',
+                             'delta_scr',
+                             'scr',
+                             'saps3')
+
+camila_categorical_columns = c('ventilacao_mecanica',
+                               'causa_ira')
+
+selected_camila_numerical_columns = c('sofa',
+                                      'una',
+                                      'fek',
+                                      'su',
+                                      'delta_scr')
+
+selected_camila_categorical_columns = c('ventilacao_mecanica',
+                                        'causa_ira')
+
+
+original_numerical_columns = c("su",
+                               "scr",
+                               "sna",
+                               "sk",
+                               "uu",
+                               "ucr",
+                               "una",
+                               "uk",
+                               "uosm")
+
+selected_numerical_columns = c("sofa", 
+                               "su",
+                               "scr",
+                               "saps3",
+                               "fek",
+                               "uu_su",
+                               "una",
+                               "sosm",
+                               "delta_scr",
+                               "tempo_internacao_hospitalar",
+                               "score_clinico", 
+                               "dva_mcg_kg_min",
+                               "uk")
+
+selected_categorical_columns = c('ventilacao_mecanica', 'causa_ira')
+
+target = "ira"
+```
+
+
+```{r echo = F, results = F}
+envelope_simulado = function(model, tol = 1e-20){
+  X <- model.matrix(model)
+  n <- nrow(X)
+  p <- ncol(X)
+  w <- model$weights
+  W <- diag(w)
+  H <- solve(t(X)%*%W%*%X, tol = tol)
+  H <- sqrt(W)%*%X%*%H%*%t(X)%*%sqrt(W)
+  h <- diag(H)
+  td <- resid(model,type="deviance") / sqrt(1 - h)
+  e <- matrix(0, n, 100)
+  #
+  for(i in 1:100){
+    dif <- runif(n) - fitted(model)
+    dif[dif >= 0 ] <- 0
+    dif[dif < 0] <- 1
+    nresp <- dif
+    fit <- glm(nresp ~ X, family = binomial)
+    w <- fit$weights
+    W <- diag(w)
+    H <- solve(t(X)%*%W%*%X, tol = tol)
+    H <- sqrt(W)%*%X%*%H%*%t(X)%*%sqrt(W)
+    h <- diag(H)
+    e[,i] <- sort(resid(fit, type = "deviance") / sqrt(1 - h))
+  }
+  #
+  e1 <- numeric(n)
+  e2 <- numeric(n)
+  #
+  for(i in 1:n){
+    eo <- sort(e[i,])
+    e1[i] <- (eo[2] + eo[3]) / 2
+    e2[i] <- (eo[97] + eo[98]) / 2
+  }
+  #
+  med <- apply(e, 1, mean)
+  faixa <- range(td, e1, e2)
+  par(pty = "s")
+  qqnorm(td, xlab = "Percentil da N(0,1)",
+         ylab = "Componente do Desvio",
+         ylim = faixa, pch = 16, main="")
+  #
+  par(new = TRUE)
+  #
+  qqnorm(e1, axes = F, xlab = "", ylab = "",
+         type = "l", ylim = faixa, lty = 1, main = "")
+  par(new = TRUE)
+  qqnorm(e2, axes = F, xlab = "", ylab = "", type = "l",
+         ylim = faixa, lty = 1, main = "")
+  par(new = TRUE)
+  qqnorm(med, axes = F, xlab = "", ylab = "", type = "l",
+         ylim = faixa, lty = 2, main = "")
+}
+
+fit_model = function(df, numerical_features, categorical_features, target, include_interaction = FALSE){
+  factor_formula = paste(sprintf("factor(%s)",
+                                 categorical_features),
+                         collapse = " + ") 
+  numerical_formula = paste(numerical_features, collapse = " + ")
+  interaction_formula = ""
+
+  if('causa_ira' %in% categorical_features & include_interaction){
+    solutos_features = intersect(numerical_features, solutos_columns) 
+    if(length(solutos_features > 0)){
+      interaction_formula = paste(paste0("factor(causa_ira) : ",
+                                         solutos_features),
+                                  collapse = " + ") 
+    }
+  }
+  
+  formulas_vetor = c(factor_formula, numerical_formula, interaction_formula)
+  
+  formula_string = sprintf("%s ~ %s", target, 
+                           paste(formulas_vetor[formulas_vetor!=""], collapse = " + "))
+  formula = formula_string %>% as.formula
+  
+  model <- glm(formula, data = df, family = "binomial")
+  return(model)
+}
+
+fit_multiple_models = function(df, numerical_features, categorical_features,
+                               target, include_interaction=FALSE, trace=0){
+  full_model <- fit_model(df, numerical_features, categorical_features,
+                          target, include_interaction=include_interaction)
+  
+  null_model = glm(ira ~ 1, data = df, 
+                   family = "binomial")
+  
+  backwards = step(full_model, trace = trace)
+  
+  forwards = step(null_model,
+                  scope = list(lower = formula(null_model),
+                               upper = formula(full_model)),
+                  direction = "forward", trace = trace)
+  
+  stepwise = step(null_model, 
+                  list(lower = formula(null_model),
+                       upper = formula(full_model)),
+                  direction = "both", trace = trace)
+  
+  features_union = c(all.vars(backwards$formula[-2]), 
+                     all.vars(forwards$formula[-2]),
+                     all.vars(stepwise$formula[-2])) %>%
+    unique
+
+  features_intersection = intersect(intersect(all.vars(backwards$formula[-2]), 
+                                              all.vars(forwards$formula[-2])),
+                                    all.vars(stepwise$formula[-2]))
+  
+  union_model = fit_model(df, features_union, c(),
+                          target, include_interaction = include_interaction)
+  intersection_model = fit_model(df, features_intersection, c(),
+                                 target, include_interaction = include_interaction)
+  
+  return(list("Full model" = full_model,
+              "Backwards" = backwards,
+              "Forwards" = forwards,
+              "Stepwise" = stepwise,
+              "Union model" = union_model,
+              "Intersection model" = intersection_model))
+  
+}
+
+model_diagnostics = function(df, model){
+  par(mar = c(4, 4, .1, .1))
+  
+  plot(model)
+  
+  plot(model, which = 4, id.n = 3)
+  
+  envelope_simulado(model)
+  
+  probabilities <- predict(model, type = "response")
+  columns = intersect(all.vars(model$formula[-2]), numerical_columns)
+  
+  df_2 = df %>%
+    dplyr::select(all_of(columns)) %>%
+    mutate(logit = log(probabilities/(1-probabilities))) %>%
+    gather(key = "predictors", value = "predictor.value", -logit)
+  
+  p1 = ggplot(df_2, aes(logit, predictor.value))+
+    geom_point(size = 0.5, alpha = 0.5) +
+    geom_smooth(method = "loess") + 
+    theme_bw() + 
+    facet_wrap(~ predictors, scales = "free_y", ncol = 2)
+  
+  model.data <- augment(model) %>% 
+    mutate(index = 1:n()) 
+
+  p2 = ggplot(model.data, aes(index, .std.resid)) + 
+    geom_point(aes(color = ira), alpha = .5) +
+    theme_bw()
+  
+  print(p1)
+  print(p2)
+}
+
+model_summary = function(df, model){
+  columns = all.vars(model$formula[-2])
+  
+  options(xtable.comment = FALSE)
+
+  model %>% 
+    tidy() %>% 
+    niceFormatting(caption = "Model summary") %>%
+    print
+  
+  model %>% 
+    glance() %>% 
+    niceFormatting(caption = "Model details") %>%
+    print
+  
+  confint.default(model) %>% 
+    exp %>%
+    as_tibble(rownames = 'variável') %>%
+    mutate(estimativa = exp(model$coefficients)) %>%
+    niceFormatting(caption = "Confidence intervals") %>%
+    print
+  
+  car::vif(model) %>%
+    niceFormatting(caption = "Variance Inflation Factor") %>%
+    print
+  
+  library(pROC)
+  
+  df$prob = predict(model, type = "response")
+  g = roc(ira ~ prob, data = df, auc=TRUE)
+  confusion = coords(g, x = "best", best.method="youden",
+                     ret = c("threshold", "specificity", "sensitivity", "fpr"))
+  confusion %>% 
+    niceFormatting(caption = "Classifier metrics") %>%
+    print
+  
+  p = ggroc(g, legacy.axes = TRUE)+
+    geom_point(aes(x = 1 - confusion$specificity, y=confusion$sensitivity),
+               colour="blue", size=5) +
+    geom_abline(slope = 1, intercept=0, linetype="longdash") + 
+    labs(subtitle = paste("AUC:", round(g$auc, 3)))
+  
+  print(p)
+}
+
+niceFormatting = function(df, caption=""){
+  df %>%
+    kbl(booktabs = T, longtable = T, caption = caption, digits = 3) %>%
+    kable_styling(latex_options = c("striped", "HOLD_position", "repeat_header"))
+}
+```
+
+
+```{r results='asis', echo=F, message=F, warning=FALSE, fig.height=4, fig.width=7}
+cat(paste("# Camila Variables \n"))
+
+camila_models = fit_multiple_models(df, selected_camila_numerical_columns,
+                                    selected_camila_categorical_columns, 
+                                    target, include_interaction = TRUE, trace = 0)
+
+for (model in names(camila_models)){
+  cat("## ", model, "\n")
+
+  model_summary(df, camila_models[[model]])
+
+  model_diagnostics(df, camila_models[[model]])
+
+  cat("\n")
+  cat("\n")
+  cat("\\newpage")
+}
+```
+
+
+```{r results='asis', echo=F, message=F, warning=FALSE, fig.height=4, fig.width=7}
+cat(paste("# Selected Variables \n"))
+
+selected_models = fit_multiple_models(df, selected_numerical_columns, 
+                                      selected_categorical_columns, target,
+                                      include_interaction = FALSE)
+
+for (model in names(selected_models)){
+  cat("## ", model, "\n")
+  
+  model_summary(df, selected_models[[model]])
+
+  model_diagnostics(df, selected_models[[model]])
+  
+  cat("\n")
+  cat("\n")
+}
+```
+
+
+```{r echo = FALSE, warning= FALSE}
+transpose_df <- function(df) {
+  t_df <- data.table::transpose(df)
+  colnames(t_df) <- rownames(df)
+  rownames(t_df) <- colnames(df)
+  t_df <- t_df %>%
+    tibble::rownames_to_column(.data = .) %>%
+    tibble::as_tibble(.)
+  return(t_df)
+}
+
+df_35 = df %>%
+  mutate(row_number = row_number()) %>%
+  filter(row_number == 35)
+
+transpose_df(df_35) %>%
+  niceFormatting(caption = "Paciente 35")
+```
+```{r}
+df = df %>%
+  mutate(row_number = row_number()) %>%
+  filter(row_number != 35)
+```
+
+```{r results='asis', echo=F, message=F, warning=FALSE, fig.height=4, fig.width=7}
+cat(paste("# Camila Variables \n"))
+
+camila_models = fit_multiple_models(df, selected_camila_numerical_columns,
+                                    selected_camila_categorical_columns, 
+                                    target, include_interaction = TRUE, trace = 0)
+
+for (model in names(camila_models)){
+  cat("## ", model, "\n")
+
+  model_summary(df, camila_models[[model]])
+
+  model_diagnostics(df, camila_models[[model]])
+
+  cat("\n")
+  cat("\n")
+  cat("\\newpage")
+}
+```
+
+
+```{r results='asis', echo=F, message=F, warning=FALSE, fig.height=4, fig.width=7}
+cat(paste("# Selected Variables \n"))
+
+selected_models = fit_multiple_models(df, selected_numerical_columns, 
+                                      selected_categorical_columns, target,
+                                      include_interaction = FALSE)
+
+for (model in names(selected_models)){
+  cat("## ", model, "\n")
+  
+  model_summary(df, selected_models[[model]])
+
+  model_diagnostics(df, selected_models[[model]])
+  
+  cat("\n")
+  cat("\n")
+}
+```
+
+
+```{r echo=F,warning=FALSE,message=FALSE, eval=FALSE}
+library(gamlss)
+
+attach(df)
+
+ira = as.numeric(levels(df$ira))[df$ira]
+
+y = cbind(ira, 1 - ira)
+
+ajuste = gamlss(y ~ sofa + su + scr, family=BI)
+plot(ajuste)
+rqres.plot(ajuste, howmany=4, type="wp")
+```
+

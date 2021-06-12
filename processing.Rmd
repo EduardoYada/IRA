@@ -1,0 +1,105 @@
+---
+title: "processing"
+output: pdf_document
+---
+
+```{r}
+library(tidyverse)
+library(data.table)
+```
+
+```{r}
+df_raw = readxl::read_excel('./data/Dados (NOVO).xlsx')
+
+head(df_raw)
+```
+
+```{r}
+categorical_columns = c('D_IRA', 'cor', 'has', 'dm', 'icc',
+                        'asma_dpoc', 'hiv', 'ca_ativo', 'avc', 
+                        'dvp', 'drogadicao', 'ventilacao_mecanica',
+                        'diureticos', 'vasopressina', 'iSRAA',
+                        'causa_IRA', 'KDIGO', 'criterio_IRA',
+                        'pos_operatorio', 'mortalidade_intra_hospitalar')
+
+daily_columns = c('diurese',
+                  'bh',
+                  'sofa',
+                  'su',
+                  'scr',
+                  'sna',
+                  'sk',
+                  'sosm',
+                  'uu',
+                  'ucr',
+                  'una',
+                  'uk',
+                  'volume_urinario',
+                  'uvu24h',
+                  'feu',
+                  'uu_ucr',
+                  'una_ucr',
+                  'uvna24h',
+                  'uosm',
+                  'uosm_estimada',
+                  'una+uk',
+                  'uu_su',
+                  'fena',
+                  'fek',
+                  'su_scr',
+                  'delta_scr')
+```
+
+
+```{r}
+columns = colnames(df_raw)
+
+df = df_raw %>%
+    mutate_at(categorical_columns, list(~factor(.))) %>%
+    mutate(IRA = factor(ifelse(D_IRA != 0, 1, 0)),
+           KDIGO = factor(KDIGO),
+           KDIGO_agrupado = case_when(KDIGO %in% c(2, 3) ~ "MODERADO/GRAVE",
+                                      KDIGO == 1 ~ "LEVE",
+                                      KDIGO == 0 ~ "SEM IRA")) 
+
+names(df) <- str_replace_all(tolower(names(df)), c("-" = "_", " " = ""))
+
+df %>%
+    head()
+```
+
+
+```{r}
+for (col in daily_columns){
+    df = df %>%
+        mutate(!!col := if_else(ira == 1, !!sym(paste0(col, '_d_1')), 
+                                !!sym(paste0(col, '_media_d1_d5'))))
+}
+
+df %>% select(daily_columns)
+```
+
+
+```{r}
+df = df %>%
+    select(-matches("d_?\\d"))
+
+dim(df)
+```
+```{r}
+df[rowSums(is.na(df %>% select(-criterio_ira))) > 0,]
+```
+
+```{r}
+df_2 = df %>%
+    filter(!numero %in% c(30, 67, 76))
+
+df_2[rowSums(is.na(df_2 %>% select(-criterio_ira))) > 0,]
+```
+
+
+```{r}
+saveRDS(df, "./data/processed_data_mean.rds")
+saveRDS(df_2, "./data/processed_data_mean_v2.rds")
+```
+
