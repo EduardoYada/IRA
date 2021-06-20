@@ -10,59 +10,28 @@ library(data.table)
 
 ```{r}
 df_raw = readxl::read_excel('./data/Dados (NOVO).xlsx')
+names(df_raw) <- str_replace_all(tolower(names(df_raw)), c("-" = "_", " " = ""))
 
 head(df_raw)
 ```
 
 ```{r}
-categorical_columns = c('D_IRA', 'cor', 'has', 'dm', 'icc',
-                        'asma_dpoc', 'hiv', 'ca_ativo', 'avc', 
-                        'dvp', 'drogadicao', 'ventilacao_mecanica',
-                        'diureticos', 'vasopressina', 'iSRAA',
-                        'causa_IRA', 'KDIGO', 'criterio_IRA',
-                        'pos_operatorio', 'mortalidade_intra_hospitalar')
+constants = yaml.load_file("constants.yaml")
 
-daily_columns = c('diurese',
-                  'bh',
-                  'sofa',
-                  'su',
-                  'scr',
-                  'sna',
-                  'sk',
-                  'sosm',
-                  'uu',
-                  'ucr',
-                  'una',
-                  'uk',
-                  'volume_urinario',
-                  'uvu24h',
-                  'feu',
-                  'uu_ucr',
-                  'una_ucr',
-                  'uvna24h',
-                  'uosm',
-                  'uosm_estimada',
-                  'una+uk',
-                  'uu_su',
-                  'fena',
-                  'fek',
-                  'su_scr',
-                  'delta_scr')
+categorical_columns = constants$categorical_columns
+
+daily_columns = constants$daily_columns
 ```
 
 
 ```{r}
-columns = colnames(df_raw)
-
 df = df_raw %>%
     mutate_at(categorical_columns, list(~factor(.))) %>%
-    mutate(IRA = factor(ifelse(D_IRA != 0, 1, 0)),
-           KDIGO = factor(KDIGO),
-           KDIGO_agrupado = case_when(KDIGO %in% c(2, 3) ~ "MODERADO/GRAVE",
-                                      KDIGO == 1 ~ "LEVE",
-                                      KDIGO == 0 ~ "SEM IRA")) 
-
-names(df) <- str_replace_all(tolower(names(df)), c("-" = "_", " " = ""))
+    mutate(ira = factor(ifelse(d_ira != 0, 1, 0)),
+           kdigo = factor(kdigo),
+           kdigo_agrupado = case_when(kdigo %in% c(2, 3) ~ "MODERADO/GRAVE",
+                                      kdigo == 1 ~ "LEVE",
+                                      kdigo == 0 ~ "SEM IRA")) 
 
 df %>%
     head()

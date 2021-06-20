@@ -3,6 +3,10 @@ title: "Modelagem"
 output: pdf_document
 ---
 
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(dev = 'pdf')
+```
+
 ```{r echo=FALSE, warning=FALSE, results=FALSE, message=FALSE}
 library(tidyverse)
 library(broom)
@@ -10,6 +14,8 @@ library(xtable)
 library(kableExtra)
 library(gridExtra)
 library(yaml)
+library(caret)
+library(formula.tools)
 ```
 
 ```{r echo = F, results = F}
@@ -37,59 +43,80 @@ df = readRDS('./data/processed_data_mean_v2.rds') %>%
 ```
 
 ```{r echo = FALSE}
-camila_numerical_columns = c('sofa',
-                             'una',
-                             'fek',
-                             'su',
-                             'delta_scr',
-                             'scr',
-                             'saps3')
+selected_columns_yaml = yaml.load_file("selected_columns.yaml")
 
-camila_categorical_columns = c('ventilacao_mecanica',
-                               'causa_ira')
+selected_camila_numerical_columns = selected_columns_yaml$selected_camila_columns
 
-selected_camila_numerical_columns = c('sofa',
-                                      'una',
-                                      'fek',
-                                      'su',
-                                      'delta_scr')
+selected_numerical_columns = selected_columns_yaml$selected_numerical_columns
 
-selected_camila_categorical_columns = c('ventilacao_mecanica',
-                                        'causa_ira')
+selected_categorical_columns = selected_columns_yaml$selected_categorical_columns
 
-
-original_numerical_columns = c("su",
-                               "scr",
-                               "sna",
-                               "sk",
-                               "uu",
-                               "ucr",
-                               "una",
-                               "uk",
-                               "uosm")
-
-selected_numerical_columns = c("sofa", 
-                               "su",
-                               "scr",
-                               "saps3",
-                               "fek",
-                               "uu_su",
-                               "una",
-                               "sosm",
-                               "delta_scr",
-                               "tempo_internacao_hospitalar",
-                               "score_clinico", 
-                               "dva_mcg_kg_min",
-                               "uk")
-
-selected_categorical_columns = c('ventilacao_mecanica', 'causa_ira')
+drop_scr = TRUE
 
 target = "ira"
 ```
 
+```{r echo = FALSE}
+if (drop_scr){
+  selected_camila_numerical_columns = setdiff(selected_camila_numerical_columns, 'scr')
+  selected_numerical_columns = setdiff(selected_numerical_columns, 'scr')
+}
+```
 
-```{r echo = F, results = F}
-envelope_simulado = function(model, tol = 1e-20){
+```{r echo = FALSE}
+gilberto_diagnostics = function(fit.model){
+  X <- model.matrix(fit.model)
+  n <- nrow(X)
+  p <- ncol(X)
+  w <- fit.model$weights
+  W <- diag(w)
+  H <- solve(t(X)%*%W%*%X)
+  H <- sqrt(W)%*%X%*%H%*%t(X)%*%sqrt(W)
+  h <- diag(H)
+  ts <- resid(fit.model,type="pearson")/sqrt(1-h)
+  td <- resid(fit.model,type="deviance")/sqrt(1-h)
+  di <- (h/(1-h))*(ts^2)
+  a <- max(td)
+  b <- min(td)
+  
+  p1 = ggplot(data.frame(fitted = fitted(fit.model), h = h)) +
+    geom_point(aes(x = fitted, y = h)) + 
+    labs(x = "Valor Ajustado", y = "Medida h") +
+    theme_bw()
+  
+  #identify(fitted(fit.model), h, n=1)
+  
+  p2 = ggplot(data.frame(di = di, index = seq(1, length(di)))) +
+    geom_point(aes(x = index, y = di)) + 
+    labs(x = "Índice", y = "Distância de Cook") +
+    theme_bw()
+  
+  #identify(di, n=1)
+  
+  p3 = ggplot(data.frame(td = td, index = seq(1, length(td))),
+              aes(x = index, y = td)) +
+    geom_point() + 
+    labs(x = "Índice", y = "Resíduo Componente do Desvio") +
+    geom_hline(yintercept = 2, linetype = 'dotted') + 
+    geom_hline(yintercept = -2, linetype = 'dotted') + 
+    theme_bw()
+  
+  #identify(td, n=1)
+  
+  p4 = ggplot(data.frame(fitted = fitted(fit.model), td = td)) +
+    geom_point(aes(x = fitted, y = td)) + 
+    labs(x = "Valor Ajustado", y = "Resíduo Componente do Desvio") +
+    theme_bw()
+  
+  #identify(fitted(fit.model), td, n=1)
+  
+  print(p1)
+  print(p2)
+  print(p3)
+  print(p4)
+}
+
+envelope_simulado = function(model, tol = 1e-22){
   X <- model.matrix(model)
   n <- nrow(X)
   p <- ncol(X)
@@ -123,26 +150,29 @@ envelope_simulado = function(model, tol = 1e-20){
     e1[i] <- (eo[2] + eo[3]) / 2
     e2[i] <- (eo[97] + eo[98]) / 2
   }
-  #
-  med <- apply(e, 1, mean)
-  faixa <- range(td, e1, e2)
-  par(pty = "s")
-  qqnorm(td, xlab = "Percentil da N(0,1)",
-         ylab = "Componente do Desvio",
-         ylim = faixa, pch = 16, main="")
-  #
-  par(new = TRUE)
-  #
-  qqnorm(e1, axes = F, xlab = "", ylab = "",
-         type = "l", ylim = faixa, lty = 1, main = "")
-  par(new = TRUE)
-  qqnorm(e2, axes = F, xlab = "", ylab = "", type = "l",
-         ylim = faixa, lty = 1, main = "")
-  par(new = TRUE)
-  qqnorm(med, axes = F, xlab = "", ylab = "", type = "l",
-         ylim = faixa, lty = 2, main = "")
-}
 
+  med <- apply(e, 1, mean)
+  
+  p = ggplot(data.frame(td = td,
+                    e1 = e1, 
+                    e2 = e2,
+                    med = med)) + 
+    stat_qq(aes(sample = td)) + 
+    stat_qq(aes(sample = e1), 
+            geom = 'line') +
+    stat_qq(aes(sample = e2), 
+            geom = 'line') +
+    stat_qq(aes(sample = med), 
+            geom = 'line',
+            linetype = 'dotted') +
+    labs(x = "Percentil da N(0,1)", y = "Componente do Desvio") +
+    theme_bw()
+  
+  print(p)
+}
+```
+
+```{r echo = F, results = F}
 fit_model = function(df, numerical_features, categorical_features, target, include_interaction = FALSE){
   factor_formula = paste(sprintf("factor(%s)",
                                  categorical_features),
@@ -150,7 +180,7 @@ fit_model = function(df, numerical_features, categorical_features, target, inclu
   numerical_formula = paste(numerical_features, collapse = " + ")
   interaction_formula = ""
 
-  if('causa_ira' %in% categorical_features & include_interaction){
+  if('causa_ira' %in% c(categorical_features, numerical_features) & include_interaction){
     solutos_features = intersect(numerical_features, solutos_columns) 
     if(length(solutos_features > 0)){
       interaction_formula = paste(paste0("factor(causa_ira) : ",
@@ -212,14 +242,58 @@ fit_multiple_models = function(df, numerical_features, categorical_features,
   
 }
 
-model_diagnostics = function(df, model){
-  par(mar = c(4, 4, .1, .1))
+model_summary = function(df, model){
+  columns = all.vars(model$formula[-2])
   
-  plot(model)
+  options(xtable.comment = FALSE)
+
+  model %>% 
+    tidy() %>% 
+    niceFormatting(caption = "Model summary") %>%
+    print
   
-  plot(model, which = 4, id.n = 3)
+  model %>% 
+    glance() %>% 
+    niceFormatting(caption = "Model details") %>%
+    print
   
-  envelope_simulado(model)
+  confint.default(model) %>% 
+    exp %>%
+    as_tibble(rownames = 'variável') %>%
+    mutate(estimativa = exp(model$coefficients)) %>%
+    niceFormatting(caption = "Confidence intervals") %>%
+    print
+  
+  if (length(coef(model)) - 1 > 1){
+    car::vif(model) %>%
+      niceFormatting(caption = "Variance Inflation Factor") %>%
+      print
+  }
+  
+  library(pROC)
+  
+  df$prob = predict(model, type = "response")
+  g = roc(ira ~ prob, data = df, auc=TRUE)
+  confusion = coords(g, x = "best", best.method="youden",
+                     ret = c("threshold", "specificity", "sensitivity", "fpr"))
+  confusion %>% 
+    niceFormatting(caption = "Classifier metrics") %>%
+    print
+  
+  p = ggroc(g, legacy.axes = TRUE)+
+    geom_point(aes(x = 1 - confusion$specificity, y=confusion$sensitivity),
+               colour="blue", size=5) +
+    geom_abline(slope = 1, intercept=0, linetype="longdash") + 
+    labs(subtitle = paste("AUC:", round(g$auc, 3)))
+  
+  print(p)
+}
+
+model_diagnostics = function(df, model, run_envelope = FALSE){
+  
+  gilberto_diagnostics(model)
+  
+  if (run_envelope) envelope_simulado(model)
   
   probabilities <- predict(model, type = "response")
   columns = intersect(all.vars(model$formula[-2]), numerical_columns)
@@ -243,100 +317,74 @@ model_diagnostics = function(df, model){
     theme_bw()
   
   print(p1)
-  print(p2)
 }
 
-model_summary = function(df, model){
-  columns = all.vars(model$formula[-2])
-  
-  options(xtable.comment = FALSE)
-
-  model %>% 
-    tidy() %>% 
-    niceFormatting(caption = "Model summary") %>%
-    print
-  
-  model %>% 
-    glance() %>% 
-    niceFormatting(caption = "Model details") %>%
-    print
-  
-  confint.default(model) %>% 
-    exp %>%
-    as_tibble(rownames = 'variável') %>%
-    mutate(estimativa = exp(model$coefficients)) %>%
-    niceFormatting(caption = "Confidence intervals") %>%
-    print
-  
-  car::vif(model) %>%
-    niceFormatting(caption = "Variance Inflation Factor") %>%
-    print
-  
-  library(pROC)
-  
-  df$prob = predict(model, type = "response")
-  g = roc(ira ~ prob, data = df, auc=TRUE)
-  confusion = coords(g, x = "best", best.method="youden",
-                     ret = c("threshold", "specificity", "sensitivity", "fpr"))
-  confusion %>% 
-    niceFormatting(caption = "Classifier metrics") %>%
-    print
-  
-  p = ggroc(g, legacy.axes = TRUE)+
-    geom_point(aes(x = 1 - confusion$specificity, y=confusion$sensitivity),
-               colour="blue", size=5) +
-    geom_abline(slope = 1, intercept=0, linetype="longdash") + 
-    labs(subtitle = paste("AUC:", round(g$auc, 3)))
-  
-  print(p)
-}
 
 niceFormatting = function(df, caption=""){
   df %>%
     kbl(booktabs = T, longtable = T, caption = caption, digits = 3) %>%
     kable_styling(latex_options = c("striped", "HOLD_position", "repeat_header"))
 }
+
+model_selection = function(df, numerical_columns, categorical_columns,
+                           target, trace = 0, include_interaction = FALSE){
+  
+  fitted_models = fit_multiple_models(df,
+                                      numerical_columns,
+                                      categorical_columns, 
+                                      target, 
+                                      include_interaction = include_interaction, 
+                                      trace = trace)
+  
+  for (model in names(fitted_models)){
+    cat("### ", model, "\n")
+  
+    model_summary(df, fitted_models[[model]])
+    
+    if (!model %in% c('Full model', 'Union model')) {
+      model_diagnostics(df, fitted_models[[model]], run_envelope = TRUE)
+    } else {
+    model_diagnostics(df, fitted_models[[model]])
+    }
+    
+    cat("\n")
+    cat("\n")
+    cat("\\newpage")
+  }
+  return(fitted_models)
+}
+```
+
+# With pacient 34
+
+
+```{r results='asis', echo=F, message=F, warning=FALSE, fig.height=4, fig.width=7}
+cat(paste("## Camila Variables \n"))
+
+# step(camila_models$`Full model`, trace = 1)
+# all.vars(camila_models$Backwards$formula)
+# model = camila_models$Forwards
+# gilberto_diagnostics(model)
+# model_summary(df, model)
+# model_diagnostics(df, model)
+# envelope_simulado(model)
+
+camila_models = model_selection(df,
+                                selected_camila_numerical_columns,
+                                selected_categorical_columns,
+                                target, 
+                                include_interaction = TRUE)
 ```
 
 
 ```{r results='asis', echo=F, message=F, warning=FALSE, fig.height=4, fig.width=7}
-cat(paste("# Camila Variables \n"))
+cat(paste("## Selected Variables \n"))
 
-camila_models = fit_multiple_models(df, selected_camila_numerical_columns,
-                                    selected_camila_categorical_columns, 
-                                    target, include_interaction = TRUE, trace = 0)
-
-for (model in names(camila_models)){
-  cat("## ", model, "\n")
-
-  model_summary(df, camila_models[[model]])
-
-  model_diagnostics(df, camila_models[[model]])
-
-  cat("\n")
-  cat("\n")
-  cat("\\newpage")
-}
-```
-
-
-```{r results='asis', echo=F, message=F, warning=FALSE, fig.height=4, fig.width=7}
-cat(paste("# Selected Variables \n"))
-
-selected_models = fit_multiple_models(df, selected_numerical_columns, 
-                                      selected_categorical_columns, target,
-                                      include_interaction = FALSE)
-
-for (model in names(selected_models)){
-  cat("## ", model, "\n")
-  
-  model_summary(df, selected_models[[model]])
-
-  model_diagnostics(df, selected_models[[model]])
-  
-  cat("\n")
-  cat("\n")
-}
+selected_models = model_selection(df,
+                                  selected_numerical_columns,
+                                  selected_categorical_columns,
+                                  target, 
+                                  include_interaction = FALSE)
 ```
 
 
@@ -358,64 +406,95 @@ df_35 = df %>%
 transpose_df(df_35) %>%
   niceFormatting(caption = "Paciente 35")
 ```
-```{r}
+
+# Without pacient 34
+
+```{r echo=FALSE}
 df = df %>%
   mutate(row_number = row_number()) %>%
   filter(row_number != 35)
 ```
 
+
 ```{r results='asis', echo=F, message=F, warning=FALSE, fig.height=4, fig.width=7}
-cat(paste("# Camila Variables \n"))
+cat(paste("## Camila Variables \n"))
 
-camila_models = fit_multiple_models(df, selected_camila_numerical_columns,
-                                    selected_camila_categorical_columns, 
-                                    target, include_interaction = TRUE, trace = 0)
-
-for (model in names(camila_models)){
-  cat("## ", model, "\n")
-
-  model_summary(df, camila_models[[model]])
-
-  model_diagnostics(df, camila_models[[model]])
-
-  cat("\n")
-  cat("\n")
-  cat("\\newpage")
-}
+camila_models = model_selection(df,
+                                selected_camila_numerical_columns,
+                                selected_categorical_columns,
+                                target, 
+                                include_interaction = TRUE)
 ```
 
 
 ```{r results='asis', echo=F, message=F, warning=FALSE, fig.height=4, fig.width=7}
-cat(paste("# Selected Variables \n"))
+cat(paste("## Selected Variables \n"))
 
-selected_models = fit_multiple_models(df, selected_numerical_columns, 
-                                      selected_categorical_columns, target,
-                                      include_interaction = FALSE)
+selected_models = model_selection(df,
+                                  selected_numerical_columns,
+                                  selected_categorical_columns,
+                                  target, 
+                                  include_interaction = FALSE)
+```
 
-for (model in names(selected_models)){
-  cat("## ", model, "\n")
+# LOOCV
+
+```{r echo = FALSE}
+loocv = function(df, formula){
+  cat(sprintf("## %s \n", as.character(formula)))
   
-  model_summary(df, selected_models[[model]])
+  train.control <- trainControl(method = "LOOCV",
+                                summaryFunction = twoClassSummary,
+                                classProbs=T,
+                                savePredictions = T)
 
-  model_diagnostics(df, selected_models[[model]])
+  df_cv = df %>% 
+    mutate(ira = if_else(ira == 0, "no", "yes"))
   
-  cat("\n")
-  cat("\n")
+  model <- train(formula, 
+                 data = df_cv,
+                 method = "glm",
+                 family = "binomial",
+                 trControl = train.control,
+                 metric = "Sens", 
+                 maximize = TRUE)
+  
+  g = roc(obs ~ yes, data = model$pred, auc=TRUE)
+  
+  youden = coords(g, x = 'best', best.method="youden",
+                  ret = c("threshold", "specificity", "sensitivity"))
+  
+  confusion = coords(g,
+                     ret = c("threshold",
+                             "specificity",
+                             "sensitivity",
+                             "fpr"))
+  
+  youden_index = confusion %>% 
+    mutate(index = row_number()) %>%
+    filter(threshold == youden$threshold) %>%
+    .$index
+  
+  confusion %>% 
+    niceFormatting(caption = sprintf("Youden threshold = %.3f", youden$threshold)) %>%
+    row_spec(youden_index, bold = T, color = "#D7261E") %>%
+    print
+  
+  p = ggroc(g, legacy.axes = TRUE)+
+    geom_point(aes(x = 1 - youden$specificity, 
+                   y = youden$sensitivity),
+               colour="blue",
+               alpha = 0.1,
+               size=3) +
+    geom_abline(slope = 1, intercept=0, linetype="longdash") + 
+    labs(subtitle = paste("AUC:", round(g$auc, 3)))
+  
+  print(p)
 }
 ```
 
 
-```{r echo=F,warning=FALSE,message=FALSE, eval=FALSE}
-library(gamlss)
-
-attach(df)
-
-ira = as.numeric(levels(df$ira))[df$ira]
-
-y = cbind(ira, 1 - ira)
-
-ajuste = gamlss(y ~ sofa + su + scr, family=BI)
-plot(ajuste)
-rqres.plot(ajuste, howmany=4, type="wp")
+```{r echo=FALSE, message=FALSE, warning=FALSE, results='asis'}
+loocv(df, ira ~ sofa + scr_basal)
 ```
 

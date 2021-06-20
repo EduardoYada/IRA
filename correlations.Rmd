@@ -16,100 +16,41 @@ library(dendextend)
 library(biotools)
 library(ggfortify)
 library(factoextra)
+library(yaml)
 select = dplyr::select
 ```
 
 
 ```{r echo=FALSE}
-categorical_columns = c('d_ira',
-                        'cor',
-                        'has', 
-                        'dm',
-                        'icc',
-                        'asma_dpoc',
-                        'hiv', 
-                        'ca_ativo',
-                        'avc', 
-                        'dvp',
-                        'ventilacao_mecanica',
-                        'diureticos',
-                        'vasopressina',
-                        'israa',
-                        'causa_ira',
-                        'kdigo',
-                        'pos_operatorio')
+constants = yaml.load_file("constants.yaml")
 
-daily_columns = c('diurese',
-                  'bh',
-                  'sofa',
-                  'su',
-                  'scr',
-                  'sna',
-                  'sk',
-                  'sosm',
-                  'uu',
-                  'ucr',
-                  'una',
-                  'uk',
-                  'volume_urinario',
-                  'uvu24h',
-                  'feu',
-                  'uu_ucr',
-                  'una_ucr',
-                  'uvna24h',
-                  'uosm',
-                  'uosm_estimada',
-                  'una+uk',
-                  'uu_su',
-                  'fena',
-                  'fek',
-                  'su_scr',
-                  'delta_scr')
+categorical_columns = constants$categorical_columns
 
-numerical_columns = c('idade', 
-                      'imc',
-                      'score_clinico',
-                      'dva_mcg_kg_min',
-                      'saps3',
-                      'egfr_basal',
-                      'scr_basal',
-                      'tempo_internacao_hospitalar',
-                      daily_columns)
+daily_columns = constants$daily_columns
+
+numerical_columns = constants$numerical_columns
+
+solutos_columns = constants$solutos_columns
 
 all_columns = c(numerical_columns, categorical_columns)
 
-
-original_columns = c('su', 
-                     'scr',
-                     'sna',
-                     'sk',
-                     'uu',
-                     'ucr',
-                     'una',
-                     'uk',
-                     'uosm')
+original_columns = constants$original_columns
 
 derived_columns = setdiff(daily_columns, original_columns)
+
+camila_numerical_columns = constants$camila_columns
 ```
 
 
 ```{r echo=FALSE, results=FALSE}
 df = readRDS('./data/processed_data_mean_v2.rds') %>%
     mutate_at(categorical_columns, list(~factor(.)))
-
-columns = colnames(df)
-
-dim(df)
-
-df
 ```
 ```{r echo=FALSE, results=FALSE}
 df_names = readxl::read_excel('./data/Nomes das variaveis.xlsx') %>%
   mutate(variavel = tolower(variavel),
          nome = coalesce(nome, variavel)) %>%
   select(nome, variavel)
-
-df_names
 ```
 
 ```{r echo=FALSE}
@@ -185,7 +126,7 @@ ggcorrplot(corr, hc.order = TRUE, outline.col = "white",
            ggtheme = theme(legend.position="right",
                            legend.title=element_blank(),
                            legend.text=element_text(size=5))) 
-ggsave('all_correlations.png',  dpi = 1000)
+# ggsave('all_correlations.png',  dpi = 1000)
 ```
 
 ## Variáveis Originais
@@ -211,7 +152,7 @@ ggcorrplot(corr, hc.order = TRUE, outline.col = "white",
                            legend.title=element_blank(),
                            legend.text=element_text(size=5))) 
 
-ggsave('original_correlations.png',  dpi = 1000)
+# ggsave('original_correlations.png',  dpi = 1000)
 
 ```
 
@@ -653,7 +594,7 @@ for(i in 1:(dim(temp_df)[1])){
 ```{r echo=FALSE, results=FALSE}
 length(significant_numerical_columns)
 
-drop = c('scr_basal', 'uvna24h', 'una_ucr', 'fena', 'su_scr')
+drop = c('uvna24h', 'una_ucr', 'fena', 'su_scr', 'saps3')
 
 selected_numerical_columns = setdiff(significant_numerical_columns, drop)
 
@@ -739,16 +680,6 @@ ggcorrplot(corr, hc.order = TRUE, outline.col = "white",
 
 # Camila variables
 
-```{r}
-camila_numerical_columns = c('sofa',
-                             'una',
-                             'fek',
-                             'su',
-                             'delta_scr',
-                             'scr',
-                             'saps3')
-```
-
 ```{r echo=F}
 corr = df %>% 
   select(all_of(camila_numerical_columns)) %>%
@@ -802,3 +733,20 @@ for(i in 1:(dim(temp_df)[1])){
   print(p)
 }
 ```
+
+```{r echo = FALSE}
+camila_drop = c('saps3', 'uu')
+
+camila_significant_numerical_columns = intersect(significant_numerical_columns, camila_numerical_columns)
+camila_selected_numerical_columns = setdiff(camila_significant_numerical_columns, camila_drop)
+```
+
+
+
+```{r echo = FALSE}
+write_yaml(list('selected_numerical_columns' = selected_numerical_columns,
+                'selected_camila_columns' = camila_selected_numerical_columns,
+                'selected_categorical_columns' = c('causa_ira', 'ventilacao_mecanica')),
+           'selected_columns.yaml')
+```
+

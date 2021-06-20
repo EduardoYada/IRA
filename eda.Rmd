@@ -9,39 +9,11 @@ library(data.table)
 ```
 
 ```{r}
-categorical_columns = c('d_ira', 'cor', 'has', 'dm', 'icc',
-                        'asma_dpoc', 'hiv', 'ca_ativo', 'avc', 
-                        'dvp', 'drogadicao', 'ventilacao_mecanica',
-                        'diureticos', 'vasopressina', 'israa',
-                        'causa_ira', 'kdigo', 'criterio_ira',
-                        'pos_operatorio', 'mortalidade_intra_hospitalar')
+constants = yaml.load_file("constants.yaml")
 
-daily_columns = c('diurese',
-                  'bh',
-                  'sofa',
-                  'su',
-                  'scr',
-                  'sna',
-                  'sk',
-                  'sosm',
-                  'uu',
-                  'ucr',
-                  'una',
-                  'uk',
-                  'volume_urinario',
-                  'uvu24h',
-                  'feu',
-                  'uu_ucr',
-                  'una_ucr',
-                  'uvna24h',
-                  'uosm',
-                  'uosm_estimada',
-                  'una+uk',
-                  'uu_su',
-                  'fena',
-                  'fek',
-                  'su_scr',
-                  'delta_scr')
+categorical_columns = constants$categorical_columns
+
+daily_columns = constants$daily_columns
 ```
 
 
@@ -69,7 +41,7 @@ for(column in categorical_columns){
 
 
 ```{r}
-for(column in categorical_columns[categorical_columns != 'D_IRA']){
+for(column in categorical_columns[categorical_columns != 'd_ira']){
     p = df %>%
         group_by(!!sym(column), ira) %>%
         summarise(cnt = n()) %>%
@@ -83,7 +55,7 @@ for(column in categorical_columns[categorical_columns != 'D_IRA']){
 
 
 ```{r}
-for(column in categorical_columns[categorical_columns != 'D_IRA']){
+for(column in categorical_columns[categorical_columns != 'd_ira']){
     p = df %>%
         group_by(!!sym(column), ira) %>%
         summarise(cnt = n()) %>%
