@@ -1,0 +1,165 @@
+---
+title: "Tabelas"
+output: pdf_document
+header-includes:
+    - \usepackage{caption}
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(dev = 'pdf', echo=TRUE, message = FALSE, warning = FALSE)
+```
+
+# Bibliotecas
+
+```{r results=FALSE}
+library(tidyverse)
+library(data.table)
+library(yaml)
+library(kableExtra)
+```
+
+# Carregando os dados
+
+```{r}
+constants = yaml.load_file("constants.yaml")
+
+categorical_columns = constants$categorical_columns
+numerical_columns = constants$numerical_columns
+
+daily_columns = constants$daily_columns
+```
+
+```{r}
+df = readRDS('./data/dados_processados.rds') %>%
+    mutate_at(categorical_columns, list(~factor(.))) %>%
+    mutate(ira_nome = if_else(ira == 1, "Sim", "Não"),
+           causa_ira_nome = case_when(causa_ira == 0 ~ "Nefrotoxicidade",
+                                      causa_ira == 1 ~ "Sepse",
+                                      causa_ira == 2 ~ "Isquemia"))
+
+df_names = readxl::read_excel('./data/Nomes das variaveis.xlsx') %>%
+  mutate(variavel = tolower(variavel),
+         nome = coalesce(nome, variavel)) %>%
+  select(nome, variavel)
+```
+
+# Tabelas
+
+\captionsetup[table]{labelformat=empty}
+
+## Variáveis numéricas
+
+```{r results = 'asis'}
+i = 1
+for (column in numerical_columns){
+  
+  temp_total_df = df %>%
+    group_by(ira_nome) %>%
+    summarise(`N` = n(),
+              `Média` = mean(!!sym(column), na.rm = T),
+              `Desvio Padrão` = sd(!!sym(column), na.rm = T),
+              `Mínimo` = min(!!sym(column), na.rm = T),
+              `Mediana` = median(!!sym(column), na.rm = T),
+              `Máximo` = max(!!sym(column), na.rm = T)) %>%
+    ungroup %>%
+    mutate(causa_ira_nome = 'Total') %>%
+    rename(`Causa da IRA` = causa_ira_nome,
+           `IRA` = ira_nome)
+  
+  caption = sprintf('Tabela A.%d Medidas descritivas para %s por fator de risco', i, 
+                    df_names %>% filter(variavel == column) %>% .$nome %>% tolower)
+  
+  df %>%
+    group_by(causa_ira_nome, ira_nome) %>%
+    summarise(`N` = n(),
+              `Média` = mean(!!sym(column), na.rm = T),
+              `Desvio Padrão` = sd(!!sym(column), na.rm = T),
+              `Mínimo` = min(!!sym(column), na.rm = T),
+              `Mediana` = median(!!sym(column), na.rm = T),
+              `Máximo` = max(!!sym(column), na.rm = T)) %>%
+    ungroup %>%
+    rename(`Causa da IRA` = causa_ira_nome,
+           `IRA` = ira_nome) %>%
+    bind_rows(temp_total_df) %>%
+    kbl(align = "l", booktabs = T, digits = 2, format = 'latex',
+        caption = caption) %>%
+    row_spec(c(1:2, 5:6) - 1, extra_latex_after = "\\rowcolor{gray!6}") %>%
+    row_spec(6, hline_after = T) %>%
+    row_spec(7:8, bold = T) %>%
+    collapse_rows(1, latex_hline = "none") %>%
+    kable_styling(latex_options = c("HOLD_position", "repeat_header")) %>%
+    print
+  
+  i = i + 1
+}
+```
+
+```{r eval=FALSE, echo = FALSE}
+for(column in categorical_columns){
+    p = df %>%
+        group_by(!!sym(column)) %>%
+        summarise(cnt = n()) %>%
+        ggplot(aes(x=!!sym(column), y=cnt)) + 
+            geom_col(fill='firebrick', alpha=0.7) + 
+            labs(title=paste('Contagem da variável: ', column))
+    print(p)
+}
+```
+
+
+```{r eval=FALSE, echo = FALSE}
+for(column in categorical_columns[categorical_columns != 'd_ira']){
+    p = df %>%
+        group_by(!!sym(column), ira) %>%
+        summarise(cnt = n()) %>%
+        ggplot(aes(x=!!sym(column), y=cnt,
+                   color=ira, fill=ira)) + 
+            geom_col(alpha=0.7, position='dodge') + 
+            labs(title=paste('Contagem da variável: ', column))
+    print(p)
+}
+```
+
+
+```{r eval=FALSE, echo = FALSE}
+for(column in categorical_columns[categorical_columns != 'd_ira']){
+    p = df %>%
+        group_by(!!sym(column), ira) %>%
+        summarise(cnt = n()) %>%
+        ungroup %>%
+        mutate(pct = cnt / sum(cnt)) %>%
+        ggplot(aes(x=!!sym(column), y=pct,
+                   color=ira, fill=ira)) + 
+            geom_col(alpha=0.7, position='dodge') 
+            # labs(title=paste('Contagem da variável: ', column))
+    print(p)
+}
+```
+
+
+```{r eval=FALSE, echo = FALSE}
+for(column in categorical_columns[categorical_columns != 'd_ira']){
+    p = df %>%
+        group_by(!!sym(column), kdigo_agrupado) %>%
+        summarise(cnt = n()) %>%
+        ggplot(aes(x = !!sym(column), y = cnt,
+                   color = kdigo_agrupado, 
+                   fill = kdigo_agrupado)) + 
+            geom_col(alpha = 0.7, position ='dodge') + 
+            labs(title = paste('Contagem da variável: ', column))
+    print(p)
+}
+```
+
+
+
+```{r eval=FALSE, echo = FALSE}
+df %>%
+    select(uosm, uosm_estimada) %>%
+    ggplot(aes(x = uosm_estimada, y = uosm)) + 
+        geom_point() + 
+        geom_abline(intercept = 0, slope = 1,
+                    linetype = 2, color = 'red')
+```
+
+

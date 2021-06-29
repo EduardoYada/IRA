@@ -1,18 +1,21 @@
 ---
-title: "processing"
+title: "Processamento dos dados brutos"
 output: pdf_document
 ---
 
-```{r}
+# Bibliotecas
+
+```{r warning=FALSE, results=FALSE, message=FALSE}
 library(tidyverse)
 library(data.table)
+library(yaml)
 ```
+
+# Carregando os dados
 
 ```{r}
 df_raw = readxl::read_excel('./data/Dados (NOVO).xlsx')
 names(df_raw) <- str_replace_all(tolower(names(df_raw)), c("-" = "_", " " = ""))
-
-head(df_raw)
 ```
 
 ```{r}
@@ -23,6 +26,7 @@ categorical_columns = constants$categorical_columns
 daily_columns = constants$daily_columns
 ```
 
+# Processamento dos dados
 
 ```{r}
 df = df_raw %>%
@@ -33,21 +37,12 @@ df = df_raw %>%
                                       kdigo == 1 ~ "LEVE",
                                       kdigo == 0 ~ "SEM IRA")) 
 
-df %>%
-    head()
-```
-
-
-```{r}
 for (col in daily_columns){
     df = df %>%
         mutate(!!col := if_else(ira == 1, !!sym(paste0(col, '_d_1')), 
                                 !!sym(paste0(col, '_media_d1_d5'))))
 }
-
-df %>% select(daily_columns)
 ```
-
 
 ```{r}
 df = df %>%
@@ -56,19 +51,17 @@ df = df %>%
 dim(df)
 ```
 ```{r}
-df[rowSums(is.na(df %>% select(-criterio_ira))) > 0,]
+df[rowSums(is.na(df %>% select(-criterio_ira))) > 0,]$numero
 ```
 
 ```{r}
 df_2 = df %>%
     filter(!numero %in% c(30, 67, 76))
-
-df_2[rowSums(is.na(df_2 %>% select(-criterio_ira))) > 0,]
 ```
 
+# Salvando dados processados
 
 ```{r}
-saveRDS(df, "./data/processed_data_mean.rds")
-saveRDS(df_2, "./data/processed_data_mean_v2.rds")
+saveRDS(df_2, "./data/dados_processados.rds")
 ```
 

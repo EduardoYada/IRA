@@ -1,10 +1,20 @@
 ---
 title: "Exploração dos Dados"
 output: pdf_document
+header-includes:
+  - \usepackage{pdflscape}
+  - \newcommand{\blandscape}{\begin{landscape}}
+  - \newcommand{\elandscape}{\end{landscape}}
 ---
 
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(dev = 'pdf', echo=TRUE,
+                      fig.height = 4)
+```
 
-```{r echo=FALSE, warning=FALSE, results=FALSE, message=FALSE}
+# Bibliotecas
+
+```{r warning=FALSE, results=FALSE, message=FALSE}
 library(tidyverse)
 library(data.table)
 library(Hmisc)
@@ -17,11 +27,13 @@ library(biotools)
 library(ggfortify)
 library(factoextra)
 library(yaml)
+library(corrplot)
 select = dplyr::select
 ```
 
+# Carregando os dados
 
-```{r echo=FALSE}
+```{r}
 constants = yaml.load_file("constants.yaml")
 
 categorical_columns = constants$categorical_columns
@@ -41,26 +53,25 @@ derived_columns = setdiff(daily_columns, original_columns)
 camila_numerical_columns = constants$camila_columns
 ```
 
-
-```{r echo=FALSE, results=FALSE}
-df = readRDS('./data/processed_data_mean_v2.rds') %>%
+```{r results=FALSE}
+df = readRDS('./data/dados_processados.rds') %>%
     mutate_at(categorical_columns, list(~factor(.)))
-```
-```{r echo=FALSE, results=FALSE}
+
 df_names = readxl::read_excel('./data/Nomes das variaveis.xlsx') %>%
   mutate(variavel = tolower(variavel),
          nome = coalesce(nome, variavel)) %>%
   select(nome, variavel)
 ```
 
-```{r echo=FALSE}
+# Funções
+
+```{r}
 flattenCorrMatrix <- function(cormat, pmat) {
   ut <- upper.tri(cormat)
   data.frame(
     row = rownames(cormat)[row(cormat)[ut]],
     column = rownames(cormat)[col(cormat)[ut]],
     rho = (cormat)[ut]
-    # ,p_value = pmat[ut]
     )
 }
 
@@ -95,7 +106,7 @@ highlyCorrelatedByGroup = function(df, group_col, threshold=0.8){
 
 niceFormatting = function(df, caption=""){
   df %>%
-    kbl(booktabs = T, longtable = T, caption = caption) %>%
+    kbl(booktabs = T, longtable = T, caption = caption, digits = 2) %>%
     kable_styling(latex_options = c("striped", "HOLD_position", "repeat_header"))
 }
 
@@ -112,9 +123,11 @@ rename_matrix = function(df){
 }
 ```
 
-# Correlação
 
-```{r echo=F}
+# Correlação
+\blandscape
+
+```{r echo=FALSE, fig.align='center', fig.height = 7, fig.width = 10}
 corr = df %>% 
   select(all_of(numerical_columns)) %>%
   drop_na %>%
@@ -125,25 +138,45 @@ ggcorrplot(corr, hc.order = TRUE, outline.col = "white",
            tl.cex = 7, tl.srt = 90,
            ggtheme = theme(legend.position="right",
                            legend.title=element_blank(),
-                           legend.text=element_text(size=5))) 
-# ggsave('all_correlations.png',  dpi = 1000)
+                           legend.text=element_text(size=5)))
+```
+```{r echo=FALSE, fig.align='center', fig.height = 7, fig.width = 10}
+corr = df %>% 
+  select(all_of(numerical_columns), -`una+uk`) %>%
+  drop_na %>%
+  cor %>%
+  as.matrix
+
+col <- colorRampPalette(c("#BB4444", "#EE9988", "#FFFFFF", "#77AADD", "#4477AA"))
+corrplot(corr, method="color", col=col(200),  
+         type="upper", order="hclust", , # Add coefficient of correlation
+         tl.col="black", tl.srt=45, insig = "blank", 
+         diag=FALSE 
+         )
+```
+```{r echo=FALSE}
+corr = df %>% 
+  select(all_of(numerical_columns[1:20]), -`una+uk`) %>%
+  drop_na %>%
+  cor %>%
+  as_tibble(rownames = " ")
+
+corr %>%
+  niceFormatting() %>%
+  column_spec(1:length(numerical_columns), width = "0.7cm") %>%
+  kable_styling(font_size = 7)
 ```
 
-## Variáveis Originais
+\elandscape
 
+<!-- ## Variáveis Originais -->
 
-```{r echo=F}
+```{r echo=F, eval=FALSE}
 corr = df %>% 
   select(all_of(original_columns)) %>%
   drop_na %>%
   cor %>%
   rename_matrix
-
-p.mat = df %>% 
-  select(all_of(original_columns)) %>%
-  drop_na %>%
-  cor_pmat %>%
-  as.matrix
 
 ggcorrplot(corr, hc.order = TRUE, outline.col = "white",
            tl.cex = 7, lab = TRUE, lab_size = 2,
@@ -151,13 +184,10 @@ ggcorrplot(corr, hc.order = TRUE, outline.col = "white",
            ggtheme = theme(legend.position="right",
                            legend.title=element_blank(),
                            legend.text=element_text(size=5))) 
-
-# ggsave('original_correlations.png',  dpi = 1000)
-
 ```
 
 
-```{r echo=F}
+```{r echo=F, eval=FALSE}
 corr = df %>% 
   filter(ira == 0) %>%
   select(all_of(original_columns)) %>%
@@ -165,13 +195,6 @@ corr = df %>%
   cor %>%
   as.matrix %>%
   rename_matrix
-
-p.mat = df %>% 
-  filter(ira == 0) %>%
-  select(all_of(original_columns)) %>%
-  drop_na %>%
-  cor_pmat %>%
-  as.matrix
 
 ggcorrplot(corr, hc.order = TRUE, outline.col = "white",
            tl.cex = 7, lab = TRUE, lab_size = 2,
@@ -184,7 +207,7 @@ ggcorrplot(corr, hc.order = TRUE, outline.col = "white",
 ```
 
 
-```{r echo=F}
+```{r echo=F, eval=FALSE}
 corr = df %>% 
   filter(ira == 1) %>%
   select(all_of(original_columns)) %>%
@@ -192,13 +215,6 @@ corr = df %>%
   cor %>%
   as.matrix %>%
   rename_matrix
-
-p.mat = df %>% 
-  filter(ira == 1) %>%
-  select(all_of(original_columns)) %>%
-  drop_na %>%
-  cor_pmat %>%
-  as.matrix
 
 ggcorrplot(corr, hc.order = TRUE, outline.col = "white",
            tl.cex = 7, lab = TRUE, lab_size = 2,
@@ -210,21 +226,15 @@ ggcorrplot(corr, hc.order = TRUE, outline.col = "white",
 
 ```
 
-## Variáveis derivadas
+<!-- ## Variáveis derivadas -->
 
-```{r echo=F}
+```{r echo=F, eval=FALSE}
 corr = df %>% 
   select(all_of(derived_columns)) %>%
   drop_na %>%
   cor %>%
   as.matrix %>%
   rename_matrix
-
-p.mat = df %>% 
-  select(all_of(derived_columns)) %>%
-  drop_na %>%
-  cor_pmat %>%
-  as.matrix
 
 ggcorrplot(corr, hc.order = TRUE, outline.col = "white",
            tl.cex = 7, lab = TRUE, lab_size = 2,
@@ -236,7 +246,7 @@ ggcorrplot(corr, hc.order = TRUE, outline.col = "white",
 ```
 
 
-```{r echo=F}
+```{r echo=F, eval=FALSE}
 corr = df %>% 
   filter(ira == 0) %>%
   select(all_of(derived_columns)) %>%
@@ -244,13 +254,6 @@ corr = df %>%
   cor %>%
   as.matrix %>%
   rename_matrix
-
-p.mat = df %>% 
-  filter(ira == 0) %>%
-  select(all_of(derived_columns)) %>%
-  drop_na %>%
-  cor_pmat %>%
-  as.matrix
 
 ggcorrplot(corr, hc.order = TRUE, outline.col = "white",
            tl.cex = 7, lab = TRUE, lab_size = 2,
@@ -263,7 +266,7 @@ ggcorrplot(corr, hc.order = TRUE, outline.col = "white",
 ```
 
 
-```{r echo=F}
+```{r echo=F, eval=FALSE}
 corr = df %>% 
   filter(ira == 1) %>%
   select(all_of(derived_columns)) %>%
@@ -290,7 +293,7 @@ ggcorrplot(corr, hc.order = TRUE, outline.col = "white",
 ```
 
 
-```{r echo=FALSE}
+```{r echo=FALSE, eval = FALSE}
 col = 'ira'
 
 df %>%
@@ -306,7 +309,7 @@ df %>%
   niceFormatting(caption = "Correlação entre variáveis por grupo de IRA")
 ```
 
-```{r echo=FALSE}
+```{r echo=FALSE, eval = FALSE}
 col = 'causa_ira'
 
 df %>%
@@ -324,7 +327,7 @@ df %>%
 
 # Dendograma
 
-```{r echo=FALSE}
+```{r echo=FALSE, eval=FALSE}
 df %>%
   select(all_of(numerical_columns)) %>%
   drop_na %>%
@@ -337,7 +340,7 @@ df %>%
     labs(x = '', y = '', subtitle = 'Dendograma para todos pacientes')
 ```
 
-```{r echo=FALSE}
+```{r echo=FALSE, eval=FALSE}
 df %>%
   filter(ira == 0) %>%
   select(all_of(numerical_columns)) %>%
@@ -351,7 +354,7 @@ df %>%
     labs(x = '', y = '', subtitle = 'Dendograma para pacientes que não desenvolveram IRA')
 ```
 
-```{r echo=FALSE}
+```{r echo=FALSE, eval=FALSE}
 df %>%
   filter(ira == 1) %>%
   select(all_of(numerical_columns)) %>%
@@ -367,7 +370,7 @@ df %>%
 
 
 
-```{r echo=FALSE}
+```{r echo=TRUE}
 d0 = df %>%
   filter(ira == 0) %>%
   select(all_of(original_columns)) %>%
@@ -392,69 +395,41 @@ d1 = df %>%
 
 dl <- dendlist(
   d0 %>%
-    set("labels_col", value = c("skyblue", "orange", "grey"), k=3) %>%
+    set("labels_col",
+        value = c("skyblue", "orange", "grey"), k=3) %>%
     set("branches_lty", 1) %>%
-    set("branches_k_color", value = c("skyblue", "orange", "grey"), k = 3),
+    set("branches_k_color", 
+        value = c("skyblue", "orange", "grey"), k = 3),
   d1 %>% 
-    set("labels_col", value = c("skyblue", "orange", "grey"), k=3) %>%
+    set("labels_col",
+        value = c("skyblue", "orange", "grey"), k=3) %>%
     set("branches_lty", 1) %>%
-    set("branches_k_color", value = c("skyblue", "orange", "grey"), k = 3) 
+    set("branches_k_color",
+        value = c("skyblue", "orange", "grey"), k = 3) 
 )
 
-# Plot them together
 dl %>%
   untangle(method = "step2") %>%
-  tanglegram(common_subtrees_color_lines = FALSE, highlight_distinct_edges  = TRUE, highlight_branches_lwd=FALSE, 
-             margin_inner=10, main_left = 'Pacientes sem IRA', main_right = 'Pacientes com IRA',
-             lwd=2, k_branches = 1, k_labels = 1, cex_main = 1.2, columns_width = c(5,3,5), margin_outer = 0.5)
+  tanglegram(common_subtrees_color_lines = FALSE,
+             highlight_distinct_edges = TRUE,
+             highlight_branches_lwd = FALSE, 
+             margin_inner = 10,
+             main_left = 'Pacientes sem IRA',
+             main_right = 'Pacientes com IRA',
+             lwd = 2,
+             k_branches = 1,
+             k_labels = 1,
+             cex_main = 1.2, 
+             columns_width = c(5, 3, 5),
+             margin_outer = 0.5)
 
 ```
 
-# Box's M Test
-
-```{r echo=FALSE}
-df_2 = df %>%
-  select(all_of(c(original_columns, "ira"))) %>%
-  drop_na
-
-matrix_numeric = df_2 %>%
-  select(all_of(original_columns)) %>%
-  as.matrix 
-
-boxM(matrix_numeric, df_2$ira)
-```
-
-\newpage
-
-# Principal Component Analysis
-
-```{r echo=FALSE}
-df_2 = df %>%
-  select(all_of(c(original_columns, "ira"))) %>%
-  drop_na
-
-df_numeric = df_2 %>%
-  select(all_of(original_columns)) %>%
-  drop_na  
-
-pca_res <- prcomp(df_numeric, scale. = TRUE)
-
-pca_res$rotation
-```
- 
-```{r echo=FALSE, warning=FALSE, message=FALSE}
-autoplot(pca_res, data = df_2, colour = 'ira',
-         loadings = TRUE, loadings.colour = 'blue',
-         loadings.label = TRUE, loadings.label.size = 3)
-```
-```{r echo=FALSE}
-fviz_eig(pca_res)
-```
 \newpage
 
 # Testing difference of means
 
-```{r echo=FALSE}
+```{r}
 df_wilcox = tibble()
 
 for (variable in numerical_columns){
@@ -473,23 +448,22 @@ df_wilcox = df_wilcox %>%
   inner_join(df_names, by='variavel') %>%
   rename(`Variável` = nome) 
 
+significant_numerical_columns = df_wilcox %>%
+  filter(`p-valor` <= 0.25) %>%
+  select(variavel) %>%
+  pull
+
 df_wilcox %>%
   select(`Variável`, `Estatística`, `p-valor`) %>%
   mutate(`p-valor` = case_when(`p-valor` == 1 ~ '> 0.999', 
                                `p-valor` < 0.001 ~ '< 0.001', 
                                TRUE ~ as.character(round(`p-valor`, 3)))) %>%
   niceFormatting(caption = "Teste Mann-Whitney")
-
-significant_numerical_columns = df_wilcox %>%
-  filter(`p-valor` <= 0.25) %>%
-  select(variavel) %>%
-  pull
-
 ```
 
 \newpage
 
-```{r echo=FALSE}
+```{r echo=FALSE, eval=FALSE}
 df_wilcox %>%
   arrange(`p-valor`) %>%
   filter(`p-valor` <= 0.25) %>%
@@ -501,7 +475,7 @@ df_wilcox %>%
   niceFormatting(caption = "Teste Mann-Whitney")
 ```
 
-```{r echo=FALSE}
+```{r echo=FALSE, eval=FALSE}
 df_wilcox %>%
   arrange(`p-valor`) %>%
   filter(`p-valor` > 0.25) %>%
@@ -513,22 +487,17 @@ df_wilcox %>%
   niceFormatting(caption = "Teste Mann-Whitney")
 ```
 
-\newpage
-
-```{r echo=FALSE}
+```{r echo=TRUE}
 df_chisq = tibble()
 selected_categorical_columns = categorical_columns[!categorical_columns %in% c('d_ira', 'kdigo')]
 
 for (variable in selected_categorical_columns){
-  
   if (length(unique(df[[variable]])) > 1){
     test = chisq.test(df$ira, df[[variable]], simulate.p.value = TRUE)
     
     df_chisq = bind_rows(df_chisq,
                          list("variavel" = variable, "Estatística" = test$statistic, "p-valor" = test$p.value))
   }
-  
-
 }
 
 df_chisq %>%
@@ -545,20 +514,17 @@ df_chisq %>%
 
 # Selected variables
 
-```{r echo=FALSE}
-# significant_numerical_columns
-
+```{r echo=FALSE, eval=FALSE}
 df %>%
   select(all_of(significant_numerical_columns)) %>%
   highlyCorrelated(threshold = 0) %>%
-  filter((row %in% significant_numerical_columns) | (column %in% significant_numerical_columns),
-         abs_rho > 0.5) %>%
+  filter(abs_rho > 0.5) %>%
   select(row, column, rho) %>%
   arrange(-rho) %>%
-  niceFormatting(caption = "") 
+  niceFormatting(caption = "Correlação entr variáveis significantes") 
 ```
 
-```{r echo = FALSE, message=FALSE, warning=FALSE}
+```{r echo = FALSE, message=FALSE, warning=FALSE, eval = FALSE}
 temp_df = df %>%
   select(all_of(significant_numerical_columns)) %>%
   highlyCorrelated(threshold = 0) %>%
@@ -590,8 +556,24 @@ for(i in 1:(dim(temp_df)[1])){
 }
 ```
 
+```{r echo=TRUE}
+corr = df %>% 
+  select(all_of(significant_numerical_columns)) %>%
+  drop_na %>%
+  cor %>%
+  as.matrix
 
-```{r echo=FALSE, results=FALSE}
+ggcorrplot(corr, hc.order = TRUE, outline.col = "white",
+           tl.cex = 7, lab = TRUE, lab_size = 2,
+           title = 'Matriz de correlação entre variáveis significantes)',
+           ggtheme = theme(legend.position="right",
+                           legend.title=element_blank(),
+                           legend.text=element_text(size=5))) 
+
+```
+
+
+```{r echo=TRUE, results=FALSE}
 length(significant_numerical_columns)
 
 drop = c('uvna24h', 'una_ucr', 'fena', 'su_scr', 'saps3')
@@ -606,40 +588,10 @@ dput(selected_numerical_columns)
 
 ```{r echo=F}
 corr = df %>% 
-  select(all_of(selected_numerical_columns)) %>%
-  drop_na %>%
-  cor %>%
-  as.matrix
-
-p.mat = df %>% 
-  select(all_of(selected_numerical_columns)) %>%
-  drop_na %>%
-  cor_pmat %>%
-  as.matrix
-
-ggcorrplot(corr, hc.order = TRUE, outline.col = "white",
-           tl.cex = 7, lab = TRUE, lab_size = 2,
-           title = 'Matriz de correlação (Variáveis escolhidas)',
-           ggtheme = theme(legend.position="right",
-                           legend.title=element_blank(),
-                           legend.text=element_text(size=5))) 
-
-```
-
-
-```{r echo=F}
-corr = df %>% 
   filter(ira == 0) %>%
   select(all_of(selected_numerical_columns)) %>%
   drop_na %>%
   cor %>%
-  as.matrix
-
-p.mat = df %>% 
-  filter(ira == 0) %>%
-  select(all_of(selected_numerical_columns)) %>%
-  drop_na %>%
-  cor_pmat %>%
   as.matrix
 
 ggcorrplot(corr, hc.order = TRUE, outline.col = "white",
@@ -661,13 +613,6 @@ corr = df %>%
   cor %>%
   as.matrix
 
-p.mat = df %>% 
-  filter(ira == 1) %>%
-  select(all_of(selected_numerical_columns)) %>%
-  drop_na %>%
-  cor_pmat %>%
-  as.matrix
-
 ggcorrplot(corr, hc.order = TRUE, outline.col = "white",
            tl.cex = 7, lab = TRUE, lab_size = 2,
            title = 'Matriz de correlação para os pacientes que desenvolveram IRA \n (Variáveis escolhidas)',
@@ -678,36 +623,35 @@ ggcorrplot(corr, hc.order = TRUE, outline.col = "white",
 
 ```
 
-# Camila variables
+<!-- # Camila variables -->
 
-```{r echo=F}
-corr = df %>% 
-  select(all_of(camila_numerical_columns)) %>%
-  drop_na %>%
-  cor %>%
-  as.matrix
+<!-- ```{r echo=F} -->
+<!-- corr = df %>%  -->
+<!--   select(all_of(camila_numerical_columns)) %>% -->
+<!--   drop_na %>% -->
+<!--   cor %>% -->
+<!--   as.matrix -->
 
-p.mat = df %>% 
-  select(all_of(camila_numerical_columns)) %>%
-  drop_na %>%
-  cor_pmat %>%
-  as.matrix
+<!-- p.mat = df %>%  -->
+<!--   select(all_of(camila_numerical_columns)) %>% -->
+<!--   drop_na %>% -->
+<!--   cor_pmat %>% -->
+<!--   as.matrix -->
 
-ggcorrplot(corr, hc.order = TRUE, outline.col = "white",
-           tl.cex = 7, lab = TRUE, lab_size = 2,
-           title = 'Matriz de correlação (Variáveis escolhidas)',
-           ggtheme = theme(legend.position="right",
-                           legend.title=element_blank(),
-                           legend.text=element_text(size=5))) 
+<!-- ggcorrplot(corr, hc.order = TRUE, outline.col = "white", -->
+<!--            tl.cex = 7, lab = TRUE, lab_size = 2, -->
+<!--            title = 'Matriz de correlação (Variáveis escolhidas)', -->
+<!--            ggtheme = theme(legend.position="right", -->
+<!--                            legend.title=element_blank(), -->
+<!--                            legend.text=element_text(size=5)))  -->
 
-```
+<!-- ``` -->
 
-```{r echo = FALSE, message=FALSE, warning=FALSE}
+```{r echo = FALSE, message=FALSE, warning=FALSE, eval = FALSE}
 temp_df = df %>%
   select(all_of(camila_numerical_columns)) %>%
   highlyCorrelated(threshold = 0) %>%
-  filter((row %in% camila_numerical_columns) | (column %in% camila_numerical_columns),
-         rho > 0.4) %>%
+  filter(rho > 0.4) %>%
   select(row, column)
 
 for(i in 1:(dim(temp_df)[1])){
