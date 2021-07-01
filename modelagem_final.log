@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020/W32TeX) (preloaded format=pdflatex 2020.12.11)  28 JUN 2021 23:49
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020/W32TeX) (preloaded format=pdflatex 2020.12.11)  30 JUN 2021 23:29
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -386,6 +386,24 @@ Package: ifvtex 2019/10/25 v1.7 ifvtex legacy package. Use iftex instead.
 \Gm@layoutvoffset=\dimen160
 \Gm@dimlist=\toks25
 )
+(c:/Users/eduar/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/fancyvrb/fancyvrb.
+sty
+Package: fancyvrb 2020/05/03 v3.6 verbatim text (tvz,hv)
+\FV@CodeLineNo=\count279
+\FV@InFile=\read2
+\FV@TabBox=\box49
+\c@FancyVerbLine=\count280
+\FV@StepNumber=\count281
+\FV@OutFile=\write3
+) (c:/Users/eduar/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/framed/framed.st
+y
+Package: framed 2011/10/22 v 0.96: framed or shaded text with page breaks
+\OuterFrameSep=\skip54
+\fb@frw=\dimen161
+\fb@frh=\dimen162
+\FrameRule=\dimen163
+\FrameSep=\dimen164
+)
 (c:/Users/eduar/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/graphics/graphicx.
 sty
 Package: graphicx 2020/09/09 v1.2b Enhanced LaTeX Graphics (DPC,SPQR)
@@ -402,8 +420,8 @@ File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
 )
 Package graphics Info: Driver file: pdftex.def on input line 105.
 )
-\Gin@req@height=\dimen161
-\Gin@req@width=\dimen162
+\Gin@req@height=\dimen165
+\Gin@req@width=\dimen166
 )
 (c:/Users/eduar/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/grffile/grffile.st
 y
@@ -415,81 +433,81 @@ line 40.
 (c:/Users/eduar/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/booktabs/booktabs.
 sty
 Package: booktabs 2020/01/12 v1.61803398 Publication quality tables
-\heavyrulewidth=\dimen163
-\lightrulewidth=\dimen164
-\cmidrulewidth=\dimen165
-\belowrulesep=\dimen166
-\belowbottomsep=\dimen167
-\aboverulesep=\dimen168
-\abovetopsep=\dimen169
-\cmidrulesep=\dimen170
-\cmidrulekern=\dimen171
-\defaultaddspace=\dimen172
-\@cmidla=\count279
-\@cmidlb=\count280
-\@aboverulesep=\dimen173
-\@belowrulesep=\dimen174
-\@thisruleclass=\count281
-\@lastruleclass=\count282
-\@thisrulewidth=\dimen175
+\heavyrulewidth=\dimen167
+\lightrulewidth=\dimen168
+\cmidrulewidth=\dimen169
+\belowrulesep=\dimen170
+\belowbottomsep=\dimen171
+\aboverulesep=\dimen172
+\abovetopsep=\dimen173
+\cmidrulesep=\dimen174
+\cmidrulekern=\dimen175
+\defaultaddspace=\dimen176
+\@cmidla=\count282
+\@cmidlb=\count283
+\@aboverulesep=\dimen177
+\@belowrulesep=\dimen178
+\@thisruleclass=\count284
+\@lastruleclass=\count285
+\@thisrulewidth=\dimen179
 )
 (c:/Users/eduar/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/tools/longtable.st
 y
 Package: longtable 2020/01/07 v4.13 Multi-page Table package (DPC)
-\LTleft=\skip54
-\LTright=\skip55
-\LTpre=\skip56
-\LTpost=\skip57
-\LTchunksize=\count283
-\LTcapwidth=\dimen176
-\LT@head=\box49
-\LT@firsthead=\box50
-\LT@foot=\box51
-\LT@lastfoot=\box52
-\LT@cols=\count284
-\LT@rows=\count285
-\c@LT@tables=\count286
-\c@LT@chunks=\count287
+\LTleft=\skip55
+\LTright=\skip56
+\LTpre=\skip57
+\LTpost=\skip58
+\LTchunksize=\count286
+\LTcapwidth=\dimen180
+\LT@head=\box50
+\LT@firsthead=\box51
+\LT@foot=\box52
+\LT@lastfoot=\box53
+\LT@cols=\count287
+\LT@rows=\count288
+\c@LT@tables=\count289
+\c@LT@chunks=\count290
 \LT@p@ftn=\toks26
 ) (c:/Users/eduar/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/tools/array.sty
 Package: array 2020/10/01 v2.5c Tabular extension package (FMi)
-\col@sep=\dimen177
-\ar@mcellbox=\box53
-\extrarowheight=\dimen178
+\col@sep=\dimen181
+\ar@mcellbox=\box54
+\extrarowheight=\dimen182
 \NC@list=\toks27
-\extratabsurround=\skip58
-\backup@length=\skip59
-\ar@cellbox=\box54
+\extratabsurround=\skip59
+\backup@length=\skip60
+\ar@cellbox=\box55
 )
 (c:/Users/eduar/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/multirow/multirow.
 sty
 Package: multirow 2019/05/31 v2.5 Span multiple rows of a table
-\multirow@colwidth=\skip60
-\multirow@cntb=\count288
-\multirow@dima=\skip61
-\bigstrutjot=\dimen179
+\multirow@colwidth=\skip61
+\multirow@cntb=\count291
+\multirow@dima=\skip62
+\bigstrutjot=\dimen183
 )
 (c:/Users/eduar/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/wrapfig/wrapfig.st
 y
-\wrapoverhang=\dimen180
-\WF@size=\dimen181
-\c@WF@wrappedlines=\count289
-\WF@box=\box55
+\wrapoverhang=\dimen184
+\WF@size=\dimen185
+\c@WF@wrappedlines=\count292
+\WF@box=\box56
 \WF@everypar=\toks28
 Package: wrapfig 2003/01/31  v 3.6
 ) (c:/Users/eduar/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/float/float.sty
 Package: float 2001/11/08 v1.3d Float enhancements (AL)
-\c@float@type=\count290
+\c@float@type=\count293
 \float@exts=\toks29
-\float@box=\box56
+\float@box=\box57
 \@float@everytoks=\toks30
-\@floatcapt=\box57
+\@floatcapt=\box58
 )
 (c:/Users/eduar/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/colortbl/colortbl.
 sty
 Package: colortbl 2020/01/04 v1.0e Color table columns (DPC)
 \everycr=\toks31
-\minrowclearance=\skip62
+\minrowclearance=\skip63
 )
 (c:/Users/eduar/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/pdflscape/pdflscap
 e.sty
@@ -506,38 +524,38 @@ Package: tabu 2019/01/11 v2.9 - flexible LaTeX tabulars (FC+tabu-fixed)
 (c:/Users/eduar/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/varwidth/varwidth.
 sty
 Package: varwidth 2009/03/30 ver 0.92;  Variable-width minipages
-\@vwid@box=\box58
-\sift@deathcycles=\count291
-\@vwid@loff=\dimen182
-\@vwid@roff=\dimen183
+\@vwid@box=\box59
+\sift@deathcycles=\count294
+\@vwid@loff=\dimen186
+\@vwid@roff=\dimen187
 )
-\c@taburow=\count292
-\tabu@nbcols=\count293
-\tabu@cnt=\count294
-\tabu@Xcol=\count295
-\tabu@alloc=\count296
-\tabu@nested=\count297
-\tabu@target=\dimen184
-\tabu@spreadtarget=\dimen185
-\tabu@naturalX=\dimen186
-\tabucolX=\dimen187
-\tabu@Xsum=\dimen188
-\extrarowdepth=\dimen189
-\abovetabulinesep=\dimen190
-\belowtabulinesep=\dimen191
-\tabustrutrule=\dimen192
+\c@taburow=\count295
+\tabu@nbcols=\count296
+\tabu@cnt=\count297
+\tabu@Xcol=\count298
+\tabu@alloc=\count299
+\tabu@nested=\count300
+\tabu@target=\dimen188
+\tabu@spreadtarget=\dimen189
+\tabu@naturalX=\dimen190
+\tabucolX=\dimen191
+\tabu@Xsum=\dimen192
+\extrarowdepth=\dimen193
+\abovetabulinesep=\dimen194
+\belowtabulinesep=\dimen195
+\tabustrutrule=\dimen196
 \tabu@thebody=\toks32
 \tabu@footnotes=\toks33
-\tabu@box=\box59
-\tabu@arstrutbox=\box60
-\tabu@hleads=\box61
-\tabu@vleads=\box62
-\tabu@cellskip=\skip63
+\tabu@box=\box60
+\tabu@arstrutbox=\box61
+\tabu@hleads=\box62
+\tabu@vleads=\box63
+\tabu@cellskip=\skip64
 )
 (c:/Users/eduar/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/threeparttable/thr
 eeparttable.sty
 Package: threeparttable 2003/06/13  v 3.0
-\@tempboxb=\box63
+\@tempboxb=\box64
 )
 (c:/Users/eduar/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/threeparttablex/th
 reeparttablex.sty
@@ -551,34 +569,43 @@ Package: environ 2014/05/04 v0.3 A new way to define environments
 ces.sty
 Package: trimspaces 2009/09/17 v1.1 Trim spaces around a token list
 ))
-\TPTL@width=\skip64
+\TPTL@width=\skip65
 ) (c:/Users/eduar/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/ulem/ulem.sty
-\UL@box=\box64
-\UL@hyphenbox=\box65
-\UL@skip=\skip65
+\UL@box=\box65
+\UL@hyphenbox=\box66
+\UL@skip=\skip66
 \UL@hook=\toks34
-\UL@height=\dimen193
-\UL@pe=\count298
-\UL@pixel=\dimen194
-\ULC@box=\box66
+\UL@height=\dimen197
+\UL@pe=\count301
+\UL@pixel=\dimen198
+\ULC@box=\box67
 Package: ulem 2019/11/18
-\ULdepth=\dimen195
+\ULdepth=\dimen199
 )
 (c:/Users/eduar/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/makecell/makecell.
 sty
 Package: makecell 2009/08/03 V0.1e Managing of Tab Column Heads and Cells
-\rotheadsize=\dimen196
-\c@nlinenum=\count299
+\rotheadsize=\dimen256
+\c@nlinenum=\count302
 \TeXr@lab=\toks35
 )
 (c:/Users/eduar/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/l3backend/l3backen
 d-pdftex.def
 File: l3backend-pdftex.def 2020-09-24 L3 backend support: PDF output (pdfTeX)
-\l__kernel_color_stack_int=\count300
-\l__pdf_internal_box=\box67
+\l__kernel_color_stack_int=\count303
+\l__pdf_internal_box=\box68
 ) (./modelagem_final.aux
 
-LaTeX Warning: Label `tab:unnamed-chunk-10' multiply defined.
+LaTeX Warning: Label `tab:unnamed-chunk-9' multiply defined.
+
+
+LaTeX Warning: Label `tab:unnamed-chunk-9' multiply defined.
+
+
+LaTeX Warning: Label `tab:unnamed-chunk-9' multiply defined.
+
+
+LaTeX Warning: Label `tab:unnamed-chunk-9' multiply defined.
 
 
 LaTeX Warning: Label `tab:unnamed-chunk-10' multiply defined.
@@ -590,46 +617,37 @@ LaTeX Warning: Label `tab:unnamed-chunk-10' multiply defined.
 LaTeX Warning: Label `tab:unnamed-chunk-10' multiply defined.
 
 
-LaTeX Warning: Label `tab:unnamed-chunk-11' multiply defined.
-
-
-LaTeX Warning: Label `tab:unnamed-chunk-11' multiply defined.
-
-
-LaTeX Warning: Label `tab:unnamed-chunk-11' multiply defined.
-
-
-LaTeX Warning: Label `tab:unnamed-chunk-11' multiply defined.
+LaTeX Warning: Label `tab:unnamed-chunk-10' multiply defined.
 
 )
 \openout1 = `modelagem_final.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 80.
-LaTeX Font Info:    ... okay on input line 80.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 80.
-LaTeX Font Info:    ... okay on input line 80.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 80.
-LaTeX Font Info:    ... okay on input line 80.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 80.
-LaTeX Font Info:    ... okay on input line 80.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 80.
-LaTeX Font Info:    ... okay on input line 80.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 80.
-LaTeX Font Info:    ... okay on input line 80.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 80.
-LaTeX Font Info:    ... okay on input line 80.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 80.
-LaTeX Font Info:    ... okay on input line 80.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 80.
-LaTeX Font Info:    ... okay on input line 80.
-LaTeX Info: Redefining \microtypecontext on input line 80.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 120.
+LaTeX Font Info:    ... okay on input line 120.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 120.
+LaTeX Font Info:    ... okay on input line 120.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 120.
+LaTeX Font Info:    ... okay on input line 120.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 120.
+LaTeX Font Info:    ... okay on input line 120.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 120.
+LaTeX Font Info:    ... okay on input line 120.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 120.
+LaTeX Font Info:    ... okay on input line 120.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 120.
+LaTeX Font Info:    ... okay on input line 120.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 120.
+LaTeX Font Info:    ... okay on input line 120.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 120.
+LaTeX Font Info:    ... okay on input line 120.
+LaTeX Info: Redefining \microtypecontext on input line 120.
 Package microtype Info: Generating PDF output.
 Package microtype Info: Character protrusion enabled (level 2).
 Package microtype Info: Using protrusion set `basicmath'.
 Package microtype Info: Automatic font expansion enabled (level 2),
 (microtype)             stretch: 20, shrink: 20, step: 1, non-selected.
 Package microtype Info: Using default expansion set `alltext-nott'.
-LaTeX Info: Redefining \showhyphens on input line 80.
+LaTeX Info: Redefining \showhyphens on input line 120.
 Package microtype Info: No adjustment of tracking.
 Package microtype Info: No adjustment of interword spacing.
 Package microtype Info: No adjustment of character kerning.
@@ -650,7 +668,7 @@ df-sys.cfg
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
-Package hyperref Info: Link coloring OFF on input line 80.
+Package hyperref Info: Link coloring OFF on input line 120.
 
 (c:/Users/eduar/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/hyperref/nameref.s
 ty
@@ -664,14 +682,14 @@ Package: refcount 2019/12/15 v3.6 Data extraction from label references (HO)
 ettitlestring.sty
 Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 )
-\c@section@level=\count301
+\c@section@level=\count304
 )
-LaTeX Info: Redefining \ref on input line 80.
-LaTeX Info: Redefining \pageref on input line 80.
-LaTeX Info: Redefining \nameref on input line 80.
+LaTeX Info: Redefining \ref on input line 120.
+LaTeX Info: Redefining \pageref on input line 120.
+LaTeX Info: Redefining \nameref on input line 120.
 (./modelagem_final.out) (./modelagem_final.out)
-\@outlinefile=\write3
-\openout3 = `modelagem_final.out'.
+\@outlinefile=\write4
+\openout4 = `modelagem_final.out'.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -707,34 +725,34 @@ LaTeX Info: Redefining \nameref on input line 80.
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-LaTeX Font Info:    Trying to load font information for OT1+lmr on input line 8
-2.
+LaTeX Font Info:    Trying to load font information for OT1+lmr on input line 1
+22.
 (c:/Users/eduar/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/lm/ot1lmr.fd
 File: ot1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
-LaTeX Font Info:    Trying to load font information for OML+lmm on input line 8
-2.
+LaTeX Font Info:    Trying to load font information for OML+lmm on input line 1
+22.
 (c:/Users/eduar/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/lm/omllmm.fd
 File: omllmm.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 LaTeX Font Info:    Trying to load font information for OMS+lmsy on input line 
-82.
+122.
 (c:/Users/eduar/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/lm/omslmsy.fd
 File: omslmsy.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 LaTeX Font Info:    Trying to load font information for OMX+lmex on input line 
-82.
+122.
 (c:/Users/eduar/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/lm/omxlmex.fd
 File: omxlmex.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <12> on input line 82.
+(Font)              <12> on input line 122.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <8> on input line 82.
+(Font)              <8> on input line 122.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <6> on input line 82.
-LaTeX Font Info:    Trying to load font information for U+msa on input line 82.
-
+(Font)              <6> on input line 122.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 122
+.
 (c:/Users/eduar/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
@@ -742,8 +760,8 @@ File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 fg
 File: mt-msa.cfg 2006/02/04 v1.1 microtype config. file: AMS symbols (a) (RS)
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 82.
-
+LaTeX Font Info:    Trying to load font information for U+msb on input line 122
+.
 (c:/Users/eduar/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
@@ -751,117 +769,316 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 fg
 File: mt-msb.cfg 2005/06/01 v1.0 microtype config. file: AMS symbols (b) (RS)
 )
-Overfull \hbox (3.45168pt too wide) in paragraph at lines 171--171
- []|\T1/lmr/m/n/10 (-20) Especificidade|
- []
+LaTeX Font Info:    Trying to load font information for T1+lmtt on input line 1
+24.
+(c:/Users/eduar/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/lm/t1lmtt.fd
+File: t1lmtt.fd 2009/10/30 v1.6 Font defs for Latin Modern
+)
+LaTeX Font Info:    Font shape `T1/lmtt/bx/n' in size <10> not available
+(Font)              Font shape `T1/lmtt/b/n' tried instead on input line 125.
 
-
-Overfull \hbox (12.5835pt too wide) in alignment at lines 168--173
- [] [] [] [] [] [] [] 
- []
-
-
-Overfull \hbox (3.45168pt too wide) in paragraph at lines 176--176
- []|\T1/lmr/m/n/10 (-20) Especificidade|
- []
-
-
-Overfull \hbox (12.5835pt too wide) in alignment at lines 173--178
- [] [] [] [] [] [] [] 
- []
-
-
-Overfull \hbox (12.5835pt too wide) in alignment at lines 178--180
- [] [] [] [] [] [] [] 
- []
-
-
-Overfull \hbox (12.5835pt too wide) in alignment at lines 180--182
- [] [] [] [] [] [] [] 
- []
-
-
-Overfull \hbox (12.5835pt too wide) in alignment at lines 182--206
- [] [] [] [] [] [] [] 
- []
-
-
-Overfull \hbox (12.5835pt too wide) in alignment at lines 206--230
- [] [] [] [] [] [] [] 
+Underfull \vbox (badness 10000) detected at line 296
  []
 
 [1
 
 {c:/Users/eduar/AppData/Roaming/TinyTeX/texmf-var/fonts/map/pdftex/updmap/pdfte
 x.map}]
-Overfull \hbox (12.5835pt too wide) in alignment at lines 230--245
- [] [] [] [] [] [] [] 
+Underfull \vbox (badness 10000) detected at line 296
+ []
+
+
+Underfull \vbox (badness 10000) detected at line 296
  []
 
 [2]
-<modelagem_final_files/figure-latex/unnamed-chunk-10-1.pdf, id=36, 469.755pt x 
+Underfull \vbox (badness 10000) detected at line 296
+ []
+
+
+Underfull \vbox (badness 10000) detected at line 296
+ []
+
+[3]
+Underfull \vbox (badness 10000) detected at line 568
+ []
+
+[4]
+Underfull \vbox (badness 10000) detected at line 568
+ []
+
+
+Underfull \vbox (badness 10000) detected at line 568
+ []
+
+[5]
+Underfull \vbox (badness 10000) detected at line 568
+ []
+
+
+Underfull \vbox (badness 10000) detected at line 568
+ []
+
+[6]
+Underfull \vbox (badness 10000) detected at line 568
+ []
+
+
+Underfull \vbox (badness 10000) detected at line 568
+ []
+
+[7]
+Underfull \vbox (badness 10000) detected at line 568
+ []
+
+
+Underfull \vbox (badness 10000) detected at line 568
+ []
+
+[8] [9]
+<modelagem_final_files/figure-latex/unnamed-chunk-9-1.pdf, id=65, 469.755pt x 2
+89.08pt>
+File: modelagem_final_files/figure-latex/unnamed-chunk-9-1.pdf Graphic file (ty
+pe pdf)
+<use modelagem_final_files/figure-latex/unnamed-chunk-9-1.pdf>
+Package pdftex.def Info: modelagem_final_files/figure-latex/unnamed-chunk-9-1.p
+df  used on input line 687.
+(pdftex.def)             Requested size: 469.75386pt x 289.07928pt.
+<modelagem_final_files/figure-latex/unnamed-chunk-9-2.pdf, id=66, 469.755pt x 2
+89.08pt>
+File: modelagem_final_files/figure-latex/unnamed-chunk-9-2.pdf Graphic file (ty
+pe pdf)
+<use modelagem_final_files/figure-latex/unnamed-chunk-9-2.pdf>
+Package pdftex.def Info: modelagem_final_files/figure-latex/unnamed-chunk-9-2.p
+df  used on input line 688.
+(pdftex.def)             Requested size: 469.75386pt x 289.07928pt.
+<modelagem_final_files/figure-latex/unnamed-chunk-9-3.pdf, id=67, 469.755pt x 2
+89.08pt>
+File: modelagem_final_files/figure-latex/unnamed-chunk-9-3.pdf Graphic file (ty
+pe pdf)
+<use modelagem_final_files/figure-latex/unnamed-chunk-9-3.pdf>
+Package pdftex.def Info: modelagem_final_files/figure-latex/unnamed-chunk-9-3.p
+df  used on input line 689.
+(pdftex.def)             Requested size: 469.75386pt x 289.07928pt.
+<modelagem_final_files/figure-latex/unnamed-chunk-9-4.pdf, id=68, 469.755pt x 2
+89.08pt>
+File: modelagem_final_files/figure-latex/unnamed-chunk-9-4.pdf Graphic file (ty
+pe pdf)
+<use modelagem_final_files/figure-latex/unnamed-chunk-9-4.pdf>
+Package pdftex.def Info: modelagem_final_files/figure-latex/unnamed-chunk-9-4.p
+df  used on input line 690.
+(pdftex.def)             Requested size: 469.75386pt x 289.07928pt.
+<modelagem_final_files/figure-latex/unnamed-chunk-9-5.pdf, id=69, 469.755pt x 2
+89.08pt>
+File: modelagem_final_files/figure-latex/unnamed-chunk-9-5.pdf Graphic file (ty
+pe pdf)
+<use modelagem_final_files/figure-latex/unnamed-chunk-9-5.pdf>
+Package pdftex.def Info: modelagem_final_files/figure-latex/unnamed-chunk-9-5.p
+df  used on input line 691.
+(pdftex.def)             Requested size: 469.75386pt x 289.07928pt.
+<modelagem_final_files/figure-latex/unnamed-chunk-9-6.pdf, id=70, 469.755pt x 2
+89.08pt>
+File: modelagem_final_files/figure-latex/unnamed-chunk-9-6.pdf Graphic file (ty
+pe pdf)
+<use modelagem_final_files/figure-latex/unnamed-chunk-9-6.pdf>
+Package pdftex.def Info: modelagem_final_files/figure-latex/unnamed-chunk-9-6.p
+df  used on input line 692.
+(pdftex.def)             Requested size: 469.75386pt x 289.07928pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 687--693
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 687--693
+[]
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 687--693
+[]
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 687--693
+[]
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 687--693
+[]
+ []
+
+[10 <./modelagem_final_files/figure-latex/unnamed-chunk-9-1.pdf> <./modelagem_f
+inal_files/figure-latex/unnamed-chunk-9-2.pdf>] [11 <./modelagem_final_files/fi
+gure-latex/unnamed-chunk-9-3.pdf> <./modelagem_final_files/figure-latex/unnamed
+-chunk-9-4.pdf>] [12 <./modelagem_final_files/figure-latex/unnamed-chunk-9-5.pd
+f> <./modelagem_final_files/figure-latex/unnamed-chunk-9-6.pdf>]
+Overfull \hbox (12.5835pt too wide) in alignment at lines 710--715
+ [] [] [] [] [] [] [] 
+ []
+
+
+Overfull \hbox (12.5835pt too wide) in alignment at lines 715--720
+ [] [] [] [] [] [] [] 
+ []
+
+
+Overfull \hbox (12.5835pt too wide) in alignment at lines 720--722
+ [] [] [] [] [] [] [] 
+ []
+
+
+Overfull \hbox (12.5835pt too wide) in alignment at lines 722--724
+ [] [] [] [] [] [] [] 
+ []
+
+
+Overfull \hbox (12.5835pt too wide) in alignment at lines 724--748
+ [] [] [] [] [] [] [] 
+ []
+
+
+Overfull \hbox (12.5835pt too wide) in alignment at lines 748--772
+ [] [] [] [] [] [] [] 
+ []
+
+
+Overfull \hbox (12.5835pt too wide) in alignment at lines 772--787
+ [] [] [] [] [] [] [] 
+ []
+
+<modelagem_final_files/figure-latex/unnamed-chunk-9-7.pdf, id=118, 469.755pt x 
 289.08pt>
+File: modelagem_final_files/figure-latex/unnamed-chunk-9-7.pdf Graphic file (ty
+pe pdf)
+<use modelagem_final_files/figure-latex/unnamed-chunk-9-7.pdf>
+Package pdftex.def Info: modelagem_final_files/figure-latex/unnamed-chunk-9-7.p
+df  used on input line 790.
+(pdftex.def)             Requested size: 469.75386pt x 289.07928pt.
+[13] [14 <./modelagem_final_files/figure-latex/unnamed-chunk-9-7.pdf>]
+<modelagem_final_files/figure-latex/unnamed-chunk-10-1.pdf, id=140, 469.755pt x
+ 289.08pt>
 File: modelagem_final_files/figure-latex/unnamed-chunk-10-1.pdf Graphic file (t
 ype pdf)
 <use modelagem_final_files/figure-latex/unnamed-chunk-10-1.pdf>
 Package pdftex.def Info: modelagem_final_files/figure-latex/unnamed-chunk-10-1.
-pdf  used on input line 247.
+pdf  used on input line 912.
 (pdftex.def)             Requested size: 469.75386pt x 289.07928pt.
-[3 <./modelagem_final_files/figure-latex/unnamed-chunk-10-1.pdf>]
-Overfull \hbox (3.45168pt too wide) in paragraph at lines 339--339
- []|\T1/lmr/m/n/10 (-20) Especificidade|
- []
-
-
-Overfull \hbox (12.5835pt too wide) in alignment at lines 336--341
- [] [] [] [] [] [] [] 
- []
-
-
-Overfull \hbox (3.45168pt too wide) in paragraph at lines 344--344
- []|\T1/lmr/m/n/10 (-20) Especificidade|
- []
-
-
-Overfull \hbox (12.5835pt too wide) in alignment at lines 341--346
- [] [] [] [] [] [] [] 
- []
-
-
-Overfull \hbox (12.5835pt too wide) in alignment at lines 346--348
- [] [] [] [] [] [] [] 
- []
-
-
-Overfull \hbox (12.5835pt too wide) in alignment at lines 348--350
- [] [] [] [] [] [] [] 
- []
-
-
-Overfull \hbox (12.5835pt too wide) in alignment at lines 350--374
- [] [] [] [] [] [] [] 
- []
-
-
-Overfull \hbox (12.5835pt too wide) in alignment at lines 374--398
- [] [] [] [] [] [] [] 
- []
-
-[4]
-Overfull \hbox (12.5835pt too wide) in alignment at lines 398--413
- [] [] [] [] [] [] [] 
- []
-
-<modelagem_final_files/figure-latex/unnamed-chunk-11-1.pdf, id=60, 469.755pt x 
-289.08pt>
-File: modelagem_final_files/figure-latex/unnamed-chunk-11-1.pdf Graphic file (t
+<modelagem_final_files/figure-latex/unnamed-chunk-10-2.pdf, id=141, 469.755pt x
+ 289.08pt>
+File: modelagem_final_files/figure-latex/unnamed-chunk-10-2.pdf Graphic file (t
 ype pdf)
-<use modelagem_final_files/figure-latex/unnamed-chunk-11-1.pdf>
-Package pdftex.def Info: modelagem_final_files/figure-latex/unnamed-chunk-11-1.
-pdf  used on input line 415.
+<use modelagem_final_files/figure-latex/unnamed-chunk-10-2.pdf>
+Package pdftex.def Info: modelagem_final_files/figure-latex/unnamed-chunk-10-2.
+pdf  used on input line 913.
 (pdftex.def)             Requested size: 469.75386pt x 289.07928pt.
-[5] [6 <./modelagem_final_files/figure-latex/unnamed-chunk-11-1.pdf>] [7] (./mo
-delagem_final.aux)
+<modelagem_final_files/figure-latex/unnamed-chunk-10-3.pdf, id=142, 469.755pt x
+ 289.08pt>
+File: modelagem_final_files/figure-latex/unnamed-chunk-10-3.pdf Graphic file (t
+ype pdf)
+<use modelagem_final_files/figure-latex/unnamed-chunk-10-3.pdf>
+Package pdftex.def Info: modelagem_final_files/figure-latex/unnamed-chunk-10-3.
+pdf  used on input line 914.
+(pdftex.def)             Requested size: 469.75386pt x 289.07928pt.
+<modelagem_final_files/figure-latex/unnamed-chunk-10-4.pdf, id=143, 469.755pt x
+ 289.08pt>
+File: modelagem_final_files/figure-latex/unnamed-chunk-10-4.pdf Graphic file (t
+ype pdf)
+<use modelagem_final_files/figure-latex/unnamed-chunk-10-4.pdf>
+Package pdftex.def Info: modelagem_final_files/figure-latex/unnamed-chunk-10-4.
+pdf  used on input line 915.
+(pdftex.def)             Requested size: 469.75386pt x 289.07928pt.
+<modelagem_final_files/figure-latex/unnamed-chunk-10-5.pdf, id=144, 469.755pt x
+ 289.08pt>
+File: modelagem_final_files/figure-latex/unnamed-chunk-10-5.pdf Graphic file (t
+ype pdf)
+<use modelagem_final_files/figure-latex/unnamed-chunk-10-5.pdf>
+Package pdftex.def Info: modelagem_final_files/figure-latex/unnamed-chunk-10-5.
+pdf  used on input line 916.
+(pdftex.def)             Requested size: 469.75386pt x 289.07928pt.
+<modelagem_final_files/figure-latex/unnamed-chunk-10-6.pdf, id=145, 469.755pt x
+ 289.08pt>
+File: modelagem_final_files/figure-latex/unnamed-chunk-10-6.pdf Graphic file (t
+ype pdf)
+<use modelagem_final_files/figure-latex/unnamed-chunk-10-6.pdf>
+Package pdftex.def Info: modelagem_final_files/figure-latex/unnamed-chunk-10-6.
+pdf  used on input line 917.
+(pdftex.def)             Requested size: 469.75386pt x 289.07928pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 912--918
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 912--918
+[]
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 912--918
+[]
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 912--918
+[]
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 912--918
+[]
+ []
+
+[15] [16 <./modelagem_final_files/figure-latex/unnamed-chunk-10-1.pdf> <./model
+agem_final_files/figure-latex/unnamed-chunk-10-2.pdf>] [17 <./modelagem_final_f
+iles/figure-latex/unnamed-chunk-10-3.pdf> <./modelagem_final_files/figure-latex
+/unnamed-chunk-10-4.pdf>]
+Overfull \hbox (12.5835pt too wide) in alignment at lines 927--932
+ [] [] [] [] [] [] [] 
+ []
+
+
+Overfull \hbox (12.5835pt too wide) in alignment at lines 932--937
+ [] [] [] [] [] [] [] 
+ []
+
+
+Overfull \hbox (12.5835pt too wide) in alignment at lines 937--939
+ [] [] [] [] [] [] [] 
+ []
+
+
+Overfull \hbox (12.5835pt too wide) in alignment at lines 939--941
+ [] [] [] [] [] [] [] 
+ []
+
+
+Overfull \hbox (12.5835pt too wide) in alignment at lines 941--965
+ [] [] [] [] [] [] [] 
+ []
+
+[18 <./modelagem_final_files/figure-latex/unnamed-chunk-10-5.pdf> <./modelagem_
+final_files/figure-latex/unnamed-chunk-10-6.pdf>]
+Overfull \hbox (12.5835pt too wide) in alignment at lines 965--989
+ [] [] [] [] [] [] [] 
+ []
+
+
+Overfull \hbox (12.5835pt too wide) in alignment at lines 989--1004
+ [] [] [] [] [] [] [] 
+ []
+
+<modelagem_final_files/figure-latex/unnamed-chunk-10-7.pdf, id=204, 469.755pt x
+ 289.08pt>
+File: modelagem_final_files/figure-latex/unnamed-chunk-10-7.pdf Graphic file (t
+ype pdf)
+<use modelagem_final_files/figure-latex/unnamed-chunk-10-7.pdf>
+Package pdftex.def Info: modelagem_final_files/figure-latex/unnamed-chunk-10-7.
+pdf  used on input line 1007.
+(pdftex.def)             Requested size: 469.75386pt x 289.07928pt.
+[19] [20 <./modelagem_final_files/figure-latex/unnamed-chunk-10-7.pdf>] [21] (.
+/modelagem_final.aux)
 Package rerunfilecheck Info: File `modelagem_final.out' has not changed.
 (rerunfilecheck)             Checksum: 5DCB224BEB8677390B9523C23A1C9A60;842.
 
@@ -869,24 +1086,27 @@ LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 13791 strings out of 481364
- 206180 string characters out of 5917579
- 610687 words of memory out of 5000000
- 30301 multiletter control sequences out of 15000+600000
- 439919 words of font info for 71 fonts, out of 8000000 for 9000
+ 14398 strings out of 481364
+ 218401 string characters out of 5917579
+ 654564 words of memory out of 5000000
+ 30857 multiletter control sequences out of 15000+600000
+ 448566 words of font info for 80 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
- 66i,7n,72p,520b,443s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 66i,7n,72p,520b,459s stack positions out of 5000i,500n,10000p,200000b,80000s
 {c:/Users/eduar/AppData/Roaming/TinyTeX/texmf-dist/fonts/enc/dvips/lm/lm-ec.e
 nc}<c:/Users/eduar/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/lm/lmb
-x10.pfb><c:/Users/eduar/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/l
-m/lmbx12.pfb><c:/Users/eduar/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/pub
-lic/lm/lmr10.pfb><c:/Users/eduar/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1
-/public/lm/lmr17.pfb><c:/Users/eduar/AppData/Roaming/TinyTeX/texmf-dist/fonts/t
-ype1/public/lm/lmri10.pfb>
-Output written on modelagem_final.pdf (7 pages, 138058 bytes).
+x12.pfb><c:/Users/eduar/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/l
+m/lmbx7.pfb><c:/Users/eduar/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/publ
+ic/lm/lmr10.pfb><c:/Users/eduar/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/
+public/lm/lmr17.pfb><c:/Users/eduar/AppData/Roaming/TinyTeX/texmf-dist/fonts/ty
+pe1/public/lm/lmr7.pfb><c:/Users/eduar/AppData/Roaming/TinyTeX/texmf-dist/fonts
+/type1/public/lm/lmtk10.pfb><c:/Users/eduar/AppData/Roaming/TinyTeX/texmf-dist/
+fonts/type1/public/lm/lmtt10.pfb><c:/Users/eduar/AppData/Roaming/TinyTeX/texmf-
+dist/fonts/type1/public/lm/lmtti10.pfb>
+Output written on modelagem_final.pdf (21 pages, 349936 bytes).
 PDF statistics:
- 112 PDF objects out of 1000 (max. 8388607)
- 93 compressed objects within 1 object stream
- 25 named destinations out of 1000 (max. 500000)
- 20515 words of extra memory for PDF output out of 20736 (max. 10000000)
+ 270 PDF objects out of 1000 (max. 8388607)
+ 208 compressed objects within 3 object streams
+ 39 named destinations out of 1000 (max. 500000)
+ 24671 words of extra memory for PDF output out of 24883 (max. 10000000)
 

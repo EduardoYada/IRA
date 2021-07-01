@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020/W32TeX) (preloaded format=pdflatex 2020.12.11)  28 JUN 2021 21:20
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020/W32TeX) (preloaded format=pdflatex 2020.12.11)  30 JUN 2021 23:02
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -616,103 +616,151 @@ File: l3backend-pdftex.def 2020-09-24 L3 backend support: PDF output (pdfTeX)
 \l__pdf_internal_box=\box68
 ) (./tabelas.aux
 
-LaTeX Warning: Label `tab:unnamed-chunk-4' multiply defined.
+LaTeX Warning: Label `tab:unnamed-chunk-5' multiply defined.
 
 
-LaTeX Warning: Label `tab:unnamed-chunk-4' multiply defined.
+LaTeX Warning: Label `tab:unnamed-chunk-5' multiply defined.
 
 
-LaTeX Warning: Label `tab:unnamed-chunk-4' multiply defined.
+LaTeX Warning: Label `tab:unnamed-chunk-5' multiply defined.
 
 
-LaTeX Warning: Label `tab:unnamed-chunk-4' multiply defined.
+LaTeX Warning: Label `tab:unnamed-chunk-5' multiply defined.
 
 
-LaTeX Warning: Label `tab:unnamed-chunk-4' multiply defined.
+LaTeX Warning: Label `tab:unnamed-chunk-5' multiply defined.
 
 
-LaTeX Warning: Label `tab:unnamed-chunk-4' multiply defined.
+LaTeX Warning: Label `tab:unnamed-chunk-5' multiply defined.
 
 
-LaTeX Warning: Label `tab:unnamed-chunk-4' multiply defined.
+LaTeX Warning: Label `tab:unnamed-chunk-5' multiply defined.
 
 
-LaTeX Warning: Label `tab:unnamed-chunk-4' multiply defined.
+LaTeX Warning: Label `tab:unnamed-chunk-5' multiply defined.
 
 
-LaTeX Warning: Label `tab:unnamed-chunk-4' multiply defined.
+LaTeX Warning: Label `tab:unnamed-chunk-5' multiply defined.
 
 
-LaTeX Warning: Label `tab:unnamed-chunk-4' multiply defined.
+LaTeX Warning: Label `tab:unnamed-chunk-5' multiply defined.
 
 
-LaTeX Warning: Label `tab:unnamed-chunk-4' multiply defined.
+LaTeX Warning: Label `tab:unnamed-chunk-5' multiply defined.
 
 
-LaTeX Warning: Label `tab:unnamed-chunk-4' multiply defined.
+LaTeX Warning: Label `tab:unnamed-chunk-5' multiply defined.
 
 
-LaTeX Warning: Label `tab:unnamed-chunk-4' multiply defined.
+LaTeX Warning: Label `tab:unnamed-chunk-5' multiply defined.
 
 
-LaTeX Warning: Label `tab:unnamed-chunk-4' multiply defined.
+LaTeX Warning: Label `tab:unnamed-chunk-5' multiply defined.
 
 
-LaTeX Warning: Label `tab:unnamed-chunk-4' multiply defined.
+LaTeX Warning: Label `tab:unnamed-chunk-5' multiply defined.
 
 
-LaTeX Warning: Label `tab:unnamed-chunk-4' multiply defined.
+LaTeX Warning: Label `tab:unnamed-chunk-5' multiply defined.
 
 
-LaTeX Warning: Label `tab:unnamed-chunk-4' multiply defined.
+LaTeX Warning: Label `tab:unnamed-chunk-5' multiply defined.
 
 
-LaTeX Warning: Label `tab:unnamed-chunk-4' multiply defined.
+LaTeX Warning: Label `tab:unnamed-chunk-5' multiply defined.
 
 
-LaTeX Warning: Label `tab:unnamed-chunk-4' multiply defined.
+LaTeX Warning: Label `tab:unnamed-chunk-5' multiply defined.
 
 
-LaTeX Warning: Label `tab:unnamed-chunk-4' multiply defined.
+LaTeX Warning: Label `tab:unnamed-chunk-5' multiply defined.
 
 
-LaTeX Warning: Label `tab:unnamed-chunk-4' multiply defined.
+LaTeX Warning: Label `tab:unnamed-chunk-5' multiply defined.
 
 
-LaTeX Warning: Label `tab:unnamed-chunk-4' multiply defined.
+LaTeX Warning: Label `tab:unnamed-chunk-5' multiply defined.
 
 
-LaTeX Warning: Label `tab:unnamed-chunk-4' multiply defined.
+LaTeX Warning: Label `tab:unnamed-chunk-5' multiply defined.
 
 
-LaTeX Warning: Label `tab:unnamed-chunk-4' multiply defined.
+LaTeX Warning: Label `tab:unnamed-chunk-5' multiply defined.
 
 
-LaTeX Warning: Label `tab:unnamed-chunk-4' multiply defined.
+LaTeX Warning: Label `tab:unnamed-chunk-5' multiply defined.
 
 
-LaTeX Warning: Label `tab:unnamed-chunk-4' multiply defined.
+LaTeX Warning: Label `tab:unnamed-chunk-5' multiply defined.
 
 
-LaTeX Warning: Label `tab:unnamed-chunk-4' multiply defined.
+LaTeX Warning: Label `tab:unnamed-chunk-5' multiply defined.
 
 
-LaTeX Warning: Label `tab:unnamed-chunk-4' multiply defined.
+LaTeX Warning: Label `tab:unnamed-chunk-5' multiply defined.
 
 
-LaTeX Warning: Label `tab:unnamed-chunk-4' multiply defined.
+LaTeX Warning: Label `tab:unnamed-chunk-5' multiply defined.
 
 
-LaTeX Warning: Label `tab:unnamed-chunk-4' multiply defined.
+LaTeX Warning: Label `tab:unnamed-chunk-5' multiply defined.
 
 
-LaTeX Warning: Label `tab:unnamed-chunk-4' multiply defined.
+LaTeX Warning: Label `tab:unnamed-chunk-5' multiply defined.
 
 
-LaTeX Warning: Label `tab:unnamed-chunk-4' multiply defined.
+LaTeX Warning: Label `tab:unnamed-chunk-5' multiply defined.
 
 
-LaTeX Warning: Label `tab:unnamed-chunk-4' multiply defined.
+LaTeX Warning: Label `tab:unnamed-chunk-5' multiply defined.
+
+
+LaTeX Warning: Label `tab:unnamed-chunk-6' multiply defined.
+
+
+LaTeX Warning: Label `tab:unnamed-chunk-6' multiply defined.
+
+
+LaTeX Warning: Label `tab:unnamed-chunk-6' multiply defined.
+
+
+LaTeX Warning: Label `tab:unnamed-chunk-6' multiply defined.
+
+
+LaTeX Warning: Label `tab:unnamed-chunk-6' multiply defined.
+
+
+LaTeX Warning: Label `tab:unnamed-chunk-6' multiply defined.
+
+
+LaTeX Warning: Label `tab:unnamed-chunk-6' multiply defined.
+
+
+LaTeX Warning: Label `tab:unnamed-chunk-6' multiply defined.
+
+
+LaTeX Warning: Label `tab:unnamed-chunk-6' multiply defined.
+
+
+LaTeX Warning: Label `tab:unnamed-chunk-6' multiply defined.
+
+
+LaTeX Warning: Label `tab:unnamed-chunk-6' multiply defined.
+
+
+LaTeX Warning: Label `tab:unnamed-chunk-6' multiply defined.
+
+
+LaTeX Warning: Label `tab:unnamed-chunk-6' multiply defined.
+
+
+LaTeX Warning: Label `tab:unnamed-chunk-6' multiply defined.
+
+
+LaTeX Warning: Label `tab:unnamed-chunk-6' multiply defined.
+
+
+LaTeX Warning: Label `tab:unnamed-chunk-6' multiply defined.
 
 )
 \openout1 = `tabelas.aux'.
@@ -882,35 +930,31 @@ File: t1lmtt.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 LaTeX Font Info:    Font shape `T1/lmtt/bx/n' in size <10> not available
 (Font)              Font shape `T1/lmtt/b/n' tried instead on input line 129.
-
-Overfull \vbox (1.94629pt too high) detected at line 219
- []
-
 [1
 
 {c:/Users/eduar/AppData/Roaming/TinyTeX/texmf-var/fonts/map/pdftex/updmap/pdfte
-x.map}]
+x.map}] [2]
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <10> on input line 225.
+(Font)              <10> on input line 261.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <7> on input line 225.
+(Font)              <7> on input line 261.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <5> on input line 225.
-[2] [3] [4] [5] [6] [7] [8] [9] [10] [11] (./tabelas.aux)
+(Font)              <5> on input line 261.
+[3] [4] [5] [6] [7] [8] [9] [10] [11] [12] [13] [14] [15] (./tabelas.aux)
 Package rerunfilecheck Info: File `tabelas.out' has not changed.
-(rerunfilecheck)             Checksum: D3AB179F875E8460DB1589D476F26A90;481.
+(rerunfilecheck)             Checksum: 3B5629CD4F082792EA85F41400AD0FF9;793.
 
 LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 15574 strings out of 481364
- 238214 string characters out of 5917579
- 610430 words of memory out of 5000000
- 32015 multiletter control sequences out of 15000+600000
+ 15604 strings out of 481364
+ 238688 string characters out of 5917579
+ 610618 words of memory out of 5000000
+ 32020 multiletter control sequences out of 15000+600000
  451706 words of font info for 94 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
- 66i,11n,72p,512b,373s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 66i,11n,72p,512b,374s stack positions out of 5000i,500n,10000p,200000b,80000s
 {c:/Users/eduar/AppData/Roaming/TinyTeX/texmf-dist/fonts/enc/dvips/lm/lm-ec.e
 nc}<c:/Users/eduar/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/lm/lmb
 x10.pfb><c:/Users/eduar/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/l
@@ -919,10 +963,10 @@ lic/lm/lmr10.pfb><c:/Users/eduar/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1
 /public/lm/lmr17.pfb><c:/Users/eduar/AppData/Roaming/TinyTeX/texmf-dist/fonts/t
 ype1/public/lm/lmtk10.pfb><c:/Users/eduar/AppData/Roaming/TinyTeX/texmf-dist/fo
 nts/type1/public/lm/lmtt10.pfb>
-Output written on tabelas.pdf (11 pages, 188086 bytes).
+Output written on tabelas.pdf (15 pages, 199802 bytes).
 PDF statistics:
- 147 PDF objects out of 1000 (max. 8388607)
- 126 compressed objects within 2 object streams
- 54 named destinations out of 1000 (max. 500000)
- 26657 words of extra memory for PDF output out of 29859 (max. 10000000)
+ 197 PDF objects out of 1000 (max. 8388607)
+ 172 compressed objects within 2 object streams
+ 79 named destinations out of 1000 (max. 500000)
+ 26673 words of extra memory for PDF output out of 29859 (max. 10000000)
 

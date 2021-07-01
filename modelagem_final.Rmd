@@ -20,7 +20,7 @@ library(formula.tools)
 library(pROC)
 ```
 
-```{r echo = F, results = F}
+```{r echo = T, results = F}
 constants = yaml.load_file("constants.yaml")
 
 categorical_columns = constants$categorical_columns
@@ -38,7 +38,7 @@ original_columns = constants$original_columns
 derived_columns = setdiff(daily_columns, original_columns)
 ```
 
-```{r echo = F, results = F}
+```{r echo = T, results = F}
 df = readRDS('./data/processed_data_mean_v2.rds') %>%
     mutate_at(categorical_columns, list(~factor(.)))
 
@@ -48,25 +48,8 @@ df_names = readxl::read_excel('./data/Nomes das variaveis.xlsx') %>%
   select(nome, variavel)
 ```
 
-```{r echo = FALSE, eval = FALSE}
-ggplot(df, aes(x = ira, y = scr_basal)) +
-  geom_boxplot()
-
-ggplot(df, aes(x = ira, y = sofa)) +
-  geom_boxplot()
-
-ggplot(df, aes(x = ira, y = su)) +
-  geom_boxplot()
-
-ggplot(df, aes(x = ira, y = una)) +
-  geom_boxplot()
-```
-
-
-```{r echo = FALSE}
+```{r echo = TRUE}
 selected_columns_yaml = yaml.load_file("selected_columns.yaml")
-
-selected_camila_numerical_columns = selected_columns_yaml$selected_camila_columns
 
 selected_numerical_columns = selected_columns_yaml$selected_numerical_columns
 
@@ -76,17 +59,16 @@ drop_scr = TRUE
 
 target = "ira"
 
-to_camila = TRUE
+to_camila = FALSE
 ```
 
-```{r echo = FALSE}
+```{r echo = TRUE}
 if (drop_scr){
-  selected_camila_numerical_columns = setdiff(selected_camila_numerical_columns, 'scr')
   selected_numerical_columns = setdiff(selected_numerical_columns, 'scr')
 }
 ```
 
-```{r echo = FALSE}
+```{r echo = TRUE}
 gilberto_diagnostics = function(fit.model){
   X <- model.matrix(fit.model)
   n <- nrow(X)
@@ -203,15 +185,20 @@ envelope_simulado = function(model, tol = 1e-22){
 }
 ```
 
-```{r echo = F, results = F}
-fit_model = function(df, numerical_features, categorical_features, target, include_interaction = FALSE){
+```{r echo = T, results = F}
+fit_model = function(df, 
+                     numerical_features,
+                     categorical_features, 
+                     target,
+                     include_interaction = FALSE){
   factor_formula = paste(sprintf("factor(%s)",
                                  categorical_features),
                          collapse = " + ") 
   numerical_formula = paste(numerical_features, collapse = " + ")
   interaction_formula = ""
 
-  if('causa_ira' %in% c(categorical_features, numerical_features) & include_interaction){
+  if('causa_ira' %in% c(categorical_features,
+                        numerical_features) & include_interaction){
     solutos_features = intersect(numerical_features, solutos_columns) 
     if(length(solutos_features > 0)){
       interaction_formula = paste(paste0("factor(causa_ira) : ",
@@ -318,13 +305,6 @@ model_summary = function(df, model){
                      ret = c("threshold", 
                              "sensitivity", "specificity", 
                              "tp", "tn", "fn", "fp"))
-  # confusion %>% 
-  #   rename(`Ponto de corte` = threshold,
-  #          Especificidade = specificity,
-  #          Sensibilidade = sensitivity,
-  #          ) %>%
-  #   niceFormatting(caption = "Métricas de classificação") %>%
-  #   print
   
   p = ggroc(g, legacy.axes = TRUE)+
     geom_point(aes(x = 1 - confusion$specificity, y=confusion$sensitivity),
@@ -332,8 +312,6 @@ model_summary = function(df, model){
     geom_abline(slope = 1, intercept=0, linetype="longdash") + 
     labs(subtitle = paste("AUC:", round(g$auc, 3)),
          x = '1 - Especificidade', y = 'Sensibilidade')
-  
-  # print(p)
   
   return(g)
 }
@@ -454,8 +432,10 @@ loocv = function(df, formula){
            `Verdadeiro negativo` = tn,
            `Falso positivo` = fp,
            `Falso negativo` = fn) %>%
-    niceFormatting(caption = sprintf("Youden LOOCV threshold = %.3f", youden$threshold)) %>%
+    niceFormatting(caption = sprintf("Youden LOOCV threshold = %.3f",
+                                     youden$threshold)) %>%
     row_spec(youden_index, bold = T, color = "#D7261E") %>%
+    kable_styling(font_size = 7) %>%
     column_spec(1:7, width = "2cm") %>%
     print
   
@@ -477,7 +457,7 @@ get_name = function(column) df_names %>% filter(variavel == column) %>% .$nome
 ```
 
 
-```{r echo=FALSE}
+```{r echo=T}
 df = df %>%
   mutate(row_number = row_number()) %>%
   filter(row_number != 35)
@@ -486,7 +466,7 @@ df_summary = tibble()
 ```
 
 
-```{r echo=FALSE, message=FALSE, warning=FALSE, results='asis'}
+```{r echo=T, message=FALSE, warning=FALSE, results='asis'}
 variaveis = c('sofa', 'una', 'scr_basal')
 
 cat(paste("# IRA ~ ", paste(lapply(variaveis, get_name), collapse = " + "), "\n \n"))
@@ -496,7 +476,9 @@ model_fit = fit_model(df, variaveis, categorical_features = c(), target = target
 g = model_summary(df, model_fit$model)
     
 if(!to_camila) model_diagnostics(df, model_fit$model, run_envelope = TRUE)
-      
+
+cat("\\newpage")
+
 g_cv = loocv(df, model_fit$formula)
 
 df_summary = model_fit$model %>%
@@ -509,7 +491,7 @@ df_summary = model_fit$model %>%
 
 \newpage
 
-```{r echo=FALSE, message=FALSE, warning=FALSE, results='asis'}
+```{r echo=T, message=FALSE, warning=FALSE, results='asis'}
 variaveis = c('sofa', 'su', 'scr_basal')
 
 cat(paste("# IRA ~ ", paste(lapply(variaveis, get_name), collapse = " + "), "\n \n"))
@@ -532,55 +514,9 @@ df_summary = model_fit$model %>%
 
 \newpage
 
-```{r echo=FALSE, message=FALSE, warning=FALSE, results='asis', eval = FALSE}
-variaveis = c('sofa', 'scr_basal')
-
-cat(paste("# IRA ~ ", paste(lapply(variaveis, get_name), collapse = " + "), "\n \n"))
-
-model_fit = fit_model(df, variaveis, categorical_features = c(), target = target)
-
-g = model_summary(df, model_fit$model)
-    
-model_diagnostics(df, model_fit$model, run_envelope = TRUE)
-      
-g_cv = loocv(df, model_fit$formula)
-
-df_summary = model_fit$model %>%
-  glance %>% 
-  mutate(`Variáveis` =  paste(lapply(variaveis, get_name), collapse = ", "),
-         AUC = g$auc %>% as.numeric,
-         `CV AUC` = g_cv$auc %>% as.numeric) %>%
-  bind_rows(df_summary)
-```
-
-\newpage
-
-```{r echo=FALSE, message=FALSE, warning=FALSE, results='asis', eval = FALSE}
-variaveis = c('sofa', 'su')
-
-cat(paste("# IRA ~ ", paste(lapply(variaveis, get_name), collapse = " + "), "\n \n"))
-
-model_fit = fit_model(df, variaveis, categorical_features = c(), target = target)
-
-g = model_summary(df, model_fit$model)
-    
-model_diagnostics(df, model_fit$model, run_envelope = TRUE)
-      
-g_cv = loocv(df, model_fit$formula)
-
-df_summary = model_fit$model %>%
-  glance %>% 
-  mutate(`Variáveis` =  paste(lapply(variaveis, get_name), collapse = ", "),
-         AUC = g$auc %>% as.numeric,
-         `CV AUC` = g_cv$auc %>% as.numeric) %>%
-  bind_rows(df_summary)
-```
-
-\newpage
-
 # Resumo
 
-```{r echo = FALSE}
+```{r echo = T}
 df_summary %>%
   select(`Variáveis`, everything(),
          -null.deviance, -df.null,

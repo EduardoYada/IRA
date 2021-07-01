@@ -18,6 +18,40 @@ library(yaml)
 library(kableExtra)
 ```
 
+# Funções auxiliares
+
+```{r}
+paste_matrix <- function(...,sep = " ",collapse = NULL){
+    n <- max(sapply(list(...),nrow))
+    p <- max(sapply(list(...),ncol))
+
+    matrix(paste(...,sep = sep,collapse = collapse),n,p)
+}
+
+percent = function(x) paste0("(", lapply(x, as.character), "%)")
+
+addpercentage = function(df){
+  x = df %>%
+    prop.table(margin = 2) %>%
+    addmargins(FUN = list(Total = sum), quiet = TRUE) %>%
+    round(2) * 100
+  
+  x[, ncol(x)] = " " 
+  x[, -(ncol(x))] = lapply(x[, -(ncol(x))], percent)
+  
+  y = matrix(x, nrow = nrow(df) + 1)
+  
+  df = df %>%
+    addmargins(FUN = list(Total = sum), quiet = TRUE)
+  
+  df_final = paste_matrix(df, y)
+  rownames(df_final) = rownames(df)
+  colnames(df_final) = colnames(df)
+  return(df_final)
+}
+```
+
+
 # Carregando os dados
 
 ```{r}
@@ -94,72 +128,27 @@ for (column in numerical_columns){
 }
 ```
 
-```{r eval=FALSE, echo = FALSE}
-for(column in categorical_columns){
-    p = df %>%
-        group_by(!!sym(column)) %>%
-        summarise(cnt = n()) %>%
-        ggplot(aes(x=!!sym(column), y=cnt)) + 
-            geom_col(fill='firebrick', alpha=0.7) + 
-            labs(title=paste('Contagem da variável: ', column))
-    print(p)
+## Variáveis categóricas
+
+```{r results = 'asis', message = F, warning = F}
+
+for (column in categorical_columns){
+  caption = sprintf('Tabela A.%d Tabela de contingência entre IRA e %s', i, 
+                    df_names %>% filter(variavel == column) %>% .$nome %>% tolower)
+  
+  table(df$ira_nome, df[[column]]) %>%
+    addpercentage %>%
+    kbl(align = "l", booktabs = T, digits = 2, format = 'latex',
+        caption = caption) %>%
+    row_spec(2, hline_after = T) %>%
+    collapse_rows(1, latex_hline = "none") %>%
+    add_header_above(c('IRA' = 1, setNames(length(unique(df[[column]])), column))) %>%
+    column_spec(length(unique(df[[column]])) + 1, border_right = T) %>%
+    kable_styling(latex_options = c("HOLD_position", "repeat_header")) %>%
+    print
+  i = i + 1
 }
-```
 
-
-```{r eval=FALSE, echo = FALSE}
-for(column in categorical_columns[categorical_columns != 'd_ira']){
-    p = df %>%
-        group_by(!!sym(column), ira) %>%
-        summarise(cnt = n()) %>%
-        ggplot(aes(x=!!sym(column), y=cnt,
-                   color=ira, fill=ira)) + 
-            geom_col(alpha=0.7, position='dodge') + 
-            labs(title=paste('Contagem da variável: ', column))
-    print(p)
-}
-```
-
-
-```{r eval=FALSE, echo = FALSE}
-for(column in categorical_columns[categorical_columns != 'd_ira']){
-    p = df %>%
-        group_by(!!sym(column), ira) %>%
-        summarise(cnt = n()) %>%
-        ungroup %>%
-        mutate(pct = cnt / sum(cnt)) %>%
-        ggplot(aes(x=!!sym(column), y=pct,
-                   color=ira, fill=ira)) + 
-            geom_col(alpha=0.7, position='dodge') 
-            # labs(title=paste('Contagem da variável: ', column))
-    print(p)
-}
-```
-
-
-```{r eval=FALSE, echo = FALSE}
-for(column in categorical_columns[categorical_columns != 'd_ira']){
-    p = df %>%
-        group_by(!!sym(column), kdigo_agrupado) %>%
-        summarise(cnt = n()) %>%
-        ggplot(aes(x = !!sym(column), y = cnt,
-                   color = kdigo_agrupado, 
-                   fill = kdigo_agrupado)) + 
-            geom_col(alpha = 0.7, position ='dodge') + 
-            labs(title = paste('Contagem da variável: ', column))
-    print(p)
-}
-```
-
-
-
-```{r eval=FALSE, echo = FALSE}
-df %>%
-    select(uosm, uosm_estimada) %>%
-    ggplot(aes(x = uosm_estimada, y = uosm)) + 
-        geom_point() + 
-        geom_abline(intercept = 0, slope = 1,
-                    linetype = 2, color = 'red')
 ```
 
 

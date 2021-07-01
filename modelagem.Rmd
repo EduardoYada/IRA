@@ -78,36 +78,44 @@ gilberto_diagnostics = function(fit.model){
   a <- max(td)
   b <- min(td)
   
-  p1 = ggplot(data.frame(fitted = fitted(fit.model), h = h)) +
+  df1 = data.frame(fitted = fitted(fit.model), h = h, indice = df$numero)
+  
+  p1 = ggplot(df1) +
     geom_point(aes(x = fitted, y = h)) + 
+    geom_text(data = df1 %>% top_n(h, n = 3),
+              aes(x = fitted, y = h, label = indice),
+              hjust = -0.1, vjust = 0) + 
     labs(x = "Valor Ajustado", y = "Medida h") +
     theme_bw()
   
-  #identify(fitted(fit.model), h, n=1)
+  df2 = data.frame(di = di, index = seq(1, length(di)), indice = df$numero)
   
-  p2 = ggplot(data.frame(di = di, index = seq(1, length(di)))) +
+  p2 = ggplot(df2) +
     geom_point(aes(x = index, y = di)) + 
+    geom_text(data = df2 %>% top_n(di, n = 3),
+              aes(x = index, y = di, label = indice),
+              hjust = -0.1, vjust = 0) + 
     labs(x = "Índice", y = "Distância de Cook") +
     theme_bw()
   
-  #identify(di, n=1)
+  df3 = data.frame(td = td, index = seq(1, length(td)), indice = df$numero)
   
-  p3 = ggplot(data.frame(td = td, index = seq(1, length(td))),
-              aes(x = index, y = td)) +
-    geom_point() + 
+  p3 = ggplot(df3) +
+    geom_point(aes(x = index, y = td)) + 
+    geom_text(data = df3 %>% filter(td < -2 | td > 2),
+              aes(x = index, y = td, label = indice),
+              hjust = -0.1, vjust = 0) + 
     labs(x = "Índice", y = "Resíduo Componente do Desvio") +
     geom_hline(yintercept = 2, linetype = 'dotted') + 
     geom_hline(yintercept = -2, linetype = 'dotted') + 
     theme_bw()
   
-  #identify(td, n=1)
+  df4 = data.frame(fitted = fitted(fit.model), td = td)
   
-  p4 = ggplot(data.frame(fitted = fitted(fit.model), td = td)) +
+  p4 = ggplot(df4) +
     geom_point(aes(x = fitted, y = td)) + 
     labs(x = "Valor Ajustado", y = "Resíduo Componente do Desvio") +
     theme_bw()
-  
-  #identify(fitted(fit.model), td, n=1)
   
   print(p1)
   print(p2)

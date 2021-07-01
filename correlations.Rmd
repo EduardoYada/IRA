@@ -134,8 +134,8 @@ corr = df %>%
   cor %>%
   as.matrix
 
-ggcorrplot(corr, hc.order = TRUE, outline.col = "white",
-           tl.cex = 7, tl.srt = 90,
+ggcorrplot(corr, hc.order = TRUE, outline.col = "white", type = 'upper',
+           tl.cex = 7, tl.srt = 90, lab = TRUE, lab_size = 1.5,
            ggtheme = theme(legend.position="right",
                            legend.title=element_blank(),
                            legend.text=element_text(size=5)))
@@ -148,12 +148,29 @@ corr = df %>%
   as.matrix
 
 col <- colorRampPalette(c("#BB4444", "#EE9988", "#FFFFFF", "#77AADD", "#4477AA"))
-corrplot(corr, method="color", col=col(200),  
+corrplot(corr, method="color", col=col(200),
          type="upper", order="hclust", , # Add coefficient of correlation
          tl.col="black", tl.srt=45, insig = "blank", 
          diag=FALSE 
          )
 ```
+
+```{r echo=FALSE, fig.align='center', fig.height = 7, fig.width = 10}
+corr = df %>% 
+  select(all_of(numerical_columns), -`una+uk`) %>%
+  drop_na %>%
+  cor %>%
+  as.matrix
+
+corrplot(corr, method="number",
+         type="upper", order="hclust",
+         number.font = 0.1, 
+         tl.col="black", tl.srt=45,
+         addCoef.col = "black", 
+         diag=FALSE 
+         )
+```
+
 ```{r echo=FALSE}
 corr = df %>% 
   select(all_of(numerical_columns[1:20]), -`una+uk`) %>%
@@ -163,7 +180,8 @@ corr = df %>%
 
 corr %>%
   niceFormatting() %>%
-  column_spec(1:length(numerical_columns), width = "0.7cm") %>%
+  column_spec(1:length(numerical_columns), width = "0.6cm") %>%
+  row_spec(0, angle = 90) %>%
   kable_styling(font_size = 7)
 ```
 
@@ -489,14 +507,18 @@ df_wilcox %>%
 
 ```{r echo=TRUE}
 df_chisq = tibble()
-selected_categorical_columns = categorical_columns[!categorical_columns %in% c('d_ira', 'kdigo')]
+selected_categorical_columns = categorical_columns[!categorical_columns %in%
+                                                     c('d_ira', 'kdigo')]
 
 for (variable in selected_categorical_columns){
   if (length(unique(df[[variable]])) > 1){
-    test = chisq.test(df$ira, df[[variable]], simulate.p.value = TRUE)
+    test = chisq.test(df$ira, df[[variable]],
+                      simulate.p.value = TRUE)
     
     df_chisq = bind_rows(df_chisq,
-                         list("variavel" = variable, "Estatística" = test$statistic, "p-valor" = test$p.value))
+                         list("variavel" = variable,
+                              "Estatística" = test$statistic, 
+                              "p-valor" = test$p.value))
   }
 }
 
@@ -556,7 +578,7 @@ for(i in 1:(dim(temp_df)[1])){
 }
 ```
 
-```{r echo=TRUE}
+```{r echo=FALSE, eval = FALSE}
 corr = df %>% 
   select(all_of(significant_numerical_columns)) %>%
   drop_na %>%
@@ -586,7 +608,7 @@ dput(selected_numerical_columns)
 ```
 
 
-```{r echo=F}
+```{r echo=F, eval=FALSE}
 corr = df %>% 
   filter(ira == 0) %>%
   select(all_of(selected_numerical_columns)) %>%
@@ -605,7 +627,7 @@ ggcorrplot(corr, hc.order = TRUE, outline.col = "white",
 ```
 
 
-```{r echo=F}
+```{r echo=F, eval=FALSE}
 corr = df %>% 
   filter(ira == 1) %>%
   select(all_of(selected_numerical_columns)) %>%
