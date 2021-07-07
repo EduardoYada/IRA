@@ -82,6 +82,7 @@ daily_columns:
   - delta_scr
 
 solutos_columns:
+  - bh
   - su
   - scr
   - sna
@@ -91,19 +92,22 @@ solutos_columns:
   - ucr
   - una
   - uk
+  - volume_urinario
   - uvu24h
   - feu
   - uu_ucr
   - una_ucr
   - uvna24h
   - uosm
-  - uosm_estimada
   - una+uk
-  - uu_su
+  - uosm_estimada
   - fena
   - fek
   - su_scr
+  - uu_su
   - delta_scr
+  - diurese
+  - scr_basal
 
 original_columns:
   - su 

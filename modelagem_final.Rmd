@@ -8,6 +8,8 @@ knitr::opts_chunk$set(dev = 'pdf',
                       fig.height = 4)
 ```
 
+# Bibliotecas
+
 ```{r echo=FALSE, warning=FALSE, results=FALSE, message=FALSE}
 library(tidyverse)
 library(broom)
@@ -18,7 +20,11 @@ library(yaml)
 library(caret)
 library(formula.tools)
 library(pROC)
+
+options(OutDec= ",")
 ```
+
+# Carregando os dados
 
 ```{r echo = T, results = F}
 constants = yaml.load_file("constants.yaml")
@@ -39,7 +45,7 @@ derived_columns = setdiff(daily_columns, original_columns)
 ```
 
 ```{r echo = T, results = F}
-df = readRDS('./data/processed_data_mean_v2.rds') %>%
+df = readRDS('./data/dados_processados.rds') %>%
     mutate_at(categorical_columns, list(~factor(.)))
 
 df_names = readxl::read_excel('./data/Nomes das variaveis.xlsx') %>%
@@ -67,6 +73,8 @@ if (drop_scr){
   selected_numerical_columns = setdiff(selected_numerical_columns, 'scr')
 }
 ```
+
+# Funções auxiliares
 
 ```{r echo = TRUE}
 gilberto_diagnostics = function(fit.model){
@@ -251,12 +259,12 @@ fit_multiple_models = function(df, numerical_features, categorical_features,
   intersection_model = fit_model(df, features_intersection, c(),
                                  target, include_interaction = include_interaction)
   
-  return(list("Full model" = full_model,
-              "Backwards" = backwards,
-              "Forwards" = forwards,
+  return(list("Modelo completo" = full_model,
+              "Backward" = backwards,
+              "Forward" = forwards,
               "Stepwise" = stepwise,
-              "Union model" = union_model,
-              "Intersection model" = intersection_model))
+              "Modelo união" = union_model,
+              "Modelo intersecção" = intersection_model))
   
 }
 
@@ -369,7 +377,7 @@ model_selection = function(df, numerical_columns, categorical_columns,
   
     model_summary(df, fitted_models[[model]])
     
-    if (!model %in% c('Full model', 'Union model')) {
+    if (!model %in% c('Modelo completo', 'Modelo união')) {
       model_diagnostics(df, fitted_models[[model]], run_envelope = TRUE)
     } else {
     model_diagnostics(df, fitted_models[[model]])
@@ -456,6 +464,44 @@ loocv = function(df, formula){
 get_name = function(column) df_names %>% filter(variavel == column) %>% .$nome
 ```
 
+# Com o paciente 34  
+
+
+```{r echo=T, message=FALSE, warning=FALSE, results='asis'}
+variaveis = c('sofa', 'una', 'scr_basal')
+
+cat(paste("## IRA ~ ", paste(lapply(variaveis, get_name), collapse = " + "), "\n \n"))
+
+model_fit = fit_model(df, variaveis, categorical_features = c(), target = target)
+
+g = model_summary(df, model_fit$model)
+    
+if(!to_camila) model_diagnostics(df, model_fit$model, run_envelope = TRUE)
+
+cat("\\newpage")
+
+g_cv = loocv(df, model_fit$formula)
+```
+
+\newpage
+
+```{r echo=T, message=FALSE, warning=FALSE, results='asis'}
+variaveis = c('sofa', 'su', 'scr_basal')
+
+cat(paste("## IRA ~ ", paste(lapply(variaveis, get_name), collapse = " + "), "\n \n"))
+
+model_fit = fit_model(df, variaveis, categorical_features = c(), target = target)
+
+g = model_summary(df, model_fit$model)
+    
+if(!to_camila) model_diagnostics(df, model_fit$model, run_envelope = TRUE)
+      
+g_cv = loocv(df, model_fit$formula)
+```
+
+\newpage
+
+# Sem o paciente 34  
 
 ```{r echo=T}
 df = df %>%
@@ -469,7 +515,7 @@ df_summary = tibble()
 ```{r echo=T, message=FALSE, warning=FALSE, results='asis'}
 variaveis = c('sofa', 'una', 'scr_basal')
 
-cat(paste("# IRA ~ ", paste(lapply(variaveis, get_name), collapse = " + "), "\n \n"))
+cat(paste("## IRA ~ ", paste(lapply(variaveis, get_name), collapse = " + "), "\n \n"))
 
 model_fit = fit_model(df, variaveis, categorical_features = c(), target = target)
 
@@ -494,7 +540,7 @@ df_summary = model_fit$model %>%
 ```{r echo=T, message=FALSE, warning=FALSE, results='asis'}
 variaveis = c('sofa', 'su', 'scr_basal')
 
-cat(paste("# IRA ~ ", paste(lapply(variaveis, get_name), collapse = " + "), "\n \n"))
+cat(paste("## IRA ~ ", paste(lapply(variaveis, get_name), collapse = " + "), "\n \n"))
 
 model_fit = fit_model(df, variaveis, categorical_features = c(), target = target)
 

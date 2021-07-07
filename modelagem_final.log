@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020/W32TeX) (preloaded format=pdflatex 2020.12.11)  30 JUN 2021 23:29
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020/W32TeX) (preloaded format=pdflatex 2020.12.11)  6 JUL 2021 22:37
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -596,7 +596,16 @@ File: l3backend-pdftex.def 2020-09-24 L3 backend support: PDF output (pdfTeX)
 \l__pdf_internal_box=\box68
 ) (./modelagem_final.aux
 
-LaTeX Warning: Label `tab:unnamed-chunk-9' multiply defined.
+LaTeX Warning: Label `tab:unnamed-chunk-8' multiply defined.
+
+
+LaTeX Warning: Label `tab:unnamed-chunk-8' multiply defined.
+
+
+LaTeX Warning: Label `tab:unnamed-chunk-8' multiply defined.
+
+
+LaTeX Warning: Label `tab:unnamed-chunk-8' multiply defined.
 
 
 LaTeX Warning: Label `tab:unnamed-chunk-9' multiply defined.
@@ -608,16 +617,31 @@ LaTeX Warning: Label `tab:unnamed-chunk-9' multiply defined.
 LaTeX Warning: Label `tab:unnamed-chunk-9' multiply defined.
 
 
-LaTeX Warning: Label `tab:unnamed-chunk-10' multiply defined.
+LaTeX Warning: Label `tab:unnamed-chunk-9' multiply defined.
 
 
-LaTeX Warning: Label `tab:unnamed-chunk-10' multiply defined.
+LaTeX Warning: Label `tab:unnamed-chunk-11' multiply defined.
 
 
-LaTeX Warning: Label `tab:unnamed-chunk-10' multiply defined.
+LaTeX Warning: Label `tab:unnamed-chunk-11' multiply defined.
 
 
-LaTeX Warning: Label `tab:unnamed-chunk-10' multiply defined.
+LaTeX Warning: Label `tab:unnamed-chunk-11' multiply defined.
+
+
+LaTeX Warning: Label `tab:unnamed-chunk-11' multiply defined.
+
+
+LaTeX Warning: Label `tab:unnamed-chunk-12' multiply defined.
+
+
+LaTeX Warning: Label `tab:unnamed-chunk-12' multiply defined.
+
+
+LaTeX Warning: Label `tab:unnamed-chunk-12' multiply defined.
+
+
+LaTeX Warning: Label `tab:unnamed-chunk-12' multiply defined.
 
 )
 \openout1 = `modelagem_final.aux'.
@@ -770,327 +794,565 @@ fg
 File: mt-msb.cfg 2005/06/01 v1.0 microtype config. file: AMS symbols (b) (RS)
 )
 LaTeX Font Info:    Trying to load font information for T1+lmtt on input line 1
-24.
+30.
 (c:/Users/eduar/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/lm/t1lmtt.fd
 File: t1lmtt.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 LaTeX Font Info:    Font shape `T1/lmtt/bx/n' in size <10> not available
-(Font)              Font shape `T1/lmtt/b/n' tried instead on input line 125.
-
-Underfull \vbox (badness 10000) detected at line 296
- []
-
+(Font)              Font shape `T1/lmtt/b/n' tried instead on input line 131.
 [1
 
 {c:/Users/eduar/AppData/Roaming/TinyTeX/texmf-var/fonts/map/pdftex/updmap/pdfte
 x.map}]
-Underfull \vbox (badness 10000) detected at line 296
- []
-
-
-Underfull \vbox (badness 10000) detected at line 296
+Underfull \vbox (badness 10000) detected at line 305
  []
 
 [2]
-Underfull \vbox (badness 10000) detected at line 296
+Underfull \vbox (badness 10000) detected at line 305
  []
 
 
-Underfull \vbox (badness 10000) detected at line 296
+Underfull \vbox (badness 10000) detected at line 305
  []
 
 [3]
-Underfull \vbox (badness 10000) detected at line 568
+Underfull \vbox (badness 10000) detected at line 578
+ []
+
+
+Overfull \vbox (0.51456pt too high) detected at line 578
  []
 
 [4]
-Underfull \vbox (badness 10000) detected at line 568
+Underfull \vbox (badness 10000) detected at line 578
  []
 
 
-Underfull \vbox (badness 10000) detected at line 568
+Underfull \vbox (badness 10000) detected at line 578
  []
 
 [5]
-Underfull \vbox (badness 10000) detected at line 568
+Underfull \vbox (badness 10000) detected at line 578
  []
 
 
-Underfull \vbox (badness 10000) detected at line 568
+Underfull \vbox (badness 10000) detected at line 578
  []
 
 [6]
-Underfull \vbox (badness 10000) detected at line 568
+Underfull \vbox (badness 10000) detected at line 578
  []
 
 
-Underfull \vbox (badness 10000) detected at line 568
+Underfull \vbox (badness 10000) detected at line 578
  []
 
 [7]
-Underfull \vbox (badness 10000) detected at line 568
+Underfull \vbox (badness 10000) detected at line 578
  []
 
 
-Underfull \vbox (badness 10000) detected at line 568
+Underfull \vbox (badness 10000) detected at line 578
  []
 
 [8] [9]
-<modelagem_final_files/figure-latex/unnamed-chunk-9-1.pdf, id=65, 469.755pt x 2
+<modelagem_final_files/figure-latex/unnamed-chunk-8-1.pdf, id=97, 469.755pt x 2
 89.08pt>
-File: modelagem_final_files/figure-latex/unnamed-chunk-9-1.pdf Graphic file (ty
+File: modelagem_final_files/figure-latex/unnamed-chunk-8-1.pdf Graphic file (ty
 pe pdf)
-<use modelagem_final_files/figure-latex/unnamed-chunk-9-1.pdf>
-Package pdftex.def Info: modelagem_final_files/figure-latex/unnamed-chunk-9-1.p
-df  used on input line 687.
-(pdftex.def)             Requested size: 469.75386pt x 289.07928pt.
-<modelagem_final_files/figure-latex/unnamed-chunk-9-2.pdf, id=66, 469.755pt x 2
-89.08pt>
-File: modelagem_final_files/figure-latex/unnamed-chunk-9-2.pdf Graphic file (ty
-pe pdf)
-<use modelagem_final_files/figure-latex/unnamed-chunk-9-2.pdf>
-Package pdftex.def Info: modelagem_final_files/figure-latex/unnamed-chunk-9-2.p
-df  used on input line 688.
-(pdftex.def)             Requested size: 469.75386pt x 289.07928pt.
-<modelagem_final_files/figure-latex/unnamed-chunk-9-3.pdf, id=67, 469.755pt x 2
-89.08pt>
-File: modelagem_final_files/figure-latex/unnamed-chunk-9-3.pdf Graphic file (ty
-pe pdf)
-<use modelagem_final_files/figure-latex/unnamed-chunk-9-3.pdf>
-Package pdftex.def Info: modelagem_final_files/figure-latex/unnamed-chunk-9-3.p
-df  used on input line 689.
-(pdftex.def)             Requested size: 469.75386pt x 289.07928pt.
-<modelagem_final_files/figure-latex/unnamed-chunk-9-4.pdf, id=68, 469.755pt x 2
-89.08pt>
-File: modelagem_final_files/figure-latex/unnamed-chunk-9-4.pdf Graphic file (ty
-pe pdf)
-<use modelagem_final_files/figure-latex/unnamed-chunk-9-4.pdf>
-Package pdftex.def Info: modelagem_final_files/figure-latex/unnamed-chunk-9-4.p
+<use modelagem_final_files/figure-latex/unnamed-chunk-8-1.pdf>
+Package pdftex.def Info: modelagem_final_files/figure-latex/unnamed-chunk-8-1.p
 df  used on input line 690.
 (pdftex.def)             Requested size: 469.75386pt x 289.07928pt.
-<modelagem_final_files/figure-latex/unnamed-chunk-9-5.pdf, id=69, 469.755pt x 2
+<modelagem_final_files/figure-latex/unnamed-chunk-8-2.pdf, id=98, 469.755pt x 2
 89.08pt>
-File: modelagem_final_files/figure-latex/unnamed-chunk-9-5.pdf Graphic file (ty
+File: modelagem_final_files/figure-latex/unnamed-chunk-8-2.pdf Graphic file (ty
 pe pdf)
-<use modelagem_final_files/figure-latex/unnamed-chunk-9-5.pdf>
-Package pdftex.def Info: modelagem_final_files/figure-latex/unnamed-chunk-9-5.p
+<use modelagem_final_files/figure-latex/unnamed-chunk-8-2.pdf>
+Package pdftex.def Info: modelagem_final_files/figure-latex/unnamed-chunk-8-2.p
 df  used on input line 691.
 (pdftex.def)             Requested size: 469.75386pt x 289.07928pt.
-<modelagem_final_files/figure-latex/unnamed-chunk-9-6.pdf, id=70, 469.755pt x 2
+<modelagem_final_files/figure-latex/unnamed-chunk-8-3.pdf, id=99, 469.755pt x 2
 89.08pt>
-File: modelagem_final_files/figure-latex/unnamed-chunk-9-6.pdf Graphic file (ty
+File: modelagem_final_files/figure-latex/unnamed-chunk-8-3.pdf Graphic file (ty
 pe pdf)
-<use modelagem_final_files/figure-latex/unnamed-chunk-9-6.pdf>
-Package pdftex.def Info: modelagem_final_files/figure-latex/unnamed-chunk-9-6.p
+<use modelagem_final_files/figure-latex/unnamed-chunk-8-3.pdf>
+Package pdftex.def Info: modelagem_final_files/figure-latex/unnamed-chunk-8-3.p
 df  used on input line 692.
 (pdftex.def)             Requested size: 469.75386pt x 289.07928pt.
+<modelagem_final_files/figure-latex/unnamed-chunk-8-4.pdf, id=100, 469.755pt x 
+289.08pt>
+File: modelagem_final_files/figure-latex/unnamed-chunk-8-4.pdf Graphic file (ty
+pe pdf)
+<use modelagem_final_files/figure-latex/unnamed-chunk-8-4.pdf>
+Package pdftex.def Info: modelagem_final_files/figure-latex/unnamed-chunk-8-4.p
+df  used on input line 693.
+(pdftex.def)             Requested size: 469.75386pt x 289.07928pt.
+<modelagem_final_files/figure-latex/unnamed-chunk-8-5.pdf, id=101, 469.755pt x 
+289.08pt>
+File: modelagem_final_files/figure-latex/unnamed-chunk-8-5.pdf Graphic file (ty
+pe pdf)
+<use modelagem_final_files/figure-latex/unnamed-chunk-8-5.pdf>
+Package pdftex.def Info: modelagem_final_files/figure-latex/unnamed-chunk-8-5.p
+df  used on input line 694.
+(pdftex.def)             Requested size: 469.75386pt x 289.07928pt.
+<modelagem_final_files/figure-latex/unnamed-chunk-8-6.pdf, id=102, 469.755pt x 
+289.08pt>
+File: modelagem_final_files/figure-latex/unnamed-chunk-8-6.pdf Graphic file (ty
+pe pdf)
+<use modelagem_final_files/figure-latex/unnamed-chunk-8-6.pdf>
+Package pdftex.def Info: modelagem_final_files/figure-latex/unnamed-chunk-8-6.p
+df  used on input line 695.
+(pdftex.def)             Requested size: 469.75386pt x 289.07928pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 687--693
+Underfull \hbox (badness 10000) in paragraph at lines 690--696
 [][]
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 687--693
+Underfull \hbox (badness 10000) in paragraph at lines 690--696
 []
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 687--693
+Underfull \hbox (badness 10000) in paragraph at lines 690--696
 []
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 687--693
+Underfull \hbox (badness 10000) in paragraph at lines 690--696
 []
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 687--693
+Underfull \hbox (badness 10000) in paragraph at lines 690--696
 []
  []
 
-[10 <./modelagem_final_files/figure-latex/unnamed-chunk-9-1.pdf> <./modelagem_f
-inal_files/figure-latex/unnamed-chunk-9-2.pdf>] [11 <./modelagem_final_files/fi
-gure-latex/unnamed-chunk-9-3.pdf> <./modelagem_final_files/figure-latex/unnamed
--chunk-9-4.pdf>] [12 <./modelagem_final_files/figure-latex/unnamed-chunk-9-5.pd
-f> <./modelagem_final_files/figure-latex/unnamed-chunk-9-6.pdf>]
-Overfull \hbox (12.5835pt too wide) in alignment at lines 710--715
+[10 <./modelagem_final_files/figure-latex/unnamed-chunk-8-1.pdf>] [11 <./modela
+gem_final_files/figure-latex/unnamed-chunk-8-2.pdf> <./modelagem_final_files/fi
+gure-latex/unnamed-chunk-8-3.pdf>] [12 <./modelagem_final_files/figure-latex/un
+named-chunk-8-4.pdf> <./modelagem_final_files/figure-latex/unnamed-chunk-8-5.pd
+f>] [13 <./modelagem_final_files/figure-latex/unnamed-chunk-8-6.pdf>]
+Overfull \hbox (12.5835pt too wide) in alignment at lines 713--718
  [] [] [] [] [] [] [] 
  []
 
 
-Overfull \hbox (12.5835pt too wide) in alignment at lines 715--720
+Overfull \hbox (12.5835pt too wide) in alignment at lines 718--723
  [] [] [] [] [] [] [] 
  []
 
 
-Overfull \hbox (12.5835pt too wide) in alignment at lines 720--722
+Overfull \hbox (12.5835pt too wide) in alignment at lines 723--725
  [] [] [] [] [] [] [] 
  []
 
 
-Overfull \hbox (12.5835pt too wide) in alignment at lines 722--724
+Overfull \hbox (12.5835pt too wide) in alignment at lines 725--727
  [] [] [] [] [] [] [] 
  []
 
 
-Overfull \hbox (12.5835pt too wide) in alignment at lines 724--748
+Overfull \hbox (12.5835pt too wide) in alignment at lines 727--751
  [] [] [] [] [] [] [] 
  []
 
 
-Overfull \hbox (12.5835pt too wide) in alignment at lines 748--772
+Overfull \hbox (12.5835pt too wide) in alignment at lines 751--775
  [] [] [] [] [] [] [] 
  []
 
 
-Overfull \hbox (12.5835pt too wide) in alignment at lines 772--787
+Overfull \hbox (12.5835pt too wide) in alignment at lines 775--791
  [] [] [] [] [] [] [] 
  []
 
-<modelagem_final_files/figure-latex/unnamed-chunk-9-7.pdf, id=118, 469.755pt x 
+<modelagem_final_files/figure-latex/unnamed-chunk-8-7.pdf, id=156, 469.755pt x 
+289.08pt>
+File: modelagem_final_files/figure-latex/unnamed-chunk-8-7.pdf Graphic file (ty
+pe pdf)
+<use modelagem_final_files/figure-latex/unnamed-chunk-8-7.pdf>
+Package pdftex.def Info: modelagem_final_files/figure-latex/unnamed-chunk-8-7.p
+df  used on input line 794.
+(pdftex.def)             Requested size: 469.75386pt x 289.07928pt.
+[14] [15 <./modelagem_final_files/figure-latex/unnamed-chunk-8-7.pdf>]
+<modelagem_final_files/figure-latex/unnamed-chunk-9-1.pdf, id=177, 469.755pt x 
+289.08pt>
+File: modelagem_final_files/figure-latex/unnamed-chunk-9-1.pdf Graphic file (ty
+pe pdf)
+<use modelagem_final_files/figure-latex/unnamed-chunk-9-1.pdf>
+Package pdftex.def Info: modelagem_final_files/figure-latex/unnamed-chunk-9-1.p
+df  used on input line 905.
+(pdftex.def)             Requested size: 469.75386pt x 289.07928pt.
+<modelagem_final_files/figure-latex/unnamed-chunk-9-2.pdf, id=178, 469.755pt x 
+289.08pt>
+File: modelagem_final_files/figure-latex/unnamed-chunk-9-2.pdf Graphic file (ty
+pe pdf)
+<use modelagem_final_files/figure-latex/unnamed-chunk-9-2.pdf>
+Package pdftex.def Info: modelagem_final_files/figure-latex/unnamed-chunk-9-2.p
+df  used on input line 906.
+(pdftex.def)             Requested size: 469.75386pt x 289.07928pt.
+<modelagem_final_files/figure-latex/unnamed-chunk-9-3.pdf, id=179, 469.755pt x 
+289.08pt>
+File: modelagem_final_files/figure-latex/unnamed-chunk-9-3.pdf Graphic file (ty
+pe pdf)
+<use modelagem_final_files/figure-latex/unnamed-chunk-9-3.pdf>
+Package pdftex.def Info: modelagem_final_files/figure-latex/unnamed-chunk-9-3.p
+df  used on input line 907.
+(pdftex.def)             Requested size: 469.75386pt x 289.07928pt.
+<modelagem_final_files/figure-latex/unnamed-chunk-9-4.pdf, id=180, 469.755pt x 
+289.08pt>
+File: modelagem_final_files/figure-latex/unnamed-chunk-9-4.pdf Graphic file (ty
+pe pdf)
+<use modelagem_final_files/figure-latex/unnamed-chunk-9-4.pdf>
+Package pdftex.def Info: modelagem_final_files/figure-latex/unnamed-chunk-9-4.p
+df  used on input line 908.
+(pdftex.def)             Requested size: 469.75386pt x 289.07928pt.
+<modelagem_final_files/figure-latex/unnamed-chunk-9-5.pdf, id=181, 469.755pt x 
+289.08pt>
+File: modelagem_final_files/figure-latex/unnamed-chunk-9-5.pdf Graphic file (ty
+pe pdf)
+<use modelagem_final_files/figure-latex/unnamed-chunk-9-5.pdf>
+Package pdftex.def Info: modelagem_final_files/figure-latex/unnamed-chunk-9-5.p
+df  used on input line 909.
+(pdftex.def)             Requested size: 469.75386pt x 289.07928pt.
+<modelagem_final_files/figure-latex/unnamed-chunk-9-6.pdf, id=182, 469.755pt x 
+289.08pt>
+File: modelagem_final_files/figure-latex/unnamed-chunk-9-6.pdf Graphic file (ty
+pe pdf)
+<use modelagem_final_files/figure-latex/unnamed-chunk-9-6.pdf>
+Package pdftex.def Info: modelagem_final_files/figure-latex/unnamed-chunk-9-6.p
+df  used on input line 910.
+(pdftex.def)             Requested size: 469.75386pt x 289.07928pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 905--911
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 905--911
+[]
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 905--911
+[]
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 905--911
+[]
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 905--911
+[]
+ []
+
+[16] [17 <./modelagem_final_files/figure-latex/unnamed-chunk-9-1.pdf> <./modela
+gem_final_files/figure-latex/unnamed-chunk-9-2.pdf>] [18 <./modelagem_final_fil
+es/figure-latex/unnamed-chunk-9-3.pdf> <./modelagem_final_files/figure-latex/un
+named-chunk-9-4.pdf>]
+Overfull \hbox (12.5835pt too wide) in alignment at lines 920--925
+ [] [] [] [] [] [] [] 
+ []
+
+
+Overfull \hbox (12.5835pt too wide) in alignment at lines 925--930
+ [] [] [] [] [] [] [] 
+ []
+
+
+Overfull \hbox (12.5835pt too wide) in alignment at lines 930--932
+ [] [] [] [] [] [] [] 
+ []
+
+
+Overfull \hbox (12.5835pt too wide) in alignment at lines 932--934
+ [] [] [] [] [] [] [] 
+ []
+
+
+Overfull \hbox (12.5835pt too wide) in alignment at lines 934--958
+ [] [] [] [] [] [] [] 
+ []
+
+[19 <./modelagem_final_files/figure-latex/unnamed-chunk-9-5.pdf> <./modelagem_f
+inal_files/figure-latex/unnamed-chunk-9-6.pdf>]
+Overfull \hbox (12.5835pt too wide) in alignment at lines 958--982
+ [] [] [] [] [] [] [] 
+ []
+
+
+Overfull \hbox (12.5835pt too wide) in alignment at lines 982--998
+ [] [] [] [] [] [] [] 
+ []
+
+<modelagem_final_files/figure-latex/unnamed-chunk-9-7.pdf, id=241, 469.755pt x 
 289.08pt>
 File: modelagem_final_files/figure-latex/unnamed-chunk-9-7.pdf Graphic file (ty
 pe pdf)
 <use modelagem_final_files/figure-latex/unnamed-chunk-9-7.pdf>
 Package pdftex.def Info: modelagem_final_files/figure-latex/unnamed-chunk-9-7.p
-df  used on input line 790.
+df  used on input line 1001.
 (pdftex.def)             Requested size: 469.75386pt x 289.07928pt.
-[13] [14 <./modelagem_final_files/figure-latex/unnamed-chunk-9-7.pdf>]
-<modelagem_final_files/figure-latex/unnamed-chunk-10-1.pdf, id=140, 469.755pt x
+[20] [21 <./modelagem_final_files/figure-latex/unnamed-chunk-9-7.pdf>] [22]
+<modelagem_final_files/figure-latex/unnamed-chunk-11-1.pdf, id=269, 469.755pt x
  289.08pt>
-File: modelagem_final_files/figure-latex/unnamed-chunk-10-1.pdf Graphic file (t
+File: modelagem_final_files/figure-latex/unnamed-chunk-11-1.pdf Graphic file (t
 ype pdf)
-<use modelagem_final_files/figure-latex/unnamed-chunk-10-1.pdf>
-Package pdftex.def Info: modelagem_final_files/figure-latex/unnamed-chunk-10-1.
-pdf  used on input line 912.
+<use modelagem_final_files/figure-latex/unnamed-chunk-11-1.pdf>
+Package pdftex.def Info: modelagem_final_files/figure-latex/unnamed-chunk-11-1.
+pdf  used on input line 1125.
 (pdftex.def)             Requested size: 469.75386pt x 289.07928pt.
-<modelagem_final_files/figure-latex/unnamed-chunk-10-2.pdf, id=141, 469.755pt x
+<modelagem_final_files/figure-latex/unnamed-chunk-11-2.pdf, id=270, 469.755pt x
  289.08pt>
-File: modelagem_final_files/figure-latex/unnamed-chunk-10-2.pdf Graphic file (t
+File: modelagem_final_files/figure-latex/unnamed-chunk-11-2.pdf Graphic file (t
 ype pdf)
-<use modelagem_final_files/figure-latex/unnamed-chunk-10-2.pdf>
-Package pdftex.def Info: modelagem_final_files/figure-latex/unnamed-chunk-10-2.
-pdf  used on input line 913.
+<use modelagem_final_files/figure-latex/unnamed-chunk-11-2.pdf>
+Package pdftex.def Info: modelagem_final_files/figure-latex/unnamed-chunk-11-2.
+pdf  used on input line 1126.
 (pdftex.def)             Requested size: 469.75386pt x 289.07928pt.
-<modelagem_final_files/figure-latex/unnamed-chunk-10-3.pdf, id=142, 469.755pt x
+<modelagem_final_files/figure-latex/unnamed-chunk-11-3.pdf, id=271, 469.755pt x
  289.08pt>
-File: modelagem_final_files/figure-latex/unnamed-chunk-10-3.pdf Graphic file (t
+File: modelagem_final_files/figure-latex/unnamed-chunk-11-3.pdf Graphic file (t
 ype pdf)
-<use modelagem_final_files/figure-latex/unnamed-chunk-10-3.pdf>
-Package pdftex.def Info: modelagem_final_files/figure-latex/unnamed-chunk-10-3.
-pdf  used on input line 914.
+<use modelagem_final_files/figure-latex/unnamed-chunk-11-3.pdf>
+Package pdftex.def Info: modelagem_final_files/figure-latex/unnamed-chunk-11-3.
+pdf  used on input line 1127.
 (pdftex.def)             Requested size: 469.75386pt x 289.07928pt.
-<modelagem_final_files/figure-latex/unnamed-chunk-10-4.pdf, id=143, 469.755pt x
+<modelagem_final_files/figure-latex/unnamed-chunk-11-4.pdf, id=272, 469.755pt x
  289.08pt>
-File: modelagem_final_files/figure-latex/unnamed-chunk-10-4.pdf Graphic file (t
+File: modelagem_final_files/figure-latex/unnamed-chunk-11-4.pdf Graphic file (t
 ype pdf)
-<use modelagem_final_files/figure-latex/unnamed-chunk-10-4.pdf>
-Package pdftex.def Info: modelagem_final_files/figure-latex/unnamed-chunk-10-4.
-pdf  used on input line 915.
+<use modelagem_final_files/figure-latex/unnamed-chunk-11-4.pdf>
+Package pdftex.def Info: modelagem_final_files/figure-latex/unnamed-chunk-11-4.
+pdf  used on input line 1128.
 (pdftex.def)             Requested size: 469.75386pt x 289.07928pt.
-<modelagem_final_files/figure-latex/unnamed-chunk-10-5.pdf, id=144, 469.755pt x
+<modelagem_final_files/figure-latex/unnamed-chunk-11-5.pdf, id=273, 469.755pt x
  289.08pt>
-File: modelagem_final_files/figure-latex/unnamed-chunk-10-5.pdf Graphic file (t
+File: modelagem_final_files/figure-latex/unnamed-chunk-11-5.pdf Graphic file (t
 ype pdf)
-<use modelagem_final_files/figure-latex/unnamed-chunk-10-5.pdf>
-Package pdftex.def Info: modelagem_final_files/figure-latex/unnamed-chunk-10-5.
-pdf  used on input line 916.
+<use modelagem_final_files/figure-latex/unnamed-chunk-11-5.pdf>
+Package pdftex.def Info: modelagem_final_files/figure-latex/unnamed-chunk-11-5.
+pdf  used on input line 1129.
 (pdftex.def)             Requested size: 469.75386pt x 289.07928pt.
-<modelagem_final_files/figure-latex/unnamed-chunk-10-6.pdf, id=145, 469.755pt x
+<modelagem_final_files/figure-latex/unnamed-chunk-11-6.pdf, id=274, 469.755pt x
  289.08pt>
-File: modelagem_final_files/figure-latex/unnamed-chunk-10-6.pdf Graphic file (t
+File: modelagem_final_files/figure-latex/unnamed-chunk-11-6.pdf Graphic file (t
 ype pdf)
-<use modelagem_final_files/figure-latex/unnamed-chunk-10-6.pdf>
-Package pdftex.def Info: modelagem_final_files/figure-latex/unnamed-chunk-10-6.
-pdf  used on input line 917.
+<use modelagem_final_files/figure-latex/unnamed-chunk-11-6.pdf>
+Package pdftex.def Info: modelagem_final_files/figure-latex/unnamed-chunk-11-6.
+pdf  used on input line 1130.
 (pdftex.def)             Requested size: 469.75386pt x 289.07928pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 912--918
+Underfull \hbox (badness 10000) in paragraph at lines 1125--1131
 [][]
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 912--918
+Underfull \hbox (badness 10000) in paragraph at lines 1125--1131
 []
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 912--918
+Underfull \hbox (badness 10000) in paragraph at lines 1125--1131
 []
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 912--918
+Underfull \hbox (badness 10000) in paragraph at lines 1125--1131
 []
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 912--918
+Underfull \hbox (badness 10000) in paragraph at lines 1125--1131
 []
  []
 
-[15] [16 <./modelagem_final_files/figure-latex/unnamed-chunk-10-1.pdf> <./model
-agem_final_files/figure-latex/unnamed-chunk-10-2.pdf>] [17 <./modelagem_final_f
-iles/figure-latex/unnamed-chunk-10-3.pdf> <./modelagem_final_files/figure-latex
-/unnamed-chunk-10-4.pdf>]
-Overfull \hbox (12.5835pt too wide) in alignment at lines 927--932
+[23 <./modelagem_final_files/figure-latex/unnamed-chunk-11-1.pdf> <./modelagem_
+final_files/figure-latex/unnamed-chunk-11-2.pdf>] [24 <./modelagem_final_files/
+figure-latex/unnamed-chunk-11-3.pdf> <./modelagem_final_files/figure-latex/unna
+med-chunk-11-4.pdf>] [25 <./modelagem_final_files/figure-latex/unnamed-chunk-11
+-5.pdf> <./modelagem_final_files/figure-latex/unnamed-chunk-11-6.pdf>]
+Overfull \hbox (12.5835pt too wide) in alignment at lines 1148--1153
  [] [] [] [] [] [] [] 
  []
 
 
-Overfull \hbox (12.5835pt too wide) in alignment at lines 932--937
+Overfull \hbox (12.5835pt too wide) in alignment at lines 1153--1158
  [] [] [] [] [] [] [] 
  []
 
 
-Overfull \hbox (12.5835pt too wide) in alignment at lines 937--939
+Overfull \hbox (12.5835pt too wide) in alignment at lines 1158--1160
  [] [] [] [] [] [] [] 
  []
 
 
-Overfull \hbox (12.5835pt too wide) in alignment at lines 939--941
+Overfull \hbox (12.5835pt too wide) in alignment at lines 1160--1162
  [] [] [] [] [] [] [] 
  []
 
 
-Overfull \hbox (12.5835pt too wide) in alignment at lines 941--965
- [] [] [] [] [] [] [] 
- []
-
-[18 <./modelagem_final_files/figure-latex/unnamed-chunk-10-5.pdf> <./modelagem_
-final_files/figure-latex/unnamed-chunk-10-6.pdf>]
-Overfull \hbox (12.5835pt too wide) in alignment at lines 965--989
+Overfull \hbox (12.5835pt too wide) in alignment at lines 1162--1186
  [] [] [] [] [] [] [] 
  []
 
 
-Overfull \hbox (12.5835pt too wide) in alignment at lines 989--1004
+Overfull \hbox (12.5835pt too wide) in alignment at lines 1186--1210
  [] [] [] [] [] [] [] 
  []
 
-<modelagem_final_files/figure-latex/unnamed-chunk-10-7.pdf, id=204, 469.755pt x
+
+Overfull \hbox (12.5835pt too wide) in alignment at lines 1210--1225
+ [] [] [] [] [] [] [] 
+ []
+
+<modelagem_final_files/figure-latex/unnamed-chunk-11-7.pdf, id=324, 469.755pt x
  289.08pt>
-File: modelagem_final_files/figure-latex/unnamed-chunk-10-7.pdf Graphic file (t
+File: modelagem_final_files/figure-latex/unnamed-chunk-11-7.pdf Graphic file (t
 ype pdf)
-<use modelagem_final_files/figure-latex/unnamed-chunk-10-7.pdf>
-Package pdftex.def Info: modelagem_final_files/figure-latex/unnamed-chunk-10-7.
-pdf  used on input line 1007.
+<use modelagem_final_files/figure-latex/unnamed-chunk-11-7.pdf>
+Package pdftex.def Info: modelagem_final_files/figure-latex/unnamed-chunk-11-7.
+pdf  used on input line 1228.
 (pdftex.def)             Requested size: 469.75386pt x 289.07928pt.
-[19] [20 <./modelagem_final_files/figure-latex/unnamed-chunk-10-7.pdf>] [21] (.
+[26] [27 <./modelagem_final_files/figure-latex/unnamed-chunk-11-7.pdf>]
+<modelagem_final_files/figure-latex/unnamed-chunk-12-1.pdf, id=343, 469.755pt x
+ 289.08pt>
+File: modelagem_final_files/figure-latex/unnamed-chunk-12-1.pdf Graphic file (t
+ype pdf)
+<use modelagem_final_files/figure-latex/unnamed-chunk-12-1.pdf>
+Package pdftex.def Info: modelagem_final_files/figure-latex/unnamed-chunk-12-1.
+pdf  used on input line 1350.
+(pdftex.def)             Requested size: 469.75386pt x 289.07928pt.
+<modelagem_final_files/figure-latex/unnamed-chunk-12-2.pdf, id=344, 469.755pt x
+ 289.08pt>
+File: modelagem_final_files/figure-latex/unnamed-chunk-12-2.pdf Graphic file (t
+ype pdf)
+<use modelagem_final_files/figure-latex/unnamed-chunk-12-2.pdf>
+Package pdftex.def Info: modelagem_final_files/figure-latex/unnamed-chunk-12-2.
+pdf  used on input line 1351.
+(pdftex.def)             Requested size: 469.75386pt x 289.07928pt.
+<modelagem_final_files/figure-latex/unnamed-chunk-12-3.pdf, id=345, 469.755pt x
+ 289.08pt>
+File: modelagem_final_files/figure-latex/unnamed-chunk-12-3.pdf Graphic file (t
+ype pdf)
+<use modelagem_final_files/figure-latex/unnamed-chunk-12-3.pdf>
+Package pdftex.def Info: modelagem_final_files/figure-latex/unnamed-chunk-12-3.
+pdf  used on input line 1352.
+(pdftex.def)             Requested size: 469.75386pt x 289.07928pt.
+<modelagem_final_files/figure-latex/unnamed-chunk-12-4.pdf, id=346, 469.755pt x
+ 289.08pt>
+File: modelagem_final_files/figure-latex/unnamed-chunk-12-4.pdf Graphic file (t
+ype pdf)
+<use modelagem_final_files/figure-latex/unnamed-chunk-12-4.pdf>
+Package pdftex.def Info: modelagem_final_files/figure-latex/unnamed-chunk-12-4.
+pdf  used on input line 1353.
+(pdftex.def)             Requested size: 469.75386pt x 289.07928pt.
+<modelagem_final_files/figure-latex/unnamed-chunk-12-5.pdf, id=347, 469.755pt x
+ 289.08pt>
+File: modelagem_final_files/figure-latex/unnamed-chunk-12-5.pdf Graphic file (t
+ype pdf)
+<use modelagem_final_files/figure-latex/unnamed-chunk-12-5.pdf>
+Package pdftex.def Info: modelagem_final_files/figure-latex/unnamed-chunk-12-5.
+pdf  used on input line 1354.
+(pdftex.def)             Requested size: 469.75386pt x 289.07928pt.
+<modelagem_final_files/figure-latex/unnamed-chunk-12-6.pdf, id=348, 469.755pt x
+ 289.08pt>
+File: modelagem_final_files/figure-latex/unnamed-chunk-12-6.pdf Graphic file (t
+ype pdf)
+<use modelagem_final_files/figure-latex/unnamed-chunk-12-6.pdf>
+Package pdftex.def Info: modelagem_final_files/figure-latex/unnamed-chunk-12-6.
+pdf  used on input line 1355.
+(pdftex.def)             Requested size: 469.75386pt x 289.07928pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 1350--1356
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1350--1356
+[]
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1350--1356
+[]
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1350--1356
+[]
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1350--1356
+[]
+ []
+
+[28] [29 <./modelagem_final_files/figure-latex/unnamed-chunk-12-1.pdf> <./model
+agem_final_files/figure-latex/unnamed-chunk-12-2.pdf>] [30 <./modelagem_final_f
+iles/figure-latex/unnamed-chunk-12-3.pdf> <./modelagem_final_files/figure-latex
+/unnamed-chunk-12-4.pdf>]
+Overfull \hbox (12.5835pt too wide) in alignment at lines 1365--1370
+ [] [] [] [] [] [] [] 
+ []
+
+
+Overfull \hbox (12.5835pt too wide) in alignment at lines 1370--1375
+ [] [] [] [] [] [] [] 
+ []
+
+
+Overfull \hbox (12.5835pt too wide) in alignment at lines 1375--1377
+ [] [] [] [] [] [] [] 
+ []
+
+
+Overfull \hbox (12.5835pt too wide) in alignment at lines 1377--1379
+ [] [] [] [] [] [] [] 
+ []
+
+
+Overfull \hbox (12.5835pt too wide) in alignment at lines 1379--1403
+ [] [] [] [] [] [] [] 
+ []
+
+[31 <./modelagem_final_files/figure-latex/unnamed-chunk-12-5.pdf> <./modelagem_
+final_files/figure-latex/unnamed-chunk-12-6.pdf>]
+Overfull \hbox (12.5835pt too wide) in alignment at lines 1403--1427
+ [] [] [] [] [] [] [] 
+ []
+
+
+Overfull \hbox (12.5835pt too wide) in alignment at lines 1427--1442
+ [] [] [] [] [] [] [] 
+ []
+
+<modelagem_final_files/figure-latex/unnamed-chunk-12-7.pdf, id=407, 469.755pt x
+ 289.08pt>
+File: modelagem_final_files/figure-latex/unnamed-chunk-12-7.pdf Graphic file (t
+ype pdf)
+<use modelagem_final_files/figure-latex/unnamed-chunk-12-7.pdf>
+Package pdftex.def Info: modelagem_final_files/figure-latex/unnamed-chunk-12-7.
+pdf  used on input line 1445.
+(pdftex.def)             Requested size: 469.75386pt x 289.07928pt.
+[32] [33 <./modelagem_final_files/figure-latex/unnamed-chunk-12-7.pdf>] [34] (.
 /modelagem_final.aux)
 Package rerunfilecheck Info: File `modelagem_final.out' has not changed.
-(rerunfilecheck)             Checksum: 5DCB224BEB8677390B9523C23A1C9A60;842.
+(rerunfilecheck)             Checksum: 19BFB1F24F8E4AE8A93C28514DD979F6;2315.
 
 LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 14398 strings out of 481364
- 218401 string characters out of 5917579
- 654564 words of memory out of 5000000
- 30857 multiletter control sequences out of 15000+600000
- 448566 words of font info for 80 fonts, out of 8000000 for 9000
+ 14551 strings out of 481364
+ 224234 string characters out of 5917579
+ 658121 words of memory out of 5000000
+ 30955 multiletter control sequences out of 15000+600000
+ 451758 words of font info for 83 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
  66i,7n,72p,520b,459s stack positions out of 5000i,500n,10000p,200000b,80000s
 {c:/Users/eduar/AppData/Roaming/TinyTeX/texmf-dist/fonts/enc/dvips/lm/lm-ec.e
@@ -1103,10 +1365,10 @@ pe1/public/lm/lmr7.pfb><c:/Users/eduar/AppData/Roaming/TinyTeX/texmf-dist/fonts
 /type1/public/lm/lmtk10.pfb><c:/Users/eduar/AppData/Roaming/TinyTeX/texmf-dist/
 fonts/type1/public/lm/lmtt10.pfb><c:/Users/eduar/AppData/Roaming/TinyTeX/texmf-
 dist/fonts/type1/public/lm/lmtti10.pfb>
-Output written on modelagem_final.pdf (21 pages, 349936 bytes).
+Output written on modelagem_final.pdf (34 pages, 483251 bytes).
 PDF statistics:
- 270 PDF objects out of 1000 (max. 8388607)
- 208 compressed objects within 3 object streams
- 39 named destinations out of 1000 (max. 500000)
- 24671 words of extra memory for PDF output out of 24883 (max. 10000000)
+ 479 PDF objects out of 1000 (max. 8388607)
+ 375 compressed objects within 4 object streams
+ 76 named destinations out of 1000 (max. 500000)
+ 26845 words of extra memory for PDF output out of 29859 (max. 10000000)
 

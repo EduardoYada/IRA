@@ -3,6 +3,8 @@ title: "Tabelas"
 output: pdf_document
 header-includes:
     - \usepackage{caption}
+mainfont: Arial
+sansfont: Arial
 ---
 
 ```{r setup, include=FALSE}
@@ -16,6 +18,8 @@ library(tidyverse)
 library(data.table)
 library(yaml)
 library(kableExtra)
+
+options(OutDec= ",")
 ```
 
 # Funções auxiliares
@@ -59,6 +63,7 @@ constants = yaml.load_file("constants.yaml")
 
 categorical_columns = constants$categorical_columns
 numerical_columns = constants$numerical_columns
+soluto_columns = constants$solutos_columns
 
 daily_columns = constants$daily_columns
 ```
@@ -83,9 +88,11 @@ df_names = readxl::read_excel('./data/Nomes das variaveis.xlsx') %>%
 
 ## Variáveis numéricas
 
+### Solutos 
+
 ```{r results = 'asis'}
 i = 1
-for (column in numerical_columns){
+for (column in soluto_columns){
   
   temp_total_df = df %>%
     group_by(ira_nome) %>%
@@ -100,8 +107,13 @@ for (column in numerical_columns){
     rename(`Causa da IRA` = causa_ira_nome,
            `IRA` = ira_nome)
   
+  nome_variavel = df_names %>% filter(variavel == column) %>% .$nome %>% tolower
+  nome_variavel = ifelse(nome_variavel %in% c('imc', 'sofa', 'saps3', 'hiv'), 
+                         toupper(nome_variavel),
+                         nome_variavel)
+  
   caption = sprintf('Tabela A.%d Medidas descritivas para %s por fator de risco', i, 
-                    df_names %>% filter(variavel == column) %>% .$nome %>% tolower)
+                    nome_variavel)
   
   df %>%
     group_by(causa_ira_nome, ira_nome) %>%
@@ -115,7 +127,7 @@ for (column in numerical_columns){
     rename(`Causa da IRA` = causa_ira_nome,
            `IRA` = ira_nome) %>%
     bind_rows(temp_total_df) %>%
-    kbl(align = "l", booktabs = T, digits = 2, format = 'latex',
+    kbl(align = "c", booktabs = T, digits = 2, format = 'latex',
         caption = caption) %>%
     row_spec(c(1:2, 5:6) - 1, extra_latex_after = "\\rowcolor{gray!6}") %>%
     row_spec(6, hline_after = T) %>%
@@ -128,17 +140,71 @@ for (column in numerical_columns){
 }
 ```
 
+### Resto
+
+```{r results = 'asis'}
+for (column in setdiff(numerical_columns, soluto_columns)){
+  temp_total_df = df %>%
+    summarise(`N` = n(),
+              `Média` = mean(!!sym(column), na.rm = T),
+              `Desvio Padrão` = sd(!!sym(column), na.rm = T),
+              `Mínimo` = min(!!sym(column), na.rm = T),
+              `Mediana` = median(!!sym(column), na.rm = T),
+              `Máximo` = max(!!sym(column), na.rm = T)) %>%
+    ungroup %>%
+    mutate(`IRA` = 'Total')
+  
+  nome_variavel = df_names %>% filter(variavel == column) %>% .$nome %>% tolower
+  nome_variavel = ifelse(nome_variavel %in% c('imc', 'saps3'), 
+                         toupper(nome_variavel),
+                         nome_variavel)
+  nome_variavel = ifelse(nome_variavel == 'índice sofa',
+                         'índice SOFA', 
+                          nome_variavel)
+  
+  caption = sprintf('Tabela A.%d Medidas descritivas para %s por fator de risco', i, 
+                    nome_variavel)
+  
+  df %>%
+    group_by(ira_nome) %>%
+    summarise(`N` = n(),
+              `Média` = mean(!!sym(column), na.rm = T),
+              `Desvio Padrão` = sd(!!sym(column), na.rm = T),
+              `Mínimo` = min(!!sym(column), na.rm = T),
+              `Mediana` = median(!!sym(column), na.rm = T),
+              `Máximo` = max(!!sym(column), na.rm = T)) %>%
+    ungroup %>%
+    rename(`IRA` = ira_nome) %>%
+    bind_rows(temp_total_df) %>%
+    kbl(align = "c", booktabs = T, digits = 2, format = 'latex',
+        caption = caption) %>%
+    row_spec(c(1, 3) - 1, extra_latex_after = "\\rowcolor{gray!6}") %>%
+    row_spec(2, hline_after = T) %>%
+    row_spec(3, bold = T) %>%
+    kable_styling(latex_options = c("HOLD_position", "repeat_header")) %>%
+    print
+  
+  i = i + 1
+}
+```
+
 ## Variáveis categóricas
 
 ```{r results = 'asis', message = F, warning = F}
 
 for (column in categorical_columns){
+  
+  nome_variavel = df_names %>% filter(variavel == column) %>% .$nome %>% tolower
+  nome_variavel = ifelse(nome_variavel %in% c('imc', 'saps3', 'kdigo', 'hiv'), 
+                         toupper(nome_variavel),
+                         nome_variavel)
+  
   caption = sprintf('Tabela A.%d Tabela de contingência entre IRA e %s', i, 
-                    df_names %>% filter(variavel == column) %>% .$nome %>% tolower)
+                    nome_variavel)
   
   table(df$ira_nome, df[[column]]) %>%
     addpercentage %>%
-    kbl(align = "l", booktabs = T, digits = 2, format = 'latex',
+    kbl(align = "c", booktabs = T, digits = 2, format = 'latex',
         caption = caption) %>%
     row_spec(2, hline_after = T) %>%
     collapse_rows(1, latex_hline = "none") %>%

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020/W32TeX) (preloaded format=pdflatex 2020.12.11)  30 JUN 2021 23:02
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020/W32TeX) (preloaded format=pdflatex 2020.12.11)  7 JUL 2021 19:22
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -691,30 +691,6 @@ LaTeX Warning: Label `tab:unnamed-chunk-5' multiply defined.
 LaTeX Warning: Label `tab:unnamed-chunk-5' multiply defined.
 
 
-LaTeX Warning: Label `tab:unnamed-chunk-5' multiply defined.
-
-
-LaTeX Warning: Label `tab:unnamed-chunk-5' multiply defined.
-
-
-LaTeX Warning: Label `tab:unnamed-chunk-5' multiply defined.
-
-
-LaTeX Warning: Label `tab:unnamed-chunk-5' multiply defined.
-
-
-LaTeX Warning: Label `tab:unnamed-chunk-5' multiply defined.
-
-
-LaTeX Warning: Label `tab:unnamed-chunk-5' multiply defined.
-
-
-LaTeX Warning: Label `tab:unnamed-chunk-5' multiply defined.
-
-
-LaTeX Warning: Label `tab:unnamed-chunk-5' multiply defined.
-
-
 LaTeX Warning: Label `tab:unnamed-chunk-6' multiply defined.
 
 
@@ -736,61 +712,82 @@ LaTeX Warning: Label `tab:unnamed-chunk-6' multiply defined.
 LaTeX Warning: Label `tab:unnamed-chunk-6' multiply defined.
 
 
-LaTeX Warning: Label `tab:unnamed-chunk-6' multiply defined.
+LaTeX Warning: Label `tab:unnamed-chunk-7' multiply defined.
 
 
-LaTeX Warning: Label `tab:unnamed-chunk-6' multiply defined.
+LaTeX Warning: Label `tab:unnamed-chunk-7' multiply defined.
 
 
-LaTeX Warning: Label `tab:unnamed-chunk-6' multiply defined.
+LaTeX Warning: Label `tab:unnamed-chunk-7' multiply defined.
 
 
-LaTeX Warning: Label `tab:unnamed-chunk-6' multiply defined.
+LaTeX Warning: Label `tab:unnamed-chunk-7' multiply defined.
 
 
-LaTeX Warning: Label `tab:unnamed-chunk-6' multiply defined.
+LaTeX Warning: Label `tab:unnamed-chunk-7' multiply defined.
 
 
-LaTeX Warning: Label `tab:unnamed-chunk-6' multiply defined.
+LaTeX Warning: Label `tab:unnamed-chunk-7' multiply defined.
 
 
-LaTeX Warning: Label `tab:unnamed-chunk-6' multiply defined.
+LaTeX Warning: Label `tab:unnamed-chunk-7' multiply defined.
 
 
-LaTeX Warning: Label `tab:unnamed-chunk-6' multiply defined.
+LaTeX Warning: Label `tab:unnamed-chunk-7' multiply defined.
 
 
-LaTeX Warning: Label `tab:unnamed-chunk-6' multiply defined.
+LaTeX Warning: Label `tab:unnamed-chunk-7' multiply defined.
+
+
+LaTeX Warning: Label `tab:unnamed-chunk-7' multiply defined.
+
+
+LaTeX Warning: Label `tab:unnamed-chunk-7' multiply defined.
+
+
+LaTeX Warning: Label `tab:unnamed-chunk-7' multiply defined.
+
+
+LaTeX Warning: Label `tab:unnamed-chunk-7' multiply defined.
+
+
+LaTeX Warning: Label `tab:unnamed-chunk-7' multiply defined.
+
+
+LaTeX Warning: Label `tab:unnamed-chunk-7' multiply defined.
+
+
+LaTeX Warning: Label `tab:unnamed-chunk-7' multiply defined.
 
 )
 \openout1 = `tabelas.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 121.
-LaTeX Font Info:    ... okay on input line 121.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 121.
-LaTeX Font Info:    ... okay on input line 121.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 121.
-LaTeX Font Info:    ... okay on input line 121.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 121.
-LaTeX Font Info:    ... okay on input line 121.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 121.
-LaTeX Font Info:    ... okay on input line 121.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 121.
-LaTeX Font Info:    ... okay on input line 121.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 121.
-LaTeX Font Info:    ... okay on input line 121.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 121.
-LaTeX Font Info:    ... okay on input line 121.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 121.
-LaTeX Font Info:    ... okay on input line 121.
-LaTeX Info: Redefining \microtypecontext on input line 121.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 123.
+LaTeX Font Info:    ... okay on input line 123.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 123.
+LaTeX Font Info:    ... okay on input line 123.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 123.
+LaTeX Font Info:    ... okay on input line 123.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 123.
+LaTeX Font Info:    ... okay on input line 123.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 123.
+LaTeX Font Info:    ... okay on input line 123.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 123.
+LaTeX Font Info:    ... okay on input line 123.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 123.
+LaTeX Font Info:    ... okay on input line 123.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 123.
+LaTeX Font Info:    ... okay on input line 123.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 123.
+LaTeX Font Info:    ... okay on input line 123.
+LaTeX Info: Redefining \microtypecontext on input line 123.
 Package microtype Info: Generating PDF output.
 Package microtype Info: Character protrusion enabled (level 2).
 Package microtype Info: Using protrusion set `basicmath'.
 Package microtype Info: Automatic font expansion enabled (level 2),
 (microtype)             stretch: 20, shrink: 20, step: 1, non-selected.
 Package microtype Info: Using default expansion set `alltext-nott'.
-LaTeX Info: Redefining \showhyphens on input line 121.
+LaTeX Info: Redefining \showhyphens on input line 123.
 Package microtype Info: No adjustment of tracking.
 Package microtype Info: No adjustment of interword spacing.
 Package microtype Info: No adjustment of character kerning.
@@ -811,7 +808,7 @@ df-sys.cfg
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
-Package hyperref Info: Link coloring OFF on input line 121.
+Package hyperref Info: Link coloring OFF on input line 123.
 
 (c:/Users/eduar/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/hyperref/nameref.s
 ty
@@ -827,9 +824,9 @@ Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 )
 \c@section@level=\count306
 )
-LaTeX Info: Redefining \ref on input line 121.
-LaTeX Info: Redefining \pageref on input line 121.
-LaTeX Info: Redefining \nameref on input line 121.
+LaTeX Info: Redefining \ref on input line 123.
+LaTeX Info: Redefining \pageref on input line 123.
+LaTeX Info: Redefining \nameref on input line 123.
 (./tabelas.out) (./tabelas.out)
 \@outlinefile=\write4
 \openout4 = `tabelas.out'.
@@ -880,32 +877,32 @@ Package caption Info: threeparttable package is loaded.
 Package caption Info: wrapfig package is loaded.
 Package caption Info: End \AtBeginDocument code.
 LaTeX Font Info:    Trying to load font information for OT1+lmr on input line 1
-23.
+25.
 (c:/Users/eduar/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/lm/ot1lmr.fd
 File: ot1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 LaTeX Font Info:    Trying to load font information for OML+lmm on input line 1
-23.
+25.
 (c:/Users/eduar/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/lm/omllmm.fd
 File: omllmm.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 LaTeX Font Info:    Trying to load font information for OMS+lmsy on input line 
-123.
+125.
 (c:/Users/eduar/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/lm/omslmsy.fd
 File: omslmsy.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 LaTeX Font Info:    Trying to load font information for OMX+lmex on input line 
-123.
+125.
 (c:/Users/eduar/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/lm/omxlmex.fd
 File: omxlmex.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <12> on input line 123.
+(Font)              <12> on input line 125.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <8> on input line 123.
+(Font)              <8> on input line 125.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <6> on input line 123.
-LaTeX Font Info:    Trying to load font information for U+msa on input line 123
+(Font)              <6> on input line 125.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 125
 .
 (c:/Users/eduar/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
@@ -914,7 +911,7 @@ File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 fg
 File: mt-msa.cfg 2006/02/04 v1.1 microtype config. file: AMS symbols (a) (RS)
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 123
+LaTeX Font Info:    Trying to load font information for U+msb on input line 125
 .
 (c:/Users/eduar/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
@@ -924,34 +921,34 @@ fg
 File: mt-msb.cfg 2005/06/01 v1.0 microtype config. file: AMS symbols (b) (RS)
 )
 LaTeX Font Info:    Trying to load font information for T1+lmtt on input line 1
-28.
+30.
 (c:/Users/eduar/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/lm/t1lmtt.fd
 File: t1lmtt.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 LaTeX Font Info:    Font shape `T1/lmtt/bx/n' in size <10> not available
-(Font)              Font shape `T1/lmtt/b/n' tried instead on input line 129.
+(Font)              Font shape `T1/lmtt/b/n' tried instead on input line 131.
 [1
 
 {c:/Users/eduar/AppData/Roaming/TinyTeX/texmf-var/fonts/map/pdftex/updmap/pdfte
 x.map}] [2]
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <10> on input line 261.
+(Font)              <10> on input line 274.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <7> on input line 261.
+(Font)              <7> on input line 274.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <5> on input line 261.
+(Font)              <5> on input line 274.
 [3] [4] [5] [6] [7] [8] [9] [10] [11] [12] [13] [14] [15] (./tabelas.aux)
 Package rerunfilecheck Info: File `tabelas.out' has not changed.
-(rerunfilecheck)             Checksum: 3B5629CD4F082792EA85F41400AD0FF9;793.
+(rerunfilecheck)             Checksum: 58C0AD49B91B84E9D442B47B5EF35C31;962.
 
 LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 15604 strings out of 481364
- 238688 string characters out of 5917579
- 610618 words of memory out of 5000000
- 32020 multiletter control sequences out of 15000+600000
+ 15613 strings out of 481364
+ 238784 string characters out of 5917579
+ 619793 words of memory out of 5000000
+ 32025 multiletter control sequences out of 15000+600000
  451706 words of font info for 94 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
  66i,11n,72p,512b,374s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -963,10 +960,10 @@ lic/lm/lmr10.pfb><c:/Users/eduar/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1
 /public/lm/lmr17.pfb><c:/Users/eduar/AppData/Roaming/TinyTeX/texmf-dist/fonts/t
 ype1/public/lm/lmtk10.pfb><c:/Users/eduar/AppData/Roaming/TinyTeX/texmf-dist/fo
 nts/type1/public/lm/lmtt10.pfb>
-Output written on tabelas.pdf (15 pages, 199802 bytes).
+Output written on tabelas.pdf (15 pages, 202636 bytes).
 PDF statistics:
- 197 PDF objects out of 1000 (max. 8388607)
- 172 compressed objects within 2 object streams
- 79 named destinations out of 1000 (max. 500000)
- 26673 words of extra memory for PDF output out of 29859 (max. 10000000)
+ 207 PDF objects out of 1000 (max. 8388607)
+ 182 compressed objects within 2 object streams
+ 83 named destinations out of 1000 (max. 500000)
+ 26689 words of extra memory for PDF output out of 29859 (max. 10000000)
 

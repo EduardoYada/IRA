@@ -7,6 +7,8 @@ output: pdf_document
 knitr::opts_chunk$set(dev = 'pdf')
 ```
 
+# Carregando bibliotecas
+
 ```{r echo=FALSE, warning=FALSE, results=FALSE, message=FALSE}
 library(tidyverse)
 library(broom)
@@ -16,7 +18,12 @@ library(gridExtra)
 library(yaml)
 library(caret)
 library(formula.tools)
+library(pROC)
+
+options(OutDec= ",")
 ```
+
+# Carregando os dados
 
 ```{r echo = F, results = F}
 constants = yaml.load_file("constants.yaml")
@@ -37,14 +44,12 @@ derived_columns = setdiff(daily_columns, original_columns)
 ```
 
 ```{r echo = F, results = F}
-df = readRDS('./data/processed_data_mean_v2.rds') %>%
+df = readRDS('./data/dados_processados.rds') %>%
     mutate_at(categorical_columns, list(~factor(.)))
 ```
 
 ```{r echo = FALSE}
 selected_columns_yaml = yaml.load_file("selected_columns.yaml")
-
-selected_camila_numerical_columns = selected_columns_yaml$selected_camila_columns
 
 selected_numerical_columns = selected_columns_yaml$selected_numerical_columns
 
@@ -57,10 +62,11 @@ target = "ira"
 
 ```{r echo = FALSE}
 if (drop_scr){
-  selected_camila_numerical_columns = setdiff(selected_camila_numerical_columns, 'scr')
   selected_numerical_columns = setdiff(selected_numerical_columns, 'scr')
 }
 ```
+
+# Funções auxiliares
 
 ```{r echo = FALSE}
 gilberto_diagnostics = function(fit.model){
@@ -148,10 +154,10 @@ envelope_simulado = function(model, tol = 1e-22){
     h <- diag(H)
     e[,i] <- sort(resid(fit, type = "deviance") / sqrt(1 - h))
   }
-  #
+  
   e1 <- numeric(n)
   e2 <- numeric(n)
-  #
+  
   for(i in 1:n){
     eo <- sort(e[i,])
     e1[i] <- (eo[2] + eo[3]) / 2
@@ -240,12 +246,12 @@ fit_multiple_models = function(df, numerical_features, categorical_features,
   intersection_model = fit_model(df, features_intersection, c(),
                                  target, include_interaction = include_interaction)
   
-  return(list("Full model" = full_model,
-              "Backwards" = backwards,
-              "Forwards" = forwards,
+  return(list("Modelo completo" = full_model,
+              "Backward" = backwards,
+              "Forward" = forwards,
               "Stepwise" = stepwise,
-              "Union model" = union_model,
-              "Intersection model" = intersection_model))
+              "Modelo união" = union_model,
+              "Modelo intersecção" = intersection_model))
   
 }
 
@@ -256,42 +262,51 @@ model_summary = function(df, model){
 
   model %>% 
     tidy() %>% 
-    niceFormatting(caption = "Model summary") %>%
+    rename(Termo = term,
+           Estimativa = estimate,
+           `Erro padrão` = std.error,
+           Estatística = statistic,
+           `p-valor` = p.value) %>%
+    niceFormatting(caption = "Resumo do modelo") %>%
     print
   
   model %>% 
     glance() %>% 
-    niceFormatting(caption = "Model details") %>%
+    select(AIC, deviance, df.residual, nobs) %>%
+    rename(`Graus de liberdade do resíduo` = df.residual,
+           `Número de observações` = nobs) %>%
+    niceFormatting(caption = "Detalhes do modelo") %>%
     print
   
   confint(model) %>% 
     exp %>%
-    as_tibble(rownames = 'variável') %>%
-    mutate(estimativa = exp(model$coefficients)) %>%
-    niceFormatting(caption = "Confidence intervals") %>%
+    as_tibble(rownames = 'Variável') %>%
+    mutate(Estimativa = exp(model$coefficients)) %>%
+    select(Variável, Estimativa, everything()) %>%
+    niceFormatting(caption = "Intervalo de confiança para a razão de chances") %>%
     print
   
   if (length(coef(model)) - 1 > 1){
     car::vif(model) %>%
-      niceFormatting(caption = "Variance Inflation Factor") %>%
+      as_tibble(rownames = 'Variável') %>%
+      # rename(Valor = value) %>%
+      niceFormatting(caption = "VIF") %>%
       print
   }
-  
-  library(pROC)
   
   df$prob = predict(model, type = "response")
   g = roc(ira ~ prob, data = df, auc=TRUE)
   confusion = coords(g, x = "best", best.method="youden",
-                     ret = c("threshold", "specificity", "sensitivity", "fpr"))
-  confusion %>% 
-    niceFormatting(caption = "Classifier metrics") %>%
-    print
+                     ret = c("threshold", 
+                             "sensitivity", "specificity", 
+                             "tp", "tn", "fn", "fp"))
   
   p = ggroc(g, legacy.axes = TRUE)+
     geom_point(aes(x = 1 - confusion$specificity, y=confusion$sensitivity),
                colour="blue", size=5) +
     geom_abline(slope = 1, intercept=0, linetype="longdash") + 
-    labs(subtitle = paste("AUC:", round(g$auc, 3)))
+    labs(subtitle = paste("AUC:", round(g$auc, 3)),
+         x = '1 - Especificidade', y = 'Sensibilidade')
   
   print(p)
 }
@@ -314,7 +329,8 @@ model_diagnostics = function(df, model, run_envelope = FALSE){
     geom_point(size = 0.5, alpha = 0.5) +
     geom_smooth(method = "loess") + 
     theme_bw() + 
-    facet_wrap(~ predictors, scales = "free_y", ncol = 2)
+    facet_wrap(~ predictors, scales = "free_y", ncol = 2) + 
+    labs(y = 'Valor do preditor', x = 'Logaritmo da razão de chances')
   
   model.data <- augment(model) %>% 
     mutate(index = 1:n()) 
@@ -324,6 +340,7 @@ model_diagnostics = function(df, model, run_envelope = FALSE){
     theme_bw()
   
   print(p1)
+  print(p2)
 }
 
 
@@ -344,11 +361,11 @@ model_selection = function(df, numerical_columns, categorical_columns,
                                       trace = trace)
   
   for (model in names(fitted_models)){
-    cat("### ", model, "\n")
+    cat("## ", model, "\n")
   
     model_summary(df, fitted_models[[model]])
     
-    if (!model %in% c('Full model', 'Union model')) {
+    if (!model %in% c('Modelo completo', 'Modelo união')) {
       model_diagnostics(df, fitted_models[[model]], run_envelope = TRUE)
     } else {
     model_diagnostics(df, fitted_models[[model]])
@@ -396,10 +413,9 @@ loocv = function(df, formula){
                   ret = c("threshold", "specificity", "sensitivity"))
   
   confusion = coords(g,
-                     ret = c("threshold",
-                             "specificity",
-                             "sensitivity",
-                             "fpr"))
+                     ret = c("threshold", 
+                             "sensitivity", "specificity", 
+                             "tp", "tn", "fn", "fp"))
   
   youden_index = confusion %>% 
     mutate(index = row_number()) %>%
@@ -407,8 +423,18 @@ loocv = function(df, formula){
     .$index
   
   confusion %>% 
-    niceFormatting(caption = sprintf("Youden threshold = %.3f", youden$threshold)) %>%
+    rename(`Ponto de corte` = threshold,
+           Especificidade = specificity,
+           Sensibilidade = sensitivity,
+           `Verdadeiro positivo` = tp,
+           `Verdadeiro negativo` = tn,
+           `Falso positivo` = fp,
+           `Falso negativo` = fn) %>%
+    niceFormatting(caption = sprintf("Youden LOOCV threshold = %.3f",
+                                     youden$threshold)) %>%
     row_spec(youden_index, bold = T, color = "#D7261E") %>%
+    kable_styling(font_size = 7) %>%
+    column_spec(1:7, width = "2cm") %>%
     print
   
   p = ggroc(g, legacy.axes = TRUE)+
@@ -418,78 +444,62 @@ loocv = function(df, formula){
                alpha = 0.1,
                size=3) +
     geom_abline(slope = 1, intercept=0, linetype="longdash") + 
-    labs(subtitle = paste("AUC:", round(g$auc, 3)))
+    labs(subtitle = paste("AUC:", round(g$auc, 3)),
+         x = '1 - Especificidade', y = 'Sensibilidade')
   
   print(p)
 }
 
 ```
 
-# With pacient 34
+# Ajustes com o paciente 34
 
-
-```{r results='asis', echo=F, message=F, warning=FALSE, fig.height=4, fig.width=7}
-cat(paste("## Camila Variables \n"))
-
-camila_models = model_selection(df,
-                                selected_camila_numerical_columns,
-                                selected_categorical_columns,
-                                target, 
-                                include_interaction = TRUE)
-```
-
-
-```{r results='asis', echo=F, message=F, warning=FALSE, fig.height=4, fig.width=7}
-cat(paste("## Selected Variables \n"))
-
+```{r results='asis', echo=T, message=F, warning=FALSE, fig.height=4, fig.width=7}
 selected_models = model_selection(df,
                                   selected_numerical_columns,
                                   selected_categorical_columns,
                                   target, 
-                                  include_interaction = FALSE)
+                                  include_interaction = T)
 ```
+# Removendo paciente 34
 
-
-```{r echo = FALSE, warning= FALSE}
+```{r echo = T, warning= FALSE}
 df_35 = df %>%
+  select(numero, d_ira, sofa, scr_basal, una, su, scr) %>%
   mutate(row_number = row_number()) %>%
   filter(row_number == 35)
 
 transpose_df(df_35) %>%
-  niceFormatting(caption = "Paciente 35")
+  niceFormatting(caption = "Paciente 34")
 ```
 
-# Without pacient 34
-
-```{r echo=FALSE}
+```{r echo=T}
 df = df %>%
   mutate(row_number = row_number()) %>%
   filter(row_number != 35)
 ```
 
-
-```{r results='asis', echo=F, message=F, warning=FALSE, fig.height=4, fig.width=7}
-cat(paste("## Camila Variables \n"))
-
-camila_models = model_selection(df,
-                                selected_camila_numerical_columns,
-                                selected_categorical_columns,
-                                target, 
-                                include_interaction = TRUE)
-```
+# Ajustes sem o paciente 34
 
 
-```{r results='asis', echo=F, message=F, warning=FALSE, fig.height=4, fig.width=7}
-cat(paste("## Selected Variables \n"))
-
+```{r results='asis', echo=T, message=F, warning=FALSE, fig.height=4, fig.width=7}
 selected_models = model_selection(df,
                                   selected_numerical_columns,
                                   selected_categorical_columns,
                                   target, 
-                                  include_interaction = FALSE)
+                                  include_interaction = T)
 ```
 
-# LOOCV
+# Ajustes sem interação
+
+```{r results='asis', echo=T, message=F, warning=FALSE, fig.height=4, fig.width=7}
+selected_models = model_selection(df,
+                                  selected_numerical_columns,
+                                  selected_categorical_columns,
+                                  target, 
+                                  include_interaction = F)
+```
+# LOOCV (Leave one out cross validation)
 
 ```{r echo=FALSE, message=FALSE, warning=FALSE, results='asis'}
 loocv(df, ira ~ sofa + una + scr_basal)

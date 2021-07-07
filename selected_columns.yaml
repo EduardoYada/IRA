@@ -12,13 +12,6 @@ selected_numerical_columns:
 - score_clinico
 - dva_mcg_kg_min
 - uk
-selected_camila_columns:
-- sofa
-- su
-- scr
-- fek
-- una
-- delta_scr
 selected_categorical_columns:
 - causa_ira
 - ventilacao_mecanica

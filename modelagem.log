@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020/W32TeX) (preloaded format=pdflatex 2020.12.11)  26 JUN 2021 21:29
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020/W32TeX) (preloaded format=pdflatex 2020.12.11)  6 JUL 2021 00:04
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -386,6 +386,24 @@ Package: ifvtex 2019/10/25 v1.7 ifvtex legacy package. Use iftex instead.
 \Gm@layoutvoffset=\dimen160
 \Gm@dimlist=\toks25
 )
+(c:/Users/eduar/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/fancyvrb/fancyvrb.
+sty
+Package: fancyvrb 2020/05/03 v3.6 verbatim text (tvz,hv)
+\FV@CodeLineNo=\count279
+\FV@InFile=\read2
+\FV@TabBox=\box49
+\c@FancyVerbLine=\count280
+\FV@StepNumber=\count281
+\FV@OutFile=\write3
+) (c:/Users/eduar/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/framed/framed.st
+y
+Package: framed 2011/10/22 v 0.96: framed or shaded text with page breaks
+\OuterFrameSep=\skip54
+\fb@frw=\dimen161
+\fb@frh=\dimen162
+\FrameRule=\dimen163
+\FrameSep=\dimen164
+)
 (c:/Users/eduar/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/graphics/graphicx.
 sty
 Package: graphicx 2020/09/09 v1.2b Enhanced LaTeX Graphics (DPC,SPQR)
@@ -402,8 +420,8 @@ File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
 )
 Package graphics Info: Driver file: pdftex.def on input line 105.
 )
-\Gin@req@height=\dimen161
-\Gin@req@width=\dimen162
+\Gin@req@height=\dimen165
+\Gin@req@width=\dimen166
 )
 (c:/Users/eduar/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/grffile/grffile.st
 y
@@ -415,81 +433,81 @@ line 40.
 (c:/Users/eduar/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/booktabs/booktabs.
 sty
 Package: booktabs 2020/01/12 v1.61803398 Publication quality tables
-\heavyrulewidth=\dimen163
-\lightrulewidth=\dimen164
-\cmidrulewidth=\dimen165
-\belowrulesep=\dimen166
-\belowbottomsep=\dimen167
-\aboverulesep=\dimen168
-\abovetopsep=\dimen169
-\cmidrulesep=\dimen170
-\cmidrulekern=\dimen171
-\defaultaddspace=\dimen172
-\@cmidla=\count279
-\@cmidlb=\count280
-\@aboverulesep=\dimen173
-\@belowrulesep=\dimen174
-\@thisruleclass=\count281
-\@lastruleclass=\count282
-\@thisrulewidth=\dimen175
+\heavyrulewidth=\dimen167
+\lightrulewidth=\dimen168
+\cmidrulewidth=\dimen169
+\belowrulesep=\dimen170
+\belowbottomsep=\dimen171
+\aboverulesep=\dimen172
+\abovetopsep=\dimen173
+\cmidrulesep=\dimen174
+\cmidrulekern=\dimen175
+\defaultaddspace=\dimen176
+\@cmidla=\count282
+\@cmidlb=\count283
+\@aboverulesep=\dimen177
+\@belowrulesep=\dimen178
+\@thisruleclass=\count284
+\@lastruleclass=\count285
+\@thisrulewidth=\dimen179
 )
 (c:/Users/eduar/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/tools/longtable.st
 y
 Package: longtable 2020/01/07 v4.13 Multi-page Table package (DPC)
-\LTleft=\skip54
-\LTright=\skip55
-\LTpre=\skip56
-\LTpost=\skip57
-\LTchunksize=\count283
-\LTcapwidth=\dimen176
-\LT@head=\box49
-\LT@firsthead=\box50
-\LT@foot=\box51
-\LT@lastfoot=\box52
-\LT@cols=\count284
-\LT@rows=\count285
-\c@LT@tables=\count286
-\c@LT@chunks=\count287
+\LTleft=\skip55
+\LTright=\skip56
+\LTpre=\skip57
+\LTpost=\skip58
+\LTchunksize=\count286
+\LTcapwidth=\dimen180
+\LT@head=\box50
+\LT@firsthead=\box51
+\LT@foot=\box52
+\LT@lastfoot=\box53
+\LT@cols=\count287
+\LT@rows=\count288
+\c@LT@tables=\count289
+\c@LT@chunks=\count290
 \LT@p@ftn=\toks26
 ) (c:/Users/eduar/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/tools/array.sty
 Package: array 2020/10/01 v2.5c Tabular extension package (FMi)
-\col@sep=\dimen177
-\ar@mcellbox=\box53
-\extrarowheight=\dimen178
+\col@sep=\dimen181
+\ar@mcellbox=\box54
+\extrarowheight=\dimen182
 \NC@list=\toks27
-\extratabsurround=\skip58
-\backup@length=\skip59
-\ar@cellbox=\box54
+\extratabsurround=\skip59
+\backup@length=\skip60
+\ar@cellbox=\box55
 )
 (c:/Users/eduar/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/multirow/multirow.
 sty
 Package: multirow 2019/05/31 v2.5 Span multiple rows of a table
-\multirow@colwidth=\skip60
-\multirow@cntb=\count288
-\multirow@dima=\skip61
-\bigstrutjot=\dimen179
+\multirow@colwidth=\skip61
+\multirow@cntb=\count291
+\multirow@dima=\skip62
+\bigstrutjot=\dimen183
 )
 (c:/Users/eduar/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/wrapfig/wrapfig.st
 y
-\wrapoverhang=\dimen180
-\WF@size=\dimen181
-\c@WF@wrappedlines=\count289
-\WF@box=\box55
+\wrapoverhang=\dimen184
+\WF@size=\dimen185
+\c@WF@wrappedlines=\count292
+\WF@box=\box56
 \WF@everypar=\toks28
 Package: wrapfig 2003/01/31  v 3.6
 ) (c:/Users/eduar/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/float/float.sty
 Package: float 2001/11/08 v1.3d Float enhancements (AL)
-\c@float@type=\count290
+\c@float@type=\count293
 \float@exts=\toks29
-\float@box=\box56
+\float@box=\box57
 \@float@everytoks=\toks30
-\@floatcapt=\box57
+\@floatcapt=\box58
 )
 (c:/Users/eduar/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/colortbl/colortbl.
 sty
 Package: colortbl 2020/01/04 v1.0e Color table columns (DPC)
 \everycr=\toks31
-\minrowclearance=\skip62
+\minrowclearance=\skip63
 )
 (c:/Users/eduar/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/pdflscape/pdflscap
 e.sty
@@ -506,38 +524,38 @@ Package: tabu 2019/01/11 v2.9 - flexible LaTeX tabulars (FC+tabu-fixed)
 (c:/Users/eduar/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/varwidth/varwidth.
 sty
 Package: varwidth 2009/03/30 ver 0.92;  Variable-width minipages
-\@vwid@box=\box58
-\sift@deathcycles=\count291
-\@vwid@loff=\dimen182
-\@vwid@roff=\dimen183
+\@vwid@box=\box59
+\sift@deathcycles=\count294
+\@vwid@loff=\dimen186
+\@vwid@roff=\dimen187
 )
-\c@taburow=\count292
-\tabu@nbcols=\count293
-\tabu@cnt=\count294
-\tabu@Xcol=\count295
-\tabu@alloc=\count296
-\tabu@nested=\count297
-\tabu@target=\dimen184
-\tabu@spreadtarget=\dimen185
-\tabu@naturalX=\dimen186
-\tabucolX=\dimen187
-\tabu@Xsum=\dimen188
-\extrarowdepth=\dimen189
-\abovetabulinesep=\dimen190
-\belowtabulinesep=\dimen191
-\tabustrutrule=\dimen192
+\c@taburow=\count295
+\tabu@nbcols=\count296
+\tabu@cnt=\count297
+\tabu@Xcol=\count298
+\tabu@alloc=\count299
+\tabu@nested=\count300
+\tabu@target=\dimen188
+\tabu@spreadtarget=\dimen189
+\tabu@naturalX=\dimen190
+\tabucolX=\dimen191
+\tabu@Xsum=\dimen192
+\extrarowdepth=\dimen193
+\abovetabulinesep=\dimen194
+\belowtabulinesep=\dimen195
+\tabustrutrule=\dimen196
 \tabu@thebody=\toks32
 \tabu@footnotes=\toks33
-\tabu@box=\box59
-\tabu@arstrutbox=\box60
-\tabu@hleads=\box61
-\tabu@vleads=\box62
-\tabu@cellskip=\skip63
+\tabu@box=\box60
+\tabu@arstrutbox=\box61
+\tabu@hleads=\box62
+\tabu@vleads=\box63
+\tabu@cellskip=\skip64
 )
 (c:/Users/eduar/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/threeparttable/thr
 eeparttable.sty
 Package: threeparttable 2003/06/13  v 3.0
-\@tempboxb=\box63
+\@tempboxb=\box64
 )
 (c:/Users/eduar/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/threeparttablex/th
 reeparttablex.sty
@@ -551,31 +569,31 @@ Package: environ 2014/05/04 v0.3 A new way to define environments
 ces.sty
 Package: trimspaces 2009/09/17 v1.1 Trim spaces around a token list
 ))
-\TPTL@width=\skip64
+\TPTL@width=\skip65
 ) (c:/Users/eduar/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/ulem/ulem.sty
-\UL@box=\box64
-\UL@hyphenbox=\box65
-\UL@skip=\skip65
+\UL@box=\box65
+\UL@hyphenbox=\box66
+\UL@skip=\skip66
 \UL@hook=\toks34
-\UL@height=\dimen193
-\UL@pe=\count298
-\UL@pixel=\dimen194
-\ULC@box=\box66
+\UL@height=\dimen197
+\UL@pe=\count301
+\UL@pixel=\dimen198
+\ULC@box=\box67
 Package: ulem 2019/11/18
-\ULdepth=\dimen195
+\ULdepth=\dimen199
 )
 (c:/Users/eduar/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/makecell/makecell.
 sty
 Package: makecell 2009/08/03 V0.1e Managing of Tab Column Heads and Cells
-\rotheadsize=\dimen196
-\c@nlinenum=\count299
+\rotheadsize=\dimen256
+\c@nlinenum=\count302
 \TeXr@lab=\toks35
 )
 (c:/Users/eduar/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/l3backend/l3backen
 d-pdftex.def
 File: l3backend-pdftex.def 2020-09-24 L3 backend support: PDF output (pdfTeX)
-\l__kernel_color_stack_int=\count300
-\l__pdf_internal_box=\box67
+\l__kernel_color_stack_int=\count303
+\l__pdf_internal_box=\box68
 ) (./modelagem.aux
 
 LaTeX Warning: Label `tab:unnamed-chunk-8' multiply defined.
@@ -647,106 +665,73 @@ LaTeX Warning: Label `tab:unnamed-chunk-8' multiply defined.
 LaTeX Warning: Label `tab:unnamed-chunk-8' multiply defined.
 
 
-LaTeX Warning: Label `tab:unnamed-chunk-8' multiply defined.
+LaTeX Warning: Label `tab:unnamed-chunk-11' multiply defined.
 
 
-LaTeX Warning: Label `tab:unnamed-chunk-8' multiply defined.
+LaTeX Warning: Label `tab:unnamed-chunk-11' multiply defined.
 
 
-LaTeX Warning: Label `tab:unnamed-chunk-8' multiply defined.
+LaTeX Warning: Label `tab:unnamed-chunk-11' multiply defined.
 
 
-LaTeX Warning: Label `tab:unnamed-chunk-8' multiply defined.
+LaTeX Warning: Label `tab:unnamed-chunk-11' multiply defined.
 
 
-LaTeX Warning: Label `tab:unnamed-chunk-8' multiply defined.
+LaTeX Warning: Label `tab:unnamed-chunk-11' multiply defined.
 
 
-LaTeX Warning: Label `tab:unnamed-chunk-9' multiply defined.
+LaTeX Warning: Label `tab:unnamed-chunk-11' multiply defined.
 
 
-LaTeX Warning: Label `tab:unnamed-chunk-9' multiply defined.
+LaTeX Warning: Label `tab:unnamed-chunk-11' multiply defined.
 
 
-LaTeX Warning: Label `tab:unnamed-chunk-9' multiply defined.
+LaTeX Warning: Label `tab:unnamed-chunk-11' multiply defined.
 
 
-LaTeX Warning: Label `tab:unnamed-chunk-9' multiply defined.
+LaTeX Warning: Label `tab:unnamed-chunk-11' multiply defined.
 
 
-LaTeX Warning: Label `tab:unnamed-chunk-9' multiply defined.
+LaTeX Warning: Label `tab:unnamed-chunk-11' multiply defined.
 
 
-LaTeX Warning: Label `tab:unnamed-chunk-9' multiply defined.
+LaTeX Warning: Label `tab:unnamed-chunk-11' multiply defined.
 
 
-LaTeX Warning: Label `tab:unnamed-chunk-9' multiply defined.
+LaTeX Warning: Label `tab:unnamed-chunk-11' multiply defined.
 
 
-LaTeX Warning: Label `tab:unnamed-chunk-9' multiply defined.
+LaTeX Warning: Label `tab:unnamed-chunk-11' multiply defined.
 
 
-LaTeX Warning: Label `tab:unnamed-chunk-9' multiply defined.
+LaTeX Warning: Label `tab:unnamed-chunk-11' multiply defined.
 
 
-LaTeX Warning: Label `tab:unnamed-chunk-9' multiply defined.
+LaTeX Warning: Label `tab:unnamed-chunk-11' multiply defined.
 
 
-LaTeX Warning: Label `tab:unnamed-chunk-9' multiply defined.
+LaTeX Warning: Label `tab:unnamed-chunk-11' multiply defined.
 
 
-LaTeX Warning: Label `tab:unnamed-chunk-9' multiply defined.
+LaTeX Warning: Label `tab:unnamed-chunk-11' multiply defined.
 
 
-LaTeX Warning: Label `tab:unnamed-chunk-9' multiply defined.
+LaTeX Warning: Label `tab:unnamed-chunk-11' multiply defined.
 
 
-LaTeX Warning: Label `tab:unnamed-chunk-9' multiply defined.
+LaTeX Warning: Label `tab:unnamed-chunk-11' multiply defined.
 
 
-LaTeX Warning: Label `tab:unnamed-chunk-9' multiply defined.
+LaTeX Warning: Label `tab:unnamed-chunk-11' multiply defined.
 
 
-LaTeX Warning: Label `tab:unnamed-chunk-9' multiply defined.
+LaTeX Warning: Label `tab:unnamed-chunk-11' multiply defined.
 
 
-LaTeX Warning: Label `tab:unnamed-chunk-9' multiply defined.
+LaTeX Warning: Label `tab:unnamed-chunk-11' multiply defined.
 
 
-LaTeX Warning: Label `tab:unnamed-chunk-9' multiply defined.
-
-
-LaTeX Warning: Label `tab:unnamed-chunk-9' multiply defined.
-
-
-LaTeX Warning: Label `tab:unnamed-chunk-9' multiply defined.
-
-
-LaTeX Warning: Label `tab:unnamed-chunk-9' multiply defined.
-
-
-LaTeX Warning: Label `tab:unnamed-chunk-9' multiply defined.
-
-
-LaTeX Warning: Label `tab:unnamed-chunk-9' multiply defined.
-
-
-LaTeX Warning: Label `tab:unnamed-chunk-9' multiply defined.
-
-
-LaTeX Warning: Label `tab:unnamed-chunk-9' multiply defined.
-
-
-LaTeX Warning: Label `tab:unnamed-chunk-9' multiply defined.
-
-
-LaTeX Warning: Label `tab:unnamed-chunk-9' multiply defined.
-
-
-LaTeX Warning: Label `tab:unnamed-chunk-9' multiply defined.
-
-
-LaTeX Warning: Label `tab:unnamed-chunk-9' multiply defined.
+LaTeX Warning: Label `tab:unnamed-chunk-11' multiply defined.
 
 
 LaTeX Warning: Label `tab:unnamed-chunk-12' multiply defined.
@@ -816,141 +801,36 @@ LaTeX Warning: Label `tab:unnamed-chunk-12' multiply defined.
 
 
 LaTeX Warning: Label `tab:unnamed-chunk-12' multiply defined.
-
-
-LaTeX Warning: Label `tab:unnamed-chunk-12' multiply defined.
-
-
-LaTeX Warning: Label `tab:unnamed-chunk-12' multiply defined.
-
-
-LaTeX Warning: Label `tab:unnamed-chunk-12' multiply defined.
-
-
-LaTeX Warning: Label `tab:unnamed-chunk-12' multiply defined.
-
-
-LaTeX Warning: Label `tab:unnamed-chunk-12' multiply defined.
-
-
-LaTeX Warning: Label `tab:unnamed-chunk-12' multiply defined.
-
-
-LaTeX Warning: Label `tab:unnamed-chunk-13' multiply defined.
-
-
-LaTeX Warning: Label `tab:unnamed-chunk-13' multiply defined.
-
-
-LaTeX Warning: Label `tab:unnamed-chunk-13' multiply defined.
-
-
-LaTeX Warning: Label `tab:unnamed-chunk-13' multiply defined.
-
-
-LaTeX Warning: Label `tab:unnamed-chunk-13' multiply defined.
-
-
-LaTeX Warning: Label `tab:unnamed-chunk-13' multiply defined.
-
-
-LaTeX Warning: Label `tab:unnamed-chunk-13' multiply defined.
-
-
-LaTeX Warning: Label `tab:unnamed-chunk-13' multiply defined.
-
-
-LaTeX Warning: Label `tab:unnamed-chunk-13' multiply defined.
-
-
-LaTeX Warning: Label `tab:unnamed-chunk-13' multiply defined.
-
-
-LaTeX Warning: Label `tab:unnamed-chunk-13' multiply defined.
-
-
-LaTeX Warning: Label `tab:unnamed-chunk-13' multiply defined.
-
-
-LaTeX Warning: Label `tab:unnamed-chunk-13' multiply defined.
-
-
-LaTeX Warning: Label `tab:unnamed-chunk-13' multiply defined.
-
-
-LaTeX Warning: Label `tab:unnamed-chunk-13' multiply defined.
-
-
-LaTeX Warning: Label `tab:unnamed-chunk-13' multiply defined.
-
-
-LaTeX Warning: Label `tab:unnamed-chunk-13' multiply defined.
-
-
-LaTeX Warning: Label `tab:unnamed-chunk-13' multiply defined.
-
-
-LaTeX Warning: Label `tab:unnamed-chunk-13' multiply defined.
-
-
-LaTeX Warning: Label `tab:unnamed-chunk-13' multiply defined.
-
-
-LaTeX Warning: Label `tab:unnamed-chunk-13' multiply defined.
-
-
-LaTeX Warning: Label `tab:unnamed-chunk-13' multiply defined.
-
-
-LaTeX Warning: Label `tab:unnamed-chunk-13' multiply defined.
-
-
-LaTeX Warning: Label `tab:unnamed-chunk-13' multiply defined.
-
-
-LaTeX Warning: Label `tab:unnamed-chunk-13' multiply defined.
-
-
-LaTeX Warning: Label `tab:unnamed-chunk-13' multiply defined.
-
-
-LaTeX Warning: Label `tab:unnamed-chunk-13' multiply defined.
-
-
-LaTeX Warning: Label `tab:unnamed-chunk-13' multiply defined.
-
-
-LaTeX Warning: Label `tab:unnamed-chunk-13' multiply defined.
 
 )
 \openout1 = `modelagem.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 80.
-LaTeX Font Info:    ... okay on input line 80.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 80.
-LaTeX Font Info:    ... okay on input line 80.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 80.
-LaTeX Font Info:    ... okay on input line 80.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 80.
-LaTeX Font Info:    ... okay on input line 80.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 80.
-LaTeX Font Info:    ... okay on input line 80.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 80.
-LaTeX Font Info:    ... okay on input line 80.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 80.
-LaTeX Font Info:    ... okay on input line 80.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 80.
-LaTeX Font Info:    ... okay on input line 80.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 80.
-LaTeX Font Info:    ... okay on input line 80.
-LaTeX Info: Redefining \microtypecontext on input line 80.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 120.
+LaTeX Font Info:    ... okay on input line 120.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 120.
+LaTeX Font Info:    ... okay on input line 120.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 120.
+LaTeX Font Info:    ... okay on input line 120.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 120.
+LaTeX Font Info:    ... okay on input line 120.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 120.
+LaTeX Font Info:    ... okay on input line 120.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 120.
+LaTeX Font Info:    ... okay on input line 120.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 120.
+LaTeX Font Info:    ... okay on input line 120.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 120.
+LaTeX Font Info:    ... okay on input line 120.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 120.
+LaTeX Font Info:    ... okay on input line 120.
+LaTeX Info: Redefining \microtypecontext on input line 120.
 Package microtype Info: Generating PDF output.
 Package microtype Info: Character protrusion enabled (level 2).
 Package microtype Info: Using protrusion set `basicmath'.
 Package microtype Info: Automatic font expansion enabled (level 2),
 (microtype)             stretch: 20, shrink: 20, step: 1, non-selected.
 Package microtype Info: Using default expansion set `alltext-nott'.
-LaTeX Info: Redefining \showhyphens on input line 80.
+LaTeX Info: Redefining \showhyphens on input line 120.
 Package microtype Info: No adjustment of tracking.
 Package microtype Info: No adjustment of interword spacing.
 Package microtype Info: No adjustment of character kerning.
@@ -971,7 +851,7 @@ df-sys.cfg
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
-Package hyperref Info: Link coloring OFF on input line 80.
+Package hyperref Info: Link coloring OFF on input line 120.
 
 (c:/Users/eduar/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/hyperref/nameref.s
 ty
@@ -985,14 +865,14 @@ Package: refcount 2019/12/15 v3.6 Data extraction from label references (HO)
 ettitlestring.sty
 Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 )
-\c@section@level=\count301
+\c@section@level=\count304
 )
-LaTeX Info: Redefining \ref on input line 80.
-LaTeX Info: Redefining \pageref on input line 80.
-LaTeX Info: Redefining \nameref on input line 80.
+LaTeX Info: Redefining \ref on input line 120.
+LaTeX Info: Redefining \pageref on input line 120.
+LaTeX Info: Redefining \nameref on input line 120.
 (./modelagem.out) (./modelagem.out)
-\@outlinefile=\write3
-\openout3 = `modelagem.out'.
+\@outlinefile=\write4
+\openout4 = `modelagem.out'.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -1028,34 +908,34 @@ LaTeX Info: Redefining \nameref on input line 80.
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-LaTeX Font Info:    Trying to load font information for OT1+lmr on input line 8
-2.
+LaTeX Font Info:    Trying to load font information for OT1+lmr on input line 1
+22.
 (c:/Users/eduar/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/lm/ot1lmr.fd
 File: ot1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
-LaTeX Font Info:    Trying to load font information for OML+lmm on input line 8
-2.
+LaTeX Font Info:    Trying to load font information for OML+lmm on input line 1
+22.
 (c:/Users/eduar/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/lm/omllmm.fd
 File: omllmm.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 LaTeX Font Info:    Trying to load font information for OMS+lmsy on input line 
-82.
+122.
 (c:/Users/eduar/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/lm/omslmsy.fd
 File: omslmsy.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 LaTeX Font Info:    Trying to load font information for OMX+lmex on input line 
-82.
+122.
 (c:/Users/eduar/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/lm/omxlmex.fd
 File: omxlmex.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <12> on input line 82.
+(Font)              <12> on input line 122.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <8> on input line 82.
+(Font)              <8> on input line 122.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <6> on input line 82.
-LaTeX Font Info:    Trying to load font information for U+msa on input line 82.
-
+(Font)              <6> on input line 122.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 122
+.
 (c:/Users/eduar/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
@@ -1063,1496 +943,1452 @@ File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 fg
 File: mt-msa.cfg 2006/02/04 v1.1 microtype config. file: AMS symbols (a) (RS)
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 82.
-
+LaTeX Font Info:    Trying to load font information for U+msb on input line 122
+.
 (c:/Users/eduar/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
 (c:/Users/eduar/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/microtype/mt-msb.c
 fg
 File: mt-msb.cfg 2005/06/01 v1.0 microtype config. file: AMS symbols (b) (RS)
-) [1
+)
+LaTeX Font Info:    Trying to load font information for T1+lmtt on input line 1
+36.
+(c:/Users/eduar/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/lm/t1lmtt.fd
+File: t1lmtt.fd 2009/10/30 v1.6 Font defs for Latin Modern
+)
+LaTeX Font Info:    Font shape `T1/lmtt/bx/n' in size <10> not available
+(Font)              Font shape `T1/lmtt/b/n' tried instead on input line 137.
+[1
 
 {c:/Users/eduar/AppData/Roaming/TinyTeX/texmf-var/fonts/map/pdftex/updmap/pdfte
-x.map}]
-<modelagem_files/figure-latex/unnamed-chunk-8-1.pdf, id=159, 505.89pt x 289.08p
+x.map}] [2]
+<modelagem_files/figure-latex/unnamed-chunk-8-1.pdf, id=147, 505.89pt x 289.08p
 t>
 File: modelagem_files/figure-latex/unnamed-chunk-8-1.pdf Graphic file (type pdf
 )
 <use modelagem_files/figure-latex/unnamed-chunk-8-1.pdf>
 Package pdftex.def Info: modelagem_files/figure-latex/unnamed-chunk-8-1.pdf  us
-ed on input line 232.
+ed on input line 319.
 (pdftex.def)             Requested size: 469.76265pt x 268.43579pt.
-<modelagem_files/figure-latex/unnamed-chunk-8-2.pdf, id=160, 505.89pt x 289.08p
+<modelagem_files/figure-latex/unnamed-chunk-8-2.pdf, id=148, 505.89pt x 289.08p
 t>
 File: modelagem_files/figure-latex/unnamed-chunk-8-2.pdf Graphic file (type pdf
 )
 <use modelagem_files/figure-latex/unnamed-chunk-8-2.pdf>
 Package pdftex.def Info: modelagem_files/figure-latex/unnamed-chunk-8-2.pdf  us
-ed on input line 233.
+ed on input line 320.
 (pdftex.def)             Requested size: 469.76265pt x 268.43579pt.
-<modelagem_files/figure-latex/unnamed-chunk-8-3.pdf, id=161, 505.89pt x 289.08p
+<modelagem_files/figure-latex/unnamed-chunk-8-3.pdf, id=149, 505.89pt x 289.08p
 t>
 File: modelagem_files/figure-latex/unnamed-chunk-8-3.pdf Graphic file (type pdf
 )
 <use modelagem_files/figure-latex/unnamed-chunk-8-3.pdf>
 Package pdftex.def Info: modelagem_files/figure-latex/unnamed-chunk-8-3.pdf  us
-ed on input line 234.
+ed on input line 321.
 (pdftex.def)             Requested size: 469.76265pt x 268.43579pt.
-<modelagem_files/figure-latex/unnamed-chunk-8-4.pdf, id=162, 505.89pt x 289.08p
+<modelagem_files/figure-latex/unnamed-chunk-8-4.pdf, id=150, 505.89pt x 289.08p
 t>
 File: modelagem_files/figure-latex/unnamed-chunk-8-4.pdf Graphic file (type pdf
 )
 <use modelagem_files/figure-latex/unnamed-chunk-8-4.pdf>
 Package pdftex.def Info: modelagem_files/figure-latex/unnamed-chunk-8-4.pdf  us
-ed on input line 235.
+ed on input line 322.
 (pdftex.def)             Requested size: 469.76265pt x 268.43579pt.
-<modelagem_files/figure-latex/unnamed-chunk-8-5.pdf, id=163, 505.89pt x 289.08p
+<modelagem_files/figure-latex/unnamed-chunk-8-5.pdf, id=151, 505.89pt x 289.08p
 t>
 File: modelagem_files/figure-latex/unnamed-chunk-8-5.pdf Graphic file (type pdf
 )
 <use modelagem_files/figure-latex/unnamed-chunk-8-5.pdf>
 Package pdftex.def Info: modelagem_files/figure-latex/unnamed-chunk-8-5.pdf  us
-ed on input line 236.
+ed on input line 323.
 (pdftex.def)             Requested size: 469.76265pt x 268.43579pt.
-<modelagem_files/figure-latex/unnamed-chunk-8-6.pdf, id=164, 505.89pt x 289.08p
+<modelagem_files/figure-latex/unnamed-chunk-8-6.pdf, id=152, 505.89pt x 289.08p
 t>
 File: modelagem_files/figure-latex/unnamed-chunk-8-6.pdf Graphic file (type pdf
 )
 <use modelagem_files/figure-latex/unnamed-chunk-8-6.pdf>
 Package pdftex.def Info: modelagem_files/figure-latex/unnamed-chunk-8-6.pdf  us
-ed on input line 237.
+ed on input line 324.
 (pdftex.def)             Requested size: 469.76265pt x 268.43579pt.
-[2] [3 <./modelagem_files/figure-latex/unnamed-chunk-8-1.pdf> <./modelagem_file
-s/figure-latex/unnamed-chunk-8-2.pdf>] [4 <./modelagem_files/figure-latex/unnam
-ed-chunk-8-3.pdf> <./modelagem_files/figure-latex/unnamed-chunk-8-4.pdf>] [5 <.
-/modelagem_files/figure-latex/unnamed-chunk-8-5.pdf> <./modelagem_files/figure-
-latex/unnamed-chunk-8-6.pdf>] [6]
-<modelagem_files/figure-latex/unnamed-chunk-8-7.pdf, id=230, 505.89pt x 289.08p
+<modelagem_files/figure-latex/unnamed-chunk-8-7.pdf, id=153, 505.89pt x 289.08p
 t>
 File: modelagem_files/figure-latex/unnamed-chunk-8-7.pdf Graphic file (type pdf
 )
 <use modelagem_files/figure-latex/unnamed-chunk-8-7.pdf>
 Package pdftex.def Info: modelagem_files/figure-latex/unnamed-chunk-8-7.pdf  us
-ed on input line 360.
+ed on input line 325.
 (pdftex.def)             Requested size: 469.76265pt x 268.43579pt.
-<modelagem_files/figure-latex/unnamed-chunk-8-8.pdf, id=231, 505.89pt x 289.08p
+[3] [4 <./modelagem_files/figure-latex/unnamed-chunk-8-1.pdf> <./modelagem_file
+s/figure-latex/unnamed-chunk-8-2.pdf>] [5 <./modelagem_files/figure-latex/unnam
+ed-chunk-8-3.pdf> <./modelagem_files/figure-latex/unnamed-chunk-8-4.pdf>] [6 <.
+/modelagem_files/figure-latex/unnamed-chunk-8-5.pdf> <./modelagem_files/figure-
+latex/unnamed-chunk-8-6.pdf>] [7 <./modelagem_files/figure-latex/unnamed-chunk-
+8-7.pdf>] [8]
+<modelagem_files/figure-latex/unnamed-chunk-8-8.pdf, id=229, 505.89pt x 289.08p
 t>
 File: modelagem_files/figure-latex/unnamed-chunk-8-8.pdf Graphic file (type pdf
 )
 <use modelagem_files/figure-latex/unnamed-chunk-8-8.pdf>
 Package pdftex.def Info: modelagem_files/figure-latex/unnamed-chunk-8-8.pdf  us
-ed on input line 361.
+ed on input line 467.
 (pdftex.def)             Requested size: 469.76265pt x 268.43579pt.
-<modelagem_files/figure-latex/unnamed-chunk-8-9.pdf, id=232, 505.89pt x 289.08p
+<modelagem_files/figure-latex/unnamed-chunk-8-9.pdf, id=230, 505.89pt x 289.08p
 t>
 File: modelagem_files/figure-latex/unnamed-chunk-8-9.pdf Graphic file (type pdf
 )
 <use modelagem_files/figure-latex/unnamed-chunk-8-9.pdf>
 Package pdftex.def Info: modelagem_files/figure-latex/unnamed-chunk-8-9.pdf  us
-ed on input line 362.
+ed on input line 468.
 (pdftex.def)             Requested size: 469.76265pt x 268.43579pt.
-<modelagem_files/figure-latex/unnamed-chunk-8-10.pdf, id=233, 505.89pt x 289.08
+<modelagem_files/figure-latex/unnamed-chunk-8-10.pdf, id=231, 505.89pt x 289.08
 pt>
 File: modelagem_files/figure-latex/unnamed-chunk-8-10.pdf Graphic file (type pd
 f)
 <use modelagem_files/figure-latex/unnamed-chunk-8-10.pdf>
 Package pdftex.def Info: modelagem_files/figure-latex/unnamed-chunk-8-10.pdf  u
-sed on input line 363.
+sed on input line 469.
 (pdftex.def)             Requested size: 469.76265pt x 268.43579pt.
-<modelagem_files/figure-latex/unnamed-chunk-8-11.pdf, id=234, 505.89pt x 289.08
+<modelagem_files/figure-latex/unnamed-chunk-8-11.pdf, id=232, 505.89pt x 289.08
 pt>
 File: modelagem_files/figure-latex/unnamed-chunk-8-11.pdf Graphic file (type pd
 f)
 <use modelagem_files/figure-latex/unnamed-chunk-8-11.pdf>
 Package pdftex.def Info: modelagem_files/figure-latex/unnamed-chunk-8-11.pdf  u
-sed on input line 364.
+sed on input line 470.
 (pdftex.def)             Requested size: 469.76265pt x 268.43579pt.
-<modelagem_files/figure-latex/unnamed-chunk-8-12.pdf, id=235, 505.89pt x 289.08
+<modelagem_files/figure-latex/unnamed-chunk-8-12.pdf, id=233, 505.89pt x 289.08
 pt>
 File: modelagem_files/figure-latex/unnamed-chunk-8-12.pdf Graphic file (type pd
 f)
 <use modelagem_files/figure-latex/unnamed-chunk-8-12.pdf>
 Package pdftex.def Info: modelagem_files/figure-latex/unnamed-chunk-8-12.pdf  u
-sed on input line 365.
+sed on input line 471.
 (pdftex.def)             Requested size: 469.76265pt x 268.43579pt.
-<modelagem_files/figure-latex/unnamed-chunk-8-13.pdf, id=236, 505.89pt x 289.08
+<modelagem_files/figure-latex/unnamed-chunk-8-13.pdf, id=234, 505.89pt x 289.08
 pt>
 File: modelagem_files/figure-latex/unnamed-chunk-8-13.pdf Graphic file (type pd
 f)
 <use modelagem_files/figure-latex/unnamed-chunk-8-13.pdf>
 Package pdftex.def Info: modelagem_files/figure-latex/unnamed-chunk-8-13.pdf  u
-sed on input line 366.
+sed on input line 472.
 (pdftex.def)             Requested size: 469.76265pt x 268.43579pt.
-[7 <./modelagem_files/figure-latex/unnamed-chunk-8-7.pdf> <./modelagem_files/fi
-gure-latex/unnamed-chunk-8-8.pdf>] [8 <./modelagem_files/figure-latex/unnamed-c
-hunk-8-9.pdf> <./modelagem_files/figure-latex/unnamed-chunk-8-10.pdf>] [9 <./mo
-delagem_files/figure-latex/unnamed-chunk-8-11.pdf> <./modelagem_files/figure-la
-tex/unnamed-chunk-8-12.pdf>] [10 <./modelagem_files/figure-latex/unnamed-chunk-
-8-13.pdf>]
-<modelagem_files/figure-latex/unnamed-chunk-8-14.pdf, id=294, 505.89pt x 289.08
+<modelagem_files/figure-latex/unnamed-chunk-8-14.pdf, id=235, 505.89pt x 289.08
 pt>
 File: modelagem_files/figure-latex/unnamed-chunk-8-14.pdf Graphic file (type pd
 f)
 <use modelagem_files/figure-latex/unnamed-chunk-8-14.pdf>
 Package pdftex.def Info: modelagem_files/figure-latex/unnamed-chunk-8-14.pdf  u
-sed on input line 468.
+sed on input line 473.
 (pdftex.def)             Requested size: 469.76265pt x 268.43579pt.
-<modelagem_files/figure-latex/unnamed-chunk-8-15.pdf, id=295, 505.89pt x 289.08
+<modelagem_files/figure-latex/unnamed-chunk-8-15.pdf, id=236, 505.89pt x 289.08
 pt>
 File: modelagem_files/figure-latex/unnamed-chunk-8-15.pdf Graphic file (type pd
 f)
 <use modelagem_files/figure-latex/unnamed-chunk-8-15.pdf>
 Package pdftex.def Info: modelagem_files/figure-latex/unnamed-chunk-8-15.pdf  u
-sed on input line 469.
+sed on input line 474.
 (pdftex.def)             Requested size: 469.76265pt x 268.43579pt.
-<modelagem_files/figure-latex/unnamed-chunk-8-16.pdf, id=296, 505.89pt x 289.08
+[9] [10 <./modelagem_files/figure-latex/unnamed-chunk-8-8.pdf> <./modelagem_fil
+es/figure-latex/unnamed-chunk-8-9.pdf>] [11 <./modelagem_files/figure-latex/unn
+amed-chunk-8-10.pdf> <./modelagem_files/figure-latex/unnamed-chunk-8-11.pdf>] [
+12 <./modelagem_files/figure-latex/unnamed-chunk-8-12.pdf> <./modelagem_files/f
+igure-latex/unnamed-chunk-8-13.pdf>] [13 <./modelagem_files/figure-latex/unname
+d-chunk-8-14.pdf> <./modelagem_files/figure-latex/unnamed-chunk-8-15.pdf>]
+<modelagem_files/figure-latex/unnamed-chunk-8-16.pdf, id=308, 505.89pt x 289.08
 pt>
 File: modelagem_files/figure-latex/unnamed-chunk-8-16.pdf Graphic file (type pd
 f)
 <use modelagem_files/figure-latex/unnamed-chunk-8-16.pdf>
 Package pdftex.def Info: modelagem_files/figure-latex/unnamed-chunk-8-16.pdf  u
-sed on input line 470.
+sed on input line 561.
 (pdftex.def)             Requested size: 469.76265pt x 268.43579pt.
-<modelagem_files/figure-latex/unnamed-chunk-8-17.pdf, id=297, 505.89pt x 289.08
+<modelagem_files/figure-latex/unnamed-chunk-8-17.pdf, id=309, 505.89pt x 289.08
 pt>
 File: modelagem_files/figure-latex/unnamed-chunk-8-17.pdf Graphic file (type pd
 f)
 <use modelagem_files/figure-latex/unnamed-chunk-8-17.pdf>
 Package pdftex.def Info: modelagem_files/figure-latex/unnamed-chunk-8-17.pdf  u
-sed on input line 471.
+sed on input line 562.
 (pdftex.def)             Requested size: 469.76265pt x 268.43579pt.
-<modelagem_files/figure-latex/unnamed-chunk-8-18.pdf, id=298, 505.89pt x 289.08
+<modelagem_files/figure-latex/unnamed-chunk-8-18.pdf, id=310, 505.89pt x 289.08
 pt>
 File: modelagem_files/figure-latex/unnamed-chunk-8-18.pdf Graphic file (type pd
 f)
 <use modelagem_files/figure-latex/unnamed-chunk-8-18.pdf>
 Package pdftex.def Info: modelagem_files/figure-latex/unnamed-chunk-8-18.pdf  u
-sed on input line 472.
+sed on input line 563.
 (pdftex.def)             Requested size: 469.76265pt x 268.43579pt.
-<modelagem_files/figure-latex/unnamed-chunk-8-19.pdf, id=299, 505.89pt x 289.08
+<modelagem_files/figure-latex/unnamed-chunk-8-19.pdf, id=311, 505.89pt x 289.08
 pt>
 File: modelagem_files/figure-latex/unnamed-chunk-8-19.pdf Graphic file (type pd
 f)
 <use modelagem_files/figure-latex/unnamed-chunk-8-19.pdf>
 Package pdftex.def Info: modelagem_files/figure-latex/unnamed-chunk-8-19.pdf  u
-sed on input line 473.
+sed on input line 564.
 (pdftex.def)             Requested size: 469.76265pt x 268.43579pt.
-<modelagem_files/figure-latex/unnamed-chunk-8-20.pdf, id=300, 505.89pt x 289.08
+<modelagem_files/figure-latex/unnamed-chunk-8-20.pdf, id=312, 505.89pt x 289.08
 pt>
 File: modelagem_files/figure-latex/unnamed-chunk-8-20.pdf Graphic file (type pd
 f)
 <use modelagem_files/figure-latex/unnamed-chunk-8-20.pdf>
 Package pdftex.def Info: modelagem_files/figure-latex/unnamed-chunk-8-20.pdf  u
-sed on input line 474.
+sed on input line 565.
 (pdftex.def)             Requested size: 469.76265pt x 268.43579pt.
-[11] [12 <./modelagem_files/figure-latex/unnamed-chunk-8-14.pdf> <./modelagem_f
-iles/figure-latex/unnamed-chunk-8-15.pdf>] [13 <./modelagem_files/figure-latex/
-unnamed-chunk-8-16.pdf> <./modelagem_files/figure-latex/unnamed-chunk-8-17.pdf>
-] [14 <./modelagem_files/figure-latex/unnamed-chunk-8-18.pdf> <./modelagem_file
-s/figure-latex/unnamed-chunk-8-19.pdf>] [15 <./modelagem_files/figure-latex/unn
-amed-chunk-8-20.pdf>]
-<modelagem_files/figure-latex/unnamed-chunk-8-21.pdf, id=369, 505.89pt x 289.08
+<modelagem_files/figure-latex/unnamed-chunk-8-21.pdf, id=313, 505.89pt x 289.08
 pt>
 File: modelagem_files/figure-latex/unnamed-chunk-8-21.pdf Graphic file (type pd
 f)
 <use modelagem_files/figure-latex/unnamed-chunk-8-21.pdf>
 Package pdftex.def Info: modelagem_files/figure-latex/unnamed-chunk-8-21.pdf  u
-sed on input line 576.
+sed on input line 566.
 (pdftex.def)             Requested size: 469.76265pt x 268.43579pt.
-<modelagem_files/figure-latex/unnamed-chunk-8-22.pdf, id=370, 505.89pt x 289.08
+<modelagem_files/figure-latex/unnamed-chunk-8-22.pdf, id=314, 505.89pt x 289.08
 pt>
 File: modelagem_files/figure-latex/unnamed-chunk-8-22.pdf Graphic file (type pd
 f)
 <use modelagem_files/figure-latex/unnamed-chunk-8-22.pdf>
 Package pdftex.def Info: modelagem_files/figure-latex/unnamed-chunk-8-22.pdf  u
-sed on input line 577.
+sed on input line 567.
 (pdftex.def)             Requested size: 469.76265pt x 268.43579pt.
-<modelagem_files/figure-latex/unnamed-chunk-8-23.pdf, id=371, 505.89pt x 289.08
+<modelagem_files/figure-latex/unnamed-chunk-8-23.pdf, id=315, 505.89pt x 289.08
 pt>
 File: modelagem_files/figure-latex/unnamed-chunk-8-23.pdf Graphic file (type pd
 f)
 <use modelagem_files/figure-latex/unnamed-chunk-8-23.pdf>
 Package pdftex.def Info: modelagem_files/figure-latex/unnamed-chunk-8-23.pdf  u
-sed on input line 578.
+sed on input line 568.
 (pdftex.def)             Requested size: 469.76265pt x 268.43579pt.
-<modelagem_files/figure-latex/unnamed-chunk-8-24.pdf, id=372, 505.89pt x 289.08
+[14] [15 <./modelagem_files/figure-latex/unnamed-chunk-8-16.pdf> <./modelagem_f
+iles/figure-latex/unnamed-chunk-8-17.pdf>] [16 <./modelagem_files/figure-latex/
+unnamed-chunk-8-18.pdf> <./modelagem_files/figure-latex/unnamed-chunk-8-19.pdf>
+] [17 <./modelagem_files/figure-latex/unnamed-chunk-8-20.pdf> <./modelagem_file
+s/figure-latex/unnamed-chunk-8-21.pdf>] [18 <./modelagem_files/figure-latex/unn
+amed-chunk-8-22.pdf> <./modelagem_files/figure-latex/unnamed-chunk-8-23.pdf>]
+<modelagem_files/figure-latex/unnamed-chunk-8-24.pdf, id=391, 505.89pt x 289.08
 pt>
 File: modelagem_files/figure-latex/unnamed-chunk-8-24.pdf Graphic file (type pd
 f)
 <use modelagem_files/figure-latex/unnamed-chunk-8-24.pdf>
 Package pdftex.def Info: modelagem_files/figure-latex/unnamed-chunk-8-24.pdf  u
-sed on input line 579.
+sed on input line 655.
 (pdftex.def)             Requested size: 469.76265pt x 268.43579pt.
-<modelagem_files/figure-latex/unnamed-chunk-8-25.pdf, id=373, 505.89pt x 289.08
+<modelagem_files/figure-latex/unnamed-chunk-8-25.pdf, id=392, 505.89pt x 289.08
 pt>
 File: modelagem_files/figure-latex/unnamed-chunk-8-25.pdf Graphic file (type pd
 f)
 <use modelagem_files/figure-latex/unnamed-chunk-8-25.pdf>
 Package pdftex.def Info: modelagem_files/figure-latex/unnamed-chunk-8-25.pdf  u
-sed on input line 580.
+sed on input line 656.
 (pdftex.def)             Requested size: 469.76265pt x 268.43579pt.
-<modelagem_files/figure-latex/unnamed-chunk-8-26.pdf, id=374, 505.89pt x 289.08
+<modelagem_files/figure-latex/unnamed-chunk-8-26.pdf, id=393, 505.89pt x 289.08
 pt>
 File: modelagem_files/figure-latex/unnamed-chunk-8-26.pdf Graphic file (type pd
 f)
 <use modelagem_files/figure-latex/unnamed-chunk-8-26.pdf>
 Package pdftex.def Info: modelagem_files/figure-latex/unnamed-chunk-8-26.pdf  u
-sed on input line 581.
+sed on input line 657.
 (pdftex.def)             Requested size: 469.76265pt x 268.43579pt.
-<modelagem_files/figure-latex/unnamed-chunk-8-27.pdf, id=375, 505.89pt x 289.08
+<modelagem_files/figure-latex/unnamed-chunk-8-27.pdf, id=394, 505.89pt x 289.08
 pt>
 File: modelagem_files/figure-latex/unnamed-chunk-8-27.pdf Graphic file (type pd
 f)
 <use modelagem_files/figure-latex/unnamed-chunk-8-27.pdf>
 Package pdftex.def Info: modelagem_files/figure-latex/unnamed-chunk-8-27.pdf  u
-sed on input line 582.
+sed on input line 658.
 (pdftex.def)             Requested size: 469.76265pt x 268.43579pt.
-[16] [17 <./modelagem_files/figure-latex/unnamed-chunk-8-21.pdf> <./modelagem_f
-iles/figure-latex/unnamed-chunk-8-22.pdf>] [18 <./modelagem_files/figure-latex/
-unnamed-chunk-8-23.pdf> <./modelagem_files/figure-latex/unnamed-chunk-8-24.pdf>
-] [19 <./modelagem_files/figure-latex/unnamed-chunk-8-25.pdf> <./modelagem_file
-s/figure-latex/unnamed-chunk-8-26.pdf>] [20 <./modelagem_files/figure-latex/unn
-amed-chunk-8-27.pdf>] [21]
-<modelagem_files/figure-latex/unnamed-chunk-8-28.pdf, id=453, 505.89pt x 289.08
+<modelagem_files/figure-latex/unnamed-chunk-8-28.pdf, id=395, 505.89pt x 289.08
 pt>
 File: modelagem_files/figure-latex/unnamed-chunk-8-28.pdf Graphic file (type pd
 f)
 <use modelagem_files/figure-latex/unnamed-chunk-8-28.pdf>
 Package pdftex.def Info: modelagem_files/figure-latex/unnamed-chunk-8-28.pdf  u
-sed on input line 715.
+sed on input line 659.
 (pdftex.def)             Requested size: 469.76265pt x 268.43579pt.
-<modelagem_files/figure-latex/unnamed-chunk-8-29.pdf, id=454, 505.89pt x 289.08
+<modelagem_files/figure-latex/unnamed-chunk-8-29.pdf, id=396, 505.89pt x 289.08
 pt>
 File: modelagem_files/figure-latex/unnamed-chunk-8-29.pdf Graphic file (type pd
 f)
 <use modelagem_files/figure-latex/unnamed-chunk-8-29.pdf>
 Package pdftex.def Info: modelagem_files/figure-latex/unnamed-chunk-8-29.pdf  u
-sed on input line 716.
+sed on input line 660.
 (pdftex.def)             Requested size: 469.76265pt x 268.43579pt.
-<modelagem_files/figure-latex/unnamed-chunk-8-30.pdf, id=455, 505.89pt x 289.08
+<modelagem_files/figure-latex/unnamed-chunk-8-30.pdf, id=397, 505.89pt x 289.08
 pt>
 File: modelagem_files/figure-latex/unnamed-chunk-8-30.pdf Graphic file (type pd
 f)
 <use modelagem_files/figure-latex/unnamed-chunk-8-30.pdf>
 Package pdftex.def Info: modelagem_files/figure-latex/unnamed-chunk-8-30.pdf  u
-sed on input line 717.
+sed on input line 661.
 (pdftex.def)             Requested size: 469.76265pt x 268.43579pt.
-<modelagem_files/figure-latex/unnamed-chunk-8-31.pdf, id=456, 505.89pt x 289.08
+<modelagem_files/figure-latex/unnamed-chunk-8-31.pdf, id=398, 505.89pt x 289.08
 pt>
 File: modelagem_files/figure-latex/unnamed-chunk-8-31.pdf Graphic file (type pd
 f)
 <use modelagem_files/figure-latex/unnamed-chunk-8-31.pdf>
 Package pdftex.def Info: modelagem_files/figure-latex/unnamed-chunk-8-31.pdf  u
-sed on input line 718.
+sed on input line 662.
 (pdftex.def)             Requested size: 469.76265pt x 268.43579pt.
-<modelagem_files/figure-latex/unnamed-chunk-8-32.pdf, id=457, 505.89pt x 289.08
+[19] [20 <./modelagem_files/figure-latex/unnamed-chunk-8-24.pdf> <./modelagem_f
+iles/figure-latex/unnamed-chunk-8-25.pdf>] [21 <./modelagem_files/figure-latex/
+unnamed-chunk-8-26.pdf> <./modelagem_files/figure-latex/unnamed-chunk-8-27.pdf>
+] [22 <./modelagem_files/figure-latex/unnamed-chunk-8-28.pdf> <./modelagem_file
+s/figure-latex/unnamed-chunk-8-29.pdf>] [23 <./modelagem_files/figure-latex/unn
+amed-chunk-8-30.pdf> <./modelagem_files/figure-latex/unnamed-chunk-8-31.pdf>] [
+24]
+<modelagem_files/figure-latex/unnamed-chunk-8-32.pdf, id=483, 505.89pt x 289.08
 pt>
 File: modelagem_files/figure-latex/unnamed-chunk-8-32.pdf Graphic file (type pd
 f)
 <use modelagem_files/figure-latex/unnamed-chunk-8-32.pdf>
 Package pdftex.def Info: modelagem_files/figure-latex/unnamed-chunk-8-32.pdf  u
-sed on input line 719.
+sed on input line 809.
 (pdftex.def)             Requested size: 469.76265pt x 268.43579pt.
-<modelagem_files/figure-latex/unnamed-chunk-8-33.pdf, id=458, 505.89pt x 289.08
+<modelagem_files/figure-latex/unnamed-chunk-8-33.pdf, id=484, 505.89pt x 289.08
 pt>
 File: modelagem_files/figure-latex/unnamed-chunk-8-33.pdf Graphic file (type pd
 f)
 <use modelagem_files/figure-latex/unnamed-chunk-8-33.pdf>
 Package pdftex.def Info: modelagem_files/figure-latex/unnamed-chunk-8-33.pdf  u
-sed on input line 720.
+sed on input line 810.
 (pdftex.def)             Requested size: 469.76265pt x 268.43579pt.
-[22] [23 <./modelagem_files/figure-latex/unnamed-chunk-8-28.pdf> <./modelagem_f
-iles/figure-latex/unnamed-chunk-8-29.pdf>] [24 <./modelagem_files/figure-latex/
-unnamed-chunk-8-30.pdf> <./modelagem_files/figure-latex/unnamed-chunk-8-31.pdf>
-] [25 <./modelagem_files/figure-latex/unnamed-chunk-8-32.pdf> <./modelagem_file
-s/figure-latex/unnamed-chunk-8-33.pdf>]
-<modelagem_files/figure-latex/unnamed-chunk-8-34.pdf, id=512, 505.89pt x 289.08
+<modelagem_files/figure-latex/unnamed-chunk-8-34.pdf, id=485, 505.89pt x 289.08
 pt>
 File: modelagem_files/figure-latex/unnamed-chunk-8-34.pdf Graphic file (type pd
 f)
 <use modelagem_files/figure-latex/unnamed-chunk-8-34.pdf>
 Package pdftex.def Info: modelagem_files/figure-latex/unnamed-chunk-8-34.pdf  u
-sed on input line 801.
+sed on input line 811.
 (pdftex.def)             Requested size: 469.76265pt x 268.43579pt.
-<modelagem_files/figure-latex/unnamed-chunk-8-35.pdf, id=513, 505.89pt x 289.08
+<modelagem_files/figure-latex/unnamed-chunk-8-35.pdf, id=486, 505.89pt x 289.08
 pt>
 File: modelagem_files/figure-latex/unnamed-chunk-8-35.pdf Graphic file (type pd
 f)
 <use modelagem_files/figure-latex/unnamed-chunk-8-35.pdf>
 Package pdftex.def Info: modelagem_files/figure-latex/unnamed-chunk-8-35.pdf  u
-sed on input line 802.
+sed on input line 812.
 (pdftex.def)             Requested size: 469.76265pt x 268.43579pt.
-<modelagem_files/figure-latex/unnamed-chunk-8-36.pdf, id=514, 505.89pt x 289.08
+<modelagem_files/figure-latex/unnamed-chunk-8-36.pdf, id=487, 505.89pt x 289.08
 pt>
 File: modelagem_files/figure-latex/unnamed-chunk-8-36.pdf Graphic file (type pd
 f)
 <use modelagem_files/figure-latex/unnamed-chunk-8-36.pdf>
 Package pdftex.def Info: modelagem_files/figure-latex/unnamed-chunk-8-36.pdf  u
-sed on input line 803.
+sed on input line 813.
 (pdftex.def)             Requested size: 469.76265pt x 268.43579pt.
-<modelagem_files/figure-latex/unnamed-chunk-8-37.pdf, id=515, 505.89pt x 289.08
+<modelagem_files/figure-latex/unnamed-chunk-8-37.pdf, id=488, 505.89pt x 289.08
 pt>
 File: modelagem_files/figure-latex/unnamed-chunk-8-37.pdf Graphic file (type pd
 f)
 <use modelagem_files/figure-latex/unnamed-chunk-8-37.pdf>
 Package pdftex.def Info: modelagem_files/figure-latex/unnamed-chunk-8-37.pdf  u
-sed on input line 804.
+sed on input line 814.
 (pdftex.def)             Requested size: 469.76265pt x 268.43579pt.
-<modelagem_files/figure-latex/unnamed-chunk-8-38.pdf, id=516, 505.89pt x 289.08
+<modelagem_files/figure-latex/unnamed-chunk-8-38.pdf, id=489, 505.89pt x 289.08
 pt>
 File: modelagem_files/figure-latex/unnamed-chunk-8-38.pdf Graphic file (type pd
 f)
 <use modelagem_files/figure-latex/unnamed-chunk-8-38.pdf>
 Package pdftex.def Info: modelagem_files/figure-latex/unnamed-chunk-8-38.pdf  u
-sed on input line 805.
+sed on input line 815.
 (pdftex.def)             Requested size: 469.76265pt x 268.43579pt.
-<modelagem_files/figure-latex/unnamed-chunk-8-39.pdf, id=517, 505.89pt x 289.08
+[25] [26 <./modelagem_files/figure-latex/unnamed-chunk-8-32.pdf> <./modelagem_f
+iles/figure-latex/unnamed-chunk-8-33.pdf>] [27 <./modelagem_files/figure-latex/
+unnamed-chunk-8-34.pdf> <./modelagem_files/figure-latex/unnamed-chunk-8-35.pdf>
+] [28 <./modelagem_files/figure-latex/unnamed-chunk-8-36.pdf> <./modelagem_file
+s/figure-latex/unnamed-chunk-8-37.pdf>] [29 <./modelagem_files/figure-latex/unn
+amed-chunk-8-38.pdf>]
+<modelagem_files/figure-latex/unnamed-chunk-8-39.pdf, id=556, 505.89pt x 289.08
 pt>
 File: modelagem_files/figure-latex/unnamed-chunk-8-39.pdf Graphic file (type pd
 f)
 <use modelagem_files/figure-latex/unnamed-chunk-8-39.pdf>
 Package pdftex.def Info: modelagem_files/figure-latex/unnamed-chunk-8-39.pdf  u
-sed on input line 806.
+sed on input line 902.
 (pdftex.def)             Requested size: 469.76265pt x 268.43579pt.
-<modelagem_files/figure-latex/unnamed-chunk-8-40.pdf, id=518, 505.89pt x 289.08
+<modelagem_files/figure-latex/unnamed-chunk-8-40.pdf, id=557, 505.89pt x 289.08
 pt>
 File: modelagem_files/figure-latex/unnamed-chunk-8-40.pdf Graphic file (type pd
 f)
 <use modelagem_files/figure-latex/unnamed-chunk-8-40.pdf>
 Package pdftex.def Info: modelagem_files/figure-latex/unnamed-chunk-8-40.pdf  u
-sed on input line 807.
+sed on input line 903.
 (pdftex.def)             Requested size: 469.76265pt x 268.43579pt.
-[26] [27 <./modelagem_files/figure-latex/unnamed-chunk-8-34.pdf> <./modelagem_f
-iles/figure-latex/unnamed-chunk-8-35.pdf>] [28 <./modelagem_files/figure-latex/
-unnamed-chunk-8-36.pdf> <./modelagem_files/figure-latex/unnamed-chunk-8-37.pdf>
-] [29 <./modelagem_files/figure-latex/unnamed-chunk-8-38.pdf> <./modelagem_file
-s/figure-latex/unnamed-chunk-8-39.pdf>] [30 <./modelagem_files/figure-latex/unn
-amed-chunk-8-40.pdf>] [31]
-<modelagem_files/figure-latex/unnamed-chunk-9-1.pdf, id=595, 505.89pt x 289.08p
-t>
-File: modelagem_files/figure-latex/unnamed-chunk-9-1.pdf Graphic file (type pdf
-)
-<use modelagem_files/figure-latex/unnamed-chunk-9-1.pdf>
-Package pdftex.def Info: modelagem_files/figure-latex/unnamed-chunk-9-1.pdf  us
-ed on input line 958.
-(pdftex.def)             Requested size: 469.76265pt x 268.43579pt.
-<modelagem_files/figure-latex/unnamed-chunk-9-2.pdf, id=596, 505.89pt x 289.08p
-t>
-File: modelagem_files/figure-latex/unnamed-chunk-9-2.pdf Graphic file (type pdf
-)
-<use modelagem_files/figure-latex/unnamed-chunk-9-2.pdf>
-Package pdftex.def Info: modelagem_files/figure-latex/unnamed-chunk-9-2.pdf  us
-ed on input line 959.
-(pdftex.def)             Requested size: 469.76265pt x 268.43579pt.
-<modelagem_files/figure-latex/unnamed-chunk-9-3.pdf, id=597, 505.89pt x 289.08p
-t>
-File: modelagem_files/figure-latex/unnamed-chunk-9-3.pdf Graphic file (type pdf
-)
-<use modelagem_files/figure-latex/unnamed-chunk-9-3.pdf>
-Package pdftex.def Info: modelagem_files/figure-latex/unnamed-chunk-9-3.pdf  us
-ed on input line 960.
-(pdftex.def)             Requested size: 469.76265pt x 268.43579pt.
-<modelagem_files/figure-latex/unnamed-chunk-9-4.pdf, id=598, 505.89pt x 289.08p
-t>
-File: modelagem_files/figure-latex/unnamed-chunk-9-4.pdf Graphic file (type pdf
-)
-<use modelagem_files/figure-latex/unnamed-chunk-9-4.pdf>
-Package pdftex.def Info: modelagem_files/figure-latex/unnamed-chunk-9-4.pdf  us
-ed on input line 961.
-(pdftex.def)             Requested size: 469.76265pt x 268.43579pt.
-<modelagem_files/figure-latex/unnamed-chunk-9-5.pdf, id=599, 505.89pt x 289.08p
-t>
-File: modelagem_files/figure-latex/unnamed-chunk-9-5.pdf Graphic file (type pdf
-)
-<use modelagem_files/figure-latex/unnamed-chunk-9-5.pdf>
-Package pdftex.def Info: modelagem_files/figure-latex/unnamed-chunk-9-5.pdf  us
-ed on input line 962.
-(pdftex.def)             Requested size: 469.76265pt x 268.43579pt.
-<modelagem_files/figure-latex/unnamed-chunk-9-6.pdf, id=600, 505.89pt x 289.08p
-t>
-File: modelagem_files/figure-latex/unnamed-chunk-9-6.pdf Graphic file (type pdf
-)
-<use modelagem_files/figure-latex/unnamed-chunk-9-6.pdf>
-Package pdftex.def Info: modelagem_files/figure-latex/unnamed-chunk-9-6.pdf  us
-ed on input line 963.
-(pdftex.def)             Requested size: 469.76265pt x 268.43579pt.
-[32] [33 <./modelagem_files/figure-latex/unnamed-chunk-9-1.pdf> <./modelagem_fi
-les/figure-latex/unnamed-chunk-9-2.pdf>] [34 <./modelagem_files/figure-latex/un
-named-chunk-9-3.pdf> <./modelagem_files/figure-latex/unnamed-chunk-9-4.pdf>] [3
-5 <./modelagem_files/figure-latex/unnamed-chunk-9-5.pdf> <./modelagem_files/fig
-ure-latex/unnamed-chunk-9-6.pdf>]
-<modelagem_files/figure-latex/unnamed-chunk-9-7.pdf, id=654, 505.89pt x 289.08p
-t>
-File: modelagem_files/figure-latex/unnamed-chunk-9-7.pdf Graphic file (type pdf
-)
-<use modelagem_files/figure-latex/unnamed-chunk-9-7.pdf>
-Package pdftex.def Info: modelagem_files/figure-latex/unnamed-chunk-9-7.pdf  us
-ed on input line 1076.
-(pdftex.def)             Requested size: 469.76265pt x 268.43579pt.
-<modelagem_files/figure-latex/unnamed-chunk-9-8.pdf, id=655, 505.89pt x 289.08p
-t>
-File: modelagem_files/figure-latex/unnamed-chunk-9-8.pdf Graphic file (type pdf
-)
-<use modelagem_files/figure-latex/unnamed-chunk-9-8.pdf>
-Package pdftex.def Info: modelagem_files/figure-latex/unnamed-chunk-9-8.pdf  us
-ed on input line 1077.
-(pdftex.def)             Requested size: 469.76265pt x 268.43579pt.
-<modelagem_files/figure-latex/unnamed-chunk-9-9.pdf, id=656, 505.89pt x 289.08p
-t>
-File: modelagem_files/figure-latex/unnamed-chunk-9-9.pdf Graphic file (type pdf
-)
-<use modelagem_files/figure-latex/unnamed-chunk-9-9.pdf>
-Package pdftex.def Info: modelagem_files/figure-latex/unnamed-chunk-9-9.pdf  us
-ed on input line 1078.
-(pdftex.def)             Requested size: 469.76265pt x 268.43579pt.
-<modelagem_files/figure-latex/unnamed-chunk-9-10.pdf, id=657, 505.89pt x 289.08
+<modelagem_files/figure-latex/unnamed-chunk-8-41.pdf, id=558, 505.89pt x 289.08
 pt>
-File: modelagem_files/figure-latex/unnamed-chunk-9-10.pdf Graphic file (type pd
+File: modelagem_files/figure-latex/unnamed-chunk-8-41.pdf Graphic file (type pd
 f)
-<use modelagem_files/figure-latex/unnamed-chunk-9-10.pdf>
-Package pdftex.def Info: modelagem_files/figure-latex/unnamed-chunk-9-10.pdf  u
-sed on input line 1079.
+<use modelagem_files/figure-latex/unnamed-chunk-8-41.pdf>
+Package pdftex.def Info: modelagem_files/figure-latex/unnamed-chunk-8-41.pdf  u
+sed on input line 904.
 (pdftex.def)             Requested size: 469.76265pt x 268.43579pt.
-<modelagem_files/figure-latex/unnamed-chunk-9-11.pdf, id=658, 505.89pt x 289.08
+<modelagem_files/figure-latex/unnamed-chunk-8-42.pdf, id=559, 505.89pt x 289.08
 pt>
-File: modelagem_files/figure-latex/unnamed-chunk-9-11.pdf Graphic file (type pd
+File: modelagem_files/figure-latex/unnamed-chunk-8-42.pdf Graphic file (type pd
 f)
-<use modelagem_files/figure-latex/unnamed-chunk-9-11.pdf>
-Package pdftex.def Info: modelagem_files/figure-latex/unnamed-chunk-9-11.pdf  u
-sed on input line 1080.
+<use modelagem_files/figure-latex/unnamed-chunk-8-42.pdf>
+Package pdftex.def Info: modelagem_files/figure-latex/unnamed-chunk-8-42.pdf  u
+sed on input line 905.
 (pdftex.def)             Requested size: 469.76265pt x 268.43579pt.
-<modelagem_files/figure-latex/unnamed-chunk-9-12.pdf, id=659, 505.89pt x 289.08
+<modelagem_files/figure-latex/unnamed-chunk-8-43.pdf, id=560, 505.89pt x 289.08
 pt>
-File: modelagem_files/figure-latex/unnamed-chunk-9-12.pdf Graphic file (type pd
+File: modelagem_files/figure-latex/unnamed-chunk-8-43.pdf Graphic file (type pd
 f)
-<use modelagem_files/figure-latex/unnamed-chunk-9-12.pdf>
-Package pdftex.def Info: modelagem_files/figure-latex/unnamed-chunk-9-12.pdf  u
-sed on input line 1081.
+<use modelagem_files/figure-latex/unnamed-chunk-8-43.pdf>
+Package pdftex.def Info: modelagem_files/figure-latex/unnamed-chunk-8-43.pdf  u
+sed on input line 906.
 (pdftex.def)             Requested size: 469.76265pt x 268.43579pt.
-<modelagem_files/figure-latex/unnamed-chunk-9-13.pdf, id=660, 505.89pt x 289.08
+<modelagem_files/figure-latex/unnamed-chunk-8-44.pdf, id=561, 505.89pt x 289.08
 pt>
-File: modelagem_files/figure-latex/unnamed-chunk-9-13.pdf Graphic file (type pd
+File: modelagem_files/figure-latex/unnamed-chunk-8-44.pdf Graphic file (type pd
 f)
-<use modelagem_files/figure-latex/unnamed-chunk-9-13.pdf>
-Package pdftex.def Info: modelagem_files/figure-latex/unnamed-chunk-9-13.pdf  u
-sed on input line 1082.
+<use modelagem_files/figure-latex/unnamed-chunk-8-44.pdf>
+Package pdftex.def Info: modelagem_files/figure-latex/unnamed-chunk-8-44.pdf  u
+sed on input line 907.
 (pdftex.def)             Requested size: 469.76265pt x 268.43579pt.
-[36] [37 <./modelagem_files/figure-latex/unnamed-chunk-9-7.pdf> <./modelagem_fi
-les/figure-latex/unnamed-chunk-9-8.pdf>] [38 <./modelagem_files/figure-latex/un
-named-chunk-9-9.pdf> <./modelagem_files/figure-latex/unnamed-chunk-9-10.pdf>] [
-39 <./modelagem_files/figure-latex/unnamed-chunk-9-11.pdf> <./modelagem_files/f
-igure-latex/unnamed-chunk-9-12.pdf>] [40 <./modelagem_files/figure-latex/unname
-d-chunk-9-13.pdf>]
-<modelagem_files/figure-latex/unnamed-chunk-9-14.pdf, id=729, 505.89pt x 289.08
+<modelagem_files/figure-latex/unnamed-chunk-8-45.pdf, id=562, 505.89pt x 289.08
 pt>
-File: modelagem_files/figure-latex/unnamed-chunk-9-14.pdf Graphic file (type pd
+File: modelagem_files/figure-latex/unnamed-chunk-8-45.pdf Graphic file (type pd
 f)
-<use modelagem_files/figure-latex/unnamed-chunk-9-14.pdf>
-Package pdftex.def Info: modelagem_files/figure-latex/unnamed-chunk-9-14.pdf  u
-sed on input line 1187.
+<use modelagem_files/figure-latex/unnamed-chunk-8-45.pdf>
+Package pdftex.def Info: modelagem_files/figure-latex/unnamed-chunk-8-45.pdf  u
+sed on input line 908.
 (pdftex.def)             Requested size: 469.76265pt x 268.43579pt.
-<modelagem_files/figure-latex/unnamed-chunk-9-15.pdf, id=730, 505.89pt x 289.08
+<modelagem_files/figure-latex/unnamed-chunk-8-46.pdf, id=563, 505.89pt x 289.08
 pt>
-File: modelagem_files/figure-latex/unnamed-chunk-9-15.pdf Graphic file (type pd
+File: modelagem_files/figure-latex/unnamed-chunk-8-46.pdf Graphic file (type pd
 f)
-<use modelagem_files/figure-latex/unnamed-chunk-9-15.pdf>
-Package pdftex.def Info: modelagem_files/figure-latex/unnamed-chunk-9-15.pdf  u
-sed on input line 1188.
+<use modelagem_files/figure-latex/unnamed-chunk-8-46.pdf>
+Package pdftex.def Info: modelagem_files/figure-latex/unnamed-chunk-8-46.pdf  u
+sed on input line 909.
 (pdftex.def)             Requested size: 469.76265pt x 268.43579pt.
-<modelagem_files/figure-latex/unnamed-chunk-9-16.pdf, id=731, 505.89pt x 289.08
+[30] [31 <./modelagem_files/figure-latex/unnamed-chunk-8-39.pdf> <./modelagem_f
+iles/figure-latex/unnamed-chunk-8-40.pdf>] [32 <./modelagem_files/figure-latex/
+unnamed-chunk-8-41.pdf> <./modelagem_files/figure-latex/unnamed-chunk-8-42.pdf>
+] [33 <./modelagem_files/figure-latex/unnamed-chunk-8-43.pdf> <./modelagem_file
+s/figure-latex/unnamed-chunk-8-44.pdf>] [34 <./modelagem_files/figure-latex/unn
+amed-chunk-8-45.pdf> <./modelagem_files/figure-latex/unnamed-chunk-8-46.pdf>] [
+35] [36]
+<modelagem_files/figure-latex/unnamed-chunk-11-1.pdf, id=655, 505.89pt x 289.08
 pt>
-File: modelagem_files/figure-latex/unnamed-chunk-9-16.pdf Graphic file (type pd
+File: modelagem_files/figure-latex/unnamed-chunk-11-1.pdf Graphic file (type pd
 f)
-<use modelagem_files/figure-latex/unnamed-chunk-9-16.pdf>
-Package pdftex.def Info: modelagem_files/figure-latex/unnamed-chunk-9-16.pdf  u
-sed on input line 1189.
+<use modelagem_files/figure-latex/unnamed-chunk-11-1.pdf>
+Package pdftex.def Info: modelagem_files/figure-latex/unnamed-chunk-11-1.pdf  u
+sed on input line 1149.
 (pdftex.def)             Requested size: 469.76265pt x 268.43579pt.
-<modelagem_files/figure-latex/unnamed-chunk-9-17.pdf, id=732, 505.89pt x 289.08
+<modelagem_files/figure-latex/unnamed-chunk-11-2.pdf, id=656, 505.89pt x 289.08
 pt>
-File: modelagem_files/figure-latex/unnamed-chunk-9-17.pdf Graphic file (type pd
+File: modelagem_files/figure-latex/unnamed-chunk-11-2.pdf Graphic file (type pd
 f)
-<use modelagem_files/figure-latex/unnamed-chunk-9-17.pdf>
-Package pdftex.def Info: modelagem_files/figure-latex/unnamed-chunk-9-17.pdf  u
-sed on input line 1190.
+<use modelagem_files/figure-latex/unnamed-chunk-11-2.pdf>
+Package pdftex.def Info: modelagem_files/figure-latex/unnamed-chunk-11-2.pdf  u
+sed on input line 1150.
 (pdftex.def)             Requested size: 469.76265pt x 268.43579pt.
-<modelagem_files/figure-latex/unnamed-chunk-9-18.pdf, id=733, 505.89pt x 289.08
+<modelagem_files/figure-latex/unnamed-chunk-11-3.pdf, id=657, 505.89pt x 289.08
 pt>
-File: modelagem_files/figure-latex/unnamed-chunk-9-18.pdf Graphic file (type pd
+File: modelagem_files/figure-latex/unnamed-chunk-11-3.pdf Graphic file (type pd
 f)
-<use modelagem_files/figure-latex/unnamed-chunk-9-18.pdf>
-Package pdftex.def Info: modelagem_files/figure-latex/unnamed-chunk-9-18.pdf  u
-sed on input line 1191.
+<use modelagem_files/figure-latex/unnamed-chunk-11-3.pdf>
+Package pdftex.def Info: modelagem_files/figure-latex/unnamed-chunk-11-3.pdf  u
+sed on input line 1151.
 (pdftex.def)             Requested size: 469.76265pt x 268.43579pt.
-<modelagem_files/figure-latex/unnamed-chunk-9-19.pdf, id=734, 505.89pt x 289.08
+<modelagem_files/figure-latex/unnamed-chunk-11-4.pdf, id=658, 505.89pt x 289.08
 pt>
-File: modelagem_files/figure-latex/unnamed-chunk-9-19.pdf Graphic file (type pd
+File: modelagem_files/figure-latex/unnamed-chunk-11-4.pdf Graphic file (type pd
 f)
-<use modelagem_files/figure-latex/unnamed-chunk-9-19.pdf>
-Package pdftex.def Info: modelagem_files/figure-latex/unnamed-chunk-9-19.pdf  u
-sed on input line 1192.
+<use modelagem_files/figure-latex/unnamed-chunk-11-4.pdf>
+Package pdftex.def Info: modelagem_files/figure-latex/unnamed-chunk-11-4.pdf  u
+sed on input line 1152.
 (pdftex.def)             Requested size: 469.76265pt x 268.43579pt.
-<modelagem_files/figure-latex/unnamed-chunk-9-20.pdf, id=735, 505.89pt x 289.08
+<modelagem_files/figure-latex/unnamed-chunk-11-5.pdf, id=659, 505.89pt x 289.08
 pt>
-File: modelagem_files/figure-latex/unnamed-chunk-9-20.pdf Graphic file (type pd
+File: modelagem_files/figure-latex/unnamed-chunk-11-5.pdf Graphic file (type pd
 f)
-<use modelagem_files/figure-latex/unnamed-chunk-9-20.pdf>
-Package pdftex.def Info: modelagem_files/figure-latex/unnamed-chunk-9-20.pdf  u
-sed on input line 1193.
+<use modelagem_files/figure-latex/unnamed-chunk-11-5.pdf>
+Package pdftex.def Info: modelagem_files/figure-latex/unnamed-chunk-11-5.pdf  u
+sed on input line 1153.
 (pdftex.def)             Requested size: 469.76265pt x 268.43579pt.
-[41] [42 <./modelagem_files/figure-latex/unnamed-chunk-9-14.pdf> <./modelagem_f
-iles/figure-latex/unnamed-chunk-9-15.pdf>] [43 <./modelagem_files/figure-latex/
-unnamed-chunk-9-16.pdf> <./modelagem_files/figure-latex/unnamed-chunk-9-17.pdf>
-] [44 <./modelagem_files/figure-latex/unnamed-chunk-9-18.pdf> <./modelagem_file
-s/figure-latex/unnamed-chunk-9-19.pdf>] [45 <./modelagem_files/figure-latex/unn
-amed-chunk-9-20.pdf>]
-<modelagem_files/figure-latex/unnamed-chunk-9-21.pdf, id=803, 505.89pt x 289.08
+<modelagem_files/figure-latex/unnamed-chunk-11-6.pdf, id=660, 505.89pt x 289.08
 pt>
-File: modelagem_files/figure-latex/unnamed-chunk-9-21.pdf Graphic file (type pd
+File: modelagem_files/figure-latex/unnamed-chunk-11-6.pdf Graphic file (type pd
 f)
-<use modelagem_files/figure-latex/unnamed-chunk-9-21.pdf>
-Package pdftex.def Info: modelagem_files/figure-latex/unnamed-chunk-9-21.pdf  u
-sed on input line 1298.
+<use modelagem_files/figure-latex/unnamed-chunk-11-6.pdf>
+Package pdftex.def Info: modelagem_files/figure-latex/unnamed-chunk-11-6.pdf  u
+sed on input line 1154.
 (pdftex.def)             Requested size: 469.76265pt x 268.43579pt.
-<modelagem_files/figure-latex/unnamed-chunk-9-22.pdf, id=804, 505.89pt x 289.08
+<modelagem_files/figure-latex/unnamed-chunk-11-7.pdf, id=661, 505.89pt x 289.08
 pt>
-File: modelagem_files/figure-latex/unnamed-chunk-9-22.pdf Graphic file (type pd
+File: modelagem_files/figure-latex/unnamed-chunk-11-7.pdf Graphic file (type pd
 f)
-<use modelagem_files/figure-latex/unnamed-chunk-9-22.pdf>
-Package pdftex.def Info: modelagem_files/figure-latex/unnamed-chunk-9-22.pdf  u
-sed on input line 1299.
+<use modelagem_files/figure-latex/unnamed-chunk-11-7.pdf>
+Package pdftex.def Info: modelagem_files/figure-latex/unnamed-chunk-11-7.pdf  u
+sed on input line 1155.
 (pdftex.def)             Requested size: 469.76265pt x 268.43579pt.
-<modelagem_files/figure-latex/unnamed-chunk-9-23.pdf, id=805, 505.89pt x 289.08
+[37] [38 <./modelagem_files/figure-latex/unnamed-chunk-11-1.pdf> <./modelagem_f
+iles/figure-latex/unnamed-chunk-11-2.pdf>] [39 <./modelagem_files/figure-latex/
+unnamed-chunk-11-3.pdf> <./modelagem_files/figure-latex/unnamed-chunk-11-4.pdf>
+] [40 <./modelagem_files/figure-latex/unnamed-chunk-11-5.pdf> <./modelagem_file
+s/figure-latex/unnamed-chunk-11-6.pdf>] [41 <./modelagem_files/figure-latex/unn
+amed-chunk-11-7.pdf>] [42]
+<modelagem_files/figure-latex/unnamed-chunk-11-8.pdf, id=737, 505.89pt x 289.08
 pt>
-File: modelagem_files/figure-latex/unnamed-chunk-9-23.pdf Graphic file (type pd
+File: modelagem_files/figure-latex/unnamed-chunk-11-8.pdf Graphic file (type pd
 f)
-<use modelagem_files/figure-latex/unnamed-chunk-9-23.pdf>
-Package pdftex.def Info: modelagem_files/figure-latex/unnamed-chunk-9-23.pdf  u
-sed on input line 1300.
+<use modelagem_files/figure-latex/unnamed-chunk-11-8.pdf>
+Package pdftex.def Info: modelagem_files/figure-latex/unnamed-chunk-11-8.pdf  u
+sed on input line 1291.
 (pdftex.def)             Requested size: 469.76265pt x 268.43579pt.
-<modelagem_files/figure-latex/unnamed-chunk-9-24.pdf, id=806, 505.89pt x 289.08
+<modelagem_files/figure-latex/unnamed-chunk-11-9.pdf, id=738, 505.89pt x 289.08
 pt>
-File: modelagem_files/figure-latex/unnamed-chunk-9-24.pdf Graphic file (type pd
+File: modelagem_files/figure-latex/unnamed-chunk-11-9.pdf Graphic file (type pd
 f)
-<use modelagem_files/figure-latex/unnamed-chunk-9-24.pdf>
-Package pdftex.def Info: modelagem_files/figure-latex/unnamed-chunk-9-24.pdf  u
-sed on input line 1301.
+<use modelagem_files/figure-latex/unnamed-chunk-11-9.pdf>
+Package pdftex.def Info: modelagem_files/figure-latex/unnamed-chunk-11-9.pdf  u
+sed on input line 1292.
 (pdftex.def)             Requested size: 469.76265pt x 268.43579pt.
-<modelagem_files/figure-latex/unnamed-chunk-9-25.pdf, id=807, 505.89pt x 289.08
-pt>
-File: modelagem_files/figure-latex/unnamed-chunk-9-25.pdf Graphic file (type pd
-f)
-<use modelagem_files/figure-latex/unnamed-chunk-9-25.pdf>
-Package pdftex.def Info: modelagem_files/figure-latex/unnamed-chunk-9-25.pdf  u
-sed on input line 1302.
+<modelagem_files/figure-latex/unnamed-chunk-11-10.pdf, id=739, 505.89pt x 289.0
+8pt>
+File: modelagem_files/figure-latex/unnamed-chunk-11-10.pdf Graphic file (type p
+df)
+<use modelagem_files/figure-latex/unnamed-chunk-11-10.pdf>
+Package pdftex.def Info: modelagem_files/figure-latex/unnamed-chunk-11-10.pdf  
+used on input line 1293.
 (pdftex.def)             Requested size: 469.76265pt x 268.43579pt.
-<modelagem_files/figure-latex/unnamed-chunk-9-26.pdf, id=808, 505.89pt x 289.08
-pt>
-File: modelagem_files/figure-latex/unnamed-chunk-9-26.pdf Graphic file (type pd
-f)
-<use modelagem_files/figure-latex/unnamed-chunk-9-26.pdf>
-Package pdftex.def Info: modelagem_files/figure-latex/unnamed-chunk-9-26.pdf  u
-sed on input line 1303.
+<modelagem_files/figure-latex/unnamed-chunk-11-11.pdf, id=740, 505.89pt x 289.0
+8pt>
+File: modelagem_files/figure-latex/unnamed-chunk-11-11.pdf Graphic file (type p
+df)
+<use modelagem_files/figure-latex/unnamed-chunk-11-11.pdf>
+Package pdftex.def Info: modelagem_files/figure-latex/unnamed-chunk-11-11.pdf  
+used on input line 1294.
 (pdftex.def)             Requested size: 469.76265pt x 268.43579pt.
-<modelagem_files/figure-latex/unnamed-chunk-9-27.pdf, id=809, 505.89pt x 289.08
-pt>
-File: modelagem_files/figure-latex/unnamed-chunk-9-27.pdf Graphic file (type pd
-f)
-<use modelagem_files/figure-latex/unnamed-chunk-9-27.pdf>
-Package pdftex.def Info: modelagem_files/figure-latex/unnamed-chunk-9-27.pdf  u
-sed on input line 1304.
+<modelagem_files/figure-latex/unnamed-chunk-11-12.pdf, id=741, 505.89pt x 289.0
+8pt>
+File: modelagem_files/figure-latex/unnamed-chunk-11-12.pdf Graphic file (type p
+df)
+<use modelagem_files/figure-latex/unnamed-chunk-11-12.pdf>
+Package pdftex.def Info: modelagem_files/figure-latex/unnamed-chunk-11-12.pdf  
+used on input line 1295.
 (pdftex.def)             Requested size: 469.76265pt x 268.43579pt.
-[46] [47 <./modelagem_files/figure-latex/unnamed-chunk-9-21.pdf> <./modelagem_f
-iles/figure-latex/unnamed-chunk-9-22.pdf>] [48 <./modelagem_files/figure-latex/
-unnamed-chunk-9-23.pdf> <./modelagem_files/figure-latex/unnamed-chunk-9-24.pdf>
-] [49 <./modelagem_files/figure-latex/unnamed-chunk-9-25.pdf> <./modelagem_file
-s/figure-latex/unnamed-chunk-9-26.pdf>] [50 <./modelagem_files/figure-latex/unn
-amed-chunk-9-27.pdf>]
-<modelagem_files/figure-latex/unnamed-chunk-9-28.pdf, id=878, 505.89pt x 289.08
-pt>
-File: modelagem_files/figure-latex/unnamed-chunk-9-28.pdf Graphic file (type pd
-f)
-<use modelagem_files/figure-latex/unnamed-chunk-9-28.pdf>
-Package pdftex.def Info: modelagem_files/figure-latex/unnamed-chunk-9-28.pdf  u
-sed on input line 1421.
+<modelagem_files/figure-latex/unnamed-chunk-11-13.pdf, id=742, 505.89pt x 289.0
+8pt>
+File: modelagem_files/figure-latex/unnamed-chunk-11-13.pdf Graphic file (type p
+df)
+<use modelagem_files/figure-latex/unnamed-chunk-11-13.pdf>
+Package pdftex.def Info: modelagem_files/figure-latex/unnamed-chunk-11-13.pdf  
+used on input line 1296.
 (pdftex.def)             Requested size: 469.76265pt x 268.43579pt.
-<modelagem_files/figure-latex/unnamed-chunk-9-29.pdf, id=879, 505.89pt x 289.08
-pt>
-File: modelagem_files/figure-latex/unnamed-chunk-9-29.pdf Graphic file (type pd
-f)
-<use modelagem_files/figure-latex/unnamed-chunk-9-29.pdf>
-Package pdftex.def Info: modelagem_files/figure-latex/unnamed-chunk-9-29.pdf  u
-sed on input line 1422.
+<modelagem_files/figure-latex/unnamed-chunk-11-14.pdf, id=743, 505.89pt x 289.0
+8pt>
+File: modelagem_files/figure-latex/unnamed-chunk-11-14.pdf Graphic file (type p
+df)
+<use modelagem_files/figure-latex/unnamed-chunk-11-14.pdf>
+Package pdftex.def Info: modelagem_files/figure-latex/unnamed-chunk-11-14.pdf  
+used on input line 1297.
 (pdftex.def)             Requested size: 469.76265pt x 268.43579pt.
-<modelagem_files/figure-latex/unnamed-chunk-9-30.pdf, id=880, 505.89pt x 289.08
-pt>
-File: modelagem_files/figure-latex/unnamed-chunk-9-30.pdf Graphic file (type pd
-f)
-<use modelagem_files/figure-latex/unnamed-chunk-9-30.pdf>
-Package pdftex.def Info: modelagem_files/figure-latex/unnamed-chunk-9-30.pdf  u
-sed on input line 1423.
+<modelagem_files/figure-latex/unnamed-chunk-11-15.pdf, id=744, 505.89pt x 289.0
+8pt>
+File: modelagem_files/figure-latex/unnamed-chunk-11-15.pdf Graphic file (type p
+df)
+<use modelagem_files/figure-latex/unnamed-chunk-11-15.pdf>
+Package pdftex.def Info: modelagem_files/figure-latex/unnamed-chunk-11-15.pdf  
+used on input line 1298.
 (pdftex.def)             Requested size: 469.76265pt x 268.43579pt.
-<modelagem_files/figure-latex/unnamed-chunk-9-31.pdf, id=881, 505.89pt x 289.08
-pt>
-File: modelagem_files/figure-latex/unnamed-chunk-9-31.pdf Graphic file (type pd
-f)
-<use modelagem_files/figure-latex/unnamed-chunk-9-31.pdf>
-Package pdftex.def Info: modelagem_files/figure-latex/unnamed-chunk-9-31.pdf  u
-sed on input line 1424.
+[43] [44 <./modelagem_files/figure-latex/unnamed-chunk-11-8.pdf> <./modelagem_f
+iles/figure-latex/unnamed-chunk-11-9.pdf>] [45 <./modelagem_files/figure-latex/
+unnamed-chunk-11-10.pdf> <./modelagem_files/figure-latex/unnamed-chunk-11-11.pd
+f>] [46 <./modelagem_files/figure-latex/unnamed-chunk-11-12.pdf> <./modelagem_f
+iles/figure-latex/unnamed-chunk-11-13.pdf>] [47 <./modelagem_files/figure-latex
+/unnamed-chunk-11-14.pdf> <./modelagem_files/figure-latex/unnamed-chunk-11-15.p
+df>]
+<modelagem_files/figure-latex/unnamed-chunk-11-16.pdf, id=816, 505.89pt x 289.0
+8pt>
+File: modelagem_files/figure-latex/unnamed-chunk-11-16.pdf Graphic file (type p
+df)
+<use modelagem_files/figure-latex/unnamed-chunk-11-16.pdf>
+Package pdftex.def Info: modelagem_files/figure-latex/unnamed-chunk-11-16.pdf  
+used on input line 1385.
 (pdftex.def)             Requested size: 469.76265pt x 268.43579pt.
-<modelagem_files/figure-latex/unnamed-chunk-9-32.pdf, id=882, 505.89pt x 289.08
-pt>
-File: modelagem_files/figure-latex/unnamed-chunk-9-32.pdf Graphic file (type pd
-f)
-<use modelagem_files/figure-latex/unnamed-chunk-9-32.pdf>
-Package pdftex.def Info: modelagem_files/figure-latex/unnamed-chunk-9-32.pdf  u
-sed on input line 1425.
+<modelagem_files/figure-latex/unnamed-chunk-11-17.pdf, id=817, 505.89pt x 289.0
+8pt>
+File: modelagem_files/figure-latex/unnamed-chunk-11-17.pdf Graphic file (type p
+df)
+<use modelagem_files/figure-latex/unnamed-chunk-11-17.pdf>
+Package pdftex.def Info: modelagem_files/figure-latex/unnamed-chunk-11-17.pdf  
+used on input line 1386.
 (pdftex.def)             Requested size: 469.76265pt x 268.43579pt.
-<modelagem_files/figure-latex/unnamed-chunk-9-33.pdf, id=883, 505.89pt x 289.08
-pt>
-File: modelagem_files/figure-latex/unnamed-chunk-9-33.pdf Graphic file (type pd
-f)
-<use modelagem_files/figure-latex/unnamed-chunk-9-33.pdf>
-Package pdftex.def Info: modelagem_files/figure-latex/unnamed-chunk-9-33.pdf  u
-sed on input line 1426.
+<modelagem_files/figure-latex/unnamed-chunk-11-18.pdf, id=818, 505.89pt x 289.0
+8pt>
+File: modelagem_files/figure-latex/unnamed-chunk-11-18.pdf Graphic file (type p
+df)
+<use modelagem_files/figure-latex/unnamed-chunk-11-18.pdf>
+Package pdftex.def Info: modelagem_files/figure-latex/unnamed-chunk-11-18.pdf  
+used on input line 1387.
 (pdftex.def)             Requested size: 469.76265pt x 268.43579pt.
-[51] [52 <./modelagem_files/figure-latex/unnamed-chunk-9-28.pdf> <./modelagem_f
-iles/figure-latex/unnamed-chunk-9-29.pdf>] [53 <./modelagem_files/figure-latex/
-unnamed-chunk-9-30.pdf> <./modelagem_files/figure-latex/unnamed-chunk-9-31.pdf>
-] [54 <./modelagem_files/figure-latex/unnamed-chunk-9-32.pdf> <./modelagem_file
-s/figure-latex/unnamed-chunk-9-33.pdf>]
-<modelagem_files/figure-latex/unnamed-chunk-9-34.pdf, id=941, 505.89pt x 289.08
-pt>
-File: modelagem_files/figure-latex/unnamed-chunk-9-34.pdf Graphic file (type pd
-f)
-<use modelagem_files/figure-latex/unnamed-chunk-9-34.pdf>
-Package pdftex.def Info: modelagem_files/figure-latex/unnamed-chunk-9-34.pdf  u
-sed on input line 1528.
+<modelagem_files/figure-latex/unnamed-chunk-11-19.pdf, id=819, 505.89pt x 289.0
+8pt>
+File: modelagem_files/figure-latex/unnamed-chunk-11-19.pdf Graphic file (type p
+df)
+<use modelagem_files/figure-latex/unnamed-chunk-11-19.pdf>
+Package pdftex.def Info: modelagem_files/figure-latex/unnamed-chunk-11-19.pdf  
+used on input line 1388.
 (pdftex.def)             Requested size: 469.76265pt x 268.43579pt.
-<modelagem_files/figure-latex/unnamed-chunk-9-35.pdf, id=942, 505.89pt x 289.08
-pt>
-File: modelagem_files/figure-latex/unnamed-chunk-9-35.pdf Graphic file (type pd
-f)
-<use modelagem_files/figure-latex/unnamed-chunk-9-35.pdf>
-Package pdftex.def Info: modelagem_files/figure-latex/unnamed-chunk-9-35.pdf  u
-sed on input line 1529.
+<modelagem_files/figure-latex/unnamed-chunk-11-20.pdf, id=820, 505.89pt x 289.0
+8pt>
+File: modelagem_files/figure-latex/unnamed-chunk-11-20.pdf Graphic file (type p
+df)
+<use modelagem_files/figure-latex/unnamed-chunk-11-20.pdf>
+Package pdftex.def Info: modelagem_files/figure-latex/unnamed-chunk-11-20.pdf  
+used on input line 1389.
 (pdftex.def)             Requested size: 469.76265pt x 268.43579pt.
-<modelagem_files/figure-latex/unnamed-chunk-9-36.pdf, id=943, 505.89pt x 289.08
-pt>
-File: modelagem_files/figure-latex/unnamed-chunk-9-36.pdf Graphic file (type pd
-f)
-<use modelagem_files/figure-latex/unnamed-chunk-9-36.pdf>
-Package pdftex.def Info: modelagem_files/figure-latex/unnamed-chunk-9-36.pdf  u
-sed on input line 1530.
+<modelagem_files/figure-latex/unnamed-chunk-11-21.pdf, id=821, 505.89pt x 289.0
+8pt>
+File: modelagem_files/figure-latex/unnamed-chunk-11-21.pdf Graphic file (type p
+df)
+<use modelagem_files/figure-latex/unnamed-chunk-11-21.pdf>
+Package pdftex.def Info: modelagem_files/figure-latex/unnamed-chunk-11-21.pdf  
+used on input line 1390.
 (pdftex.def)             Requested size: 469.76265pt x 268.43579pt.
-<modelagem_files/figure-latex/unnamed-chunk-9-37.pdf, id=944, 505.89pt x 289.08
-pt>
-File: modelagem_files/figure-latex/unnamed-chunk-9-37.pdf Graphic file (type pd
-f)
-<use modelagem_files/figure-latex/unnamed-chunk-9-37.pdf>
-Package pdftex.def Info: modelagem_files/figure-latex/unnamed-chunk-9-37.pdf  u
-sed on input line 1531.
+<modelagem_files/figure-latex/unnamed-chunk-11-22.pdf, id=822, 505.89pt x 289.0
+8pt>
+File: modelagem_files/figure-latex/unnamed-chunk-11-22.pdf Graphic file (type p
+df)
+<use modelagem_files/figure-latex/unnamed-chunk-11-22.pdf>
+Package pdftex.def Info: modelagem_files/figure-latex/unnamed-chunk-11-22.pdf  
+used on input line 1391.
 (pdftex.def)             Requested size: 469.76265pt x 268.43579pt.
-<modelagem_files/figure-latex/unnamed-chunk-9-38.pdf, id=945, 505.89pt x 289.08
-pt>
-File: modelagem_files/figure-latex/unnamed-chunk-9-38.pdf Graphic file (type pd
-f)
-<use modelagem_files/figure-latex/unnamed-chunk-9-38.pdf>
-Package pdftex.def Info: modelagem_files/figure-latex/unnamed-chunk-9-38.pdf  u
-sed on input line 1532.
+<modelagem_files/figure-latex/unnamed-chunk-11-23.pdf, id=823, 505.89pt x 289.0
+8pt>
+File: modelagem_files/figure-latex/unnamed-chunk-11-23.pdf Graphic file (type p
+df)
+<use modelagem_files/figure-latex/unnamed-chunk-11-23.pdf>
+Package pdftex.def Info: modelagem_files/figure-latex/unnamed-chunk-11-23.pdf  
+used on input line 1392.
 (pdftex.def)             Requested size: 469.76265pt x 268.43579pt.
-<modelagem_files/figure-latex/unnamed-chunk-9-39.pdf, id=946, 505.89pt x 289.08
-pt>
-File: modelagem_files/figure-latex/unnamed-chunk-9-39.pdf Graphic file (type pd
-f)
-<use modelagem_files/figure-latex/unnamed-chunk-9-39.pdf>
-Package pdftex.def Info: modelagem_files/figure-latex/unnamed-chunk-9-39.pdf  u
-sed on input line 1533.
+[48] [49 <./modelagem_files/figure-latex/unnamed-chunk-11-16.pdf> <./modelagem_
+files/figure-latex/unnamed-chunk-11-17.pdf>] [50 <./modelagem_files/figure-late
+x/unnamed-chunk-11-18.pdf> <./modelagem_files/figure-latex/unnamed-chunk-11-19.
+pdf>] [51 <./modelagem_files/figure-latex/unnamed-chunk-11-20.pdf> <./modelagem
+_files/figure-latex/unnamed-chunk-11-21.pdf>] [52 <./modelagem_files/figure-lat
+ex/unnamed-chunk-11-22.pdf> <./modelagem_files/figure-latex/unnamed-chunk-11-23
+.pdf>]
+<modelagem_files/figure-latex/unnamed-chunk-11-24.pdf, id=900, 505.89pt x 289.0
+8pt>
+File: modelagem_files/figure-latex/unnamed-chunk-11-24.pdf Graphic file (type p
+df)
+<use modelagem_files/figure-latex/unnamed-chunk-11-24.pdf>
+Package pdftex.def Info: modelagem_files/figure-latex/unnamed-chunk-11-24.pdf  
+used on input line 1479.
 (pdftex.def)             Requested size: 469.76265pt x 268.43579pt.
-<modelagem_files/figure-latex/unnamed-chunk-9-40.pdf, id=947, 505.89pt x 289.08
-pt>
-File: modelagem_files/figure-latex/unnamed-chunk-9-40.pdf Graphic file (type pd
-f)
-<use modelagem_files/figure-latex/unnamed-chunk-9-40.pdf>
-Package pdftex.def Info: modelagem_files/figure-latex/unnamed-chunk-9-40.pdf  u
-sed on input line 1534.
+<modelagem_files/figure-latex/unnamed-chunk-11-25.pdf, id=901, 505.89pt x 289.0
+8pt>
+File: modelagem_files/figure-latex/unnamed-chunk-11-25.pdf Graphic file (type p
+df)
+<use modelagem_files/figure-latex/unnamed-chunk-11-25.pdf>
+Package pdftex.def Info: modelagem_files/figure-latex/unnamed-chunk-11-25.pdf  
+used on input line 1480.
 (pdftex.def)             Requested size: 469.76265pt x 268.43579pt.
-[55] [56 <./modelagem_files/figure-latex/unnamed-chunk-9-34.pdf> <./modelagem_f
-iles/figure-latex/unnamed-chunk-9-35.pdf>] [57 <./modelagem_files/figure-latex/
-unnamed-chunk-9-36.pdf> <./modelagem_files/figure-latex/unnamed-chunk-9-37.pdf>
-] [58 <./modelagem_files/figure-latex/unnamed-chunk-9-38.pdf> <./modelagem_file
-s/figure-latex/unnamed-chunk-9-39.pdf>] [59 <./modelagem_files/figure-latex/unn
-amed-chunk-9-40.pdf>] [60] [61]
-<modelagem_files/figure-latex/unnamed-chunk-12-1.pdf, id=1031, 505.89pt x 289.0
+<modelagem_files/figure-latex/unnamed-chunk-11-26.pdf, id=902, 505.89pt x 289.0
+8pt>
+File: modelagem_files/figure-latex/unnamed-chunk-11-26.pdf Graphic file (type p
+df)
+<use modelagem_files/figure-latex/unnamed-chunk-11-26.pdf>
+Package pdftex.def Info: modelagem_files/figure-latex/unnamed-chunk-11-26.pdf  
+used on input line 1481.
+(pdftex.def)             Requested size: 469.76265pt x 268.43579pt.
+<modelagem_files/figure-latex/unnamed-chunk-11-27.pdf, id=903, 505.89pt x 289.0
+8pt>
+File: modelagem_files/figure-latex/unnamed-chunk-11-27.pdf Graphic file (type p
+df)
+<use modelagem_files/figure-latex/unnamed-chunk-11-27.pdf>
+Package pdftex.def Info: modelagem_files/figure-latex/unnamed-chunk-11-27.pdf  
+used on input line 1482.
+(pdftex.def)             Requested size: 469.76265pt x 268.43579pt.
+<modelagem_files/figure-latex/unnamed-chunk-11-28.pdf, id=904, 505.89pt x 289.0
+8pt>
+File: modelagem_files/figure-latex/unnamed-chunk-11-28.pdf Graphic file (type p
+df)
+<use modelagem_files/figure-latex/unnamed-chunk-11-28.pdf>
+Package pdftex.def Info: modelagem_files/figure-latex/unnamed-chunk-11-28.pdf  
+used on input line 1483.
+(pdftex.def)             Requested size: 469.76265pt x 268.43579pt.
+<modelagem_files/figure-latex/unnamed-chunk-11-29.pdf, id=905, 505.89pt x 289.0
+8pt>
+File: modelagem_files/figure-latex/unnamed-chunk-11-29.pdf Graphic file (type p
+df)
+<use modelagem_files/figure-latex/unnamed-chunk-11-29.pdf>
+Package pdftex.def Info: modelagem_files/figure-latex/unnamed-chunk-11-29.pdf  
+used on input line 1484.
+(pdftex.def)             Requested size: 469.76265pt x 268.43579pt.
+<modelagem_files/figure-latex/unnamed-chunk-11-30.pdf, id=906, 505.89pt x 289.0
+8pt>
+File: modelagem_files/figure-latex/unnamed-chunk-11-30.pdf Graphic file (type p
+df)
+<use modelagem_files/figure-latex/unnamed-chunk-11-30.pdf>
+Package pdftex.def Info: modelagem_files/figure-latex/unnamed-chunk-11-30.pdf  
+used on input line 1485.
+(pdftex.def)             Requested size: 469.76265pt x 268.43579pt.
+<modelagem_files/figure-latex/unnamed-chunk-11-31.pdf, id=907, 505.89pt x 289.0
+8pt>
+File: modelagem_files/figure-latex/unnamed-chunk-11-31.pdf Graphic file (type p
+df)
+<use modelagem_files/figure-latex/unnamed-chunk-11-31.pdf>
+Package pdftex.def Info: modelagem_files/figure-latex/unnamed-chunk-11-31.pdf  
+used on input line 1486.
+(pdftex.def)             Requested size: 469.76265pt x 268.43579pt.
+[53] [54 <./modelagem_files/figure-latex/unnamed-chunk-11-24.pdf> <./modelagem_
+files/figure-latex/unnamed-chunk-11-25.pdf>] [55 <./modelagem_files/figure-late
+x/unnamed-chunk-11-26.pdf> <./modelagem_files/figure-latex/unnamed-chunk-11-27.
+pdf>] [56 <./modelagem_files/figure-latex/unnamed-chunk-11-28.pdf> <./modelagem
+_files/figure-latex/unnamed-chunk-11-29.pdf>] [57 <./modelagem_files/figure-lat
+ex/unnamed-chunk-11-30.pdf> <./modelagem_files/figure-latex/unnamed-chunk-11-31
+.pdf>] [58]
+<modelagem_files/figure-latex/unnamed-chunk-11-32.pdf, id=992, 505.89pt x 289.0
+8pt>
+File: modelagem_files/figure-latex/unnamed-chunk-11-32.pdf Graphic file (type p
+df)
+<use modelagem_files/figure-latex/unnamed-chunk-11-32.pdf>
+Package pdftex.def Info: modelagem_files/figure-latex/unnamed-chunk-11-32.pdf  
+used on input line 1647.
+(pdftex.def)             Requested size: 469.76265pt x 268.43579pt.
+<modelagem_files/figure-latex/unnamed-chunk-11-33.pdf, id=993, 505.89pt x 289.0
+8pt>
+File: modelagem_files/figure-latex/unnamed-chunk-11-33.pdf Graphic file (type p
+df)
+<use modelagem_files/figure-latex/unnamed-chunk-11-33.pdf>
+Package pdftex.def Info: modelagem_files/figure-latex/unnamed-chunk-11-33.pdf  
+used on input line 1648.
+(pdftex.def)             Requested size: 469.76265pt x 268.43579pt.
+<modelagem_files/figure-latex/unnamed-chunk-11-34.pdf, id=994, 505.89pt x 289.0
+8pt>
+File: modelagem_files/figure-latex/unnamed-chunk-11-34.pdf Graphic file (type p
+df)
+<use modelagem_files/figure-latex/unnamed-chunk-11-34.pdf>
+Package pdftex.def Info: modelagem_files/figure-latex/unnamed-chunk-11-34.pdf  
+used on input line 1649.
+(pdftex.def)             Requested size: 469.76265pt x 268.43579pt.
+<modelagem_files/figure-latex/unnamed-chunk-11-35.pdf, id=995, 505.89pt x 289.0
+8pt>
+File: modelagem_files/figure-latex/unnamed-chunk-11-35.pdf Graphic file (type p
+df)
+<use modelagem_files/figure-latex/unnamed-chunk-11-35.pdf>
+Package pdftex.def Info: modelagem_files/figure-latex/unnamed-chunk-11-35.pdf  
+used on input line 1650.
+(pdftex.def)             Requested size: 469.76265pt x 268.43579pt.
+<modelagem_files/figure-latex/unnamed-chunk-11-36.pdf, id=996, 505.89pt x 289.0
+8pt>
+File: modelagem_files/figure-latex/unnamed-chunk-11-36.pdf Graphic file (type p
+df)
+<use modelagem_files/figure-latex/unnamed-chunk-11-36.pdf>
+Package pdftex.def Info: modelagem_files/figure-latex/unnamed-chunk-11-36.pdf  
+used on input line 1651.
+(pdftex.def)             Requested size: 469.76265pt x 268.43579pt.
+<modelagem_files/figure-latex/unnamed-chunk-11-37.pdf, id=997, 505.89pt x 289.0
+8pt>
+File: modelagem_files/figure-latex/unnamed-chunk-11-37.pdf Graphic file (type p
+df)
+<use modelagem_files/figure-latex/unnamed-chunk-11-37.pdf>
+Package pdftex.def Info: modelagem_files/figure-latex/unnamed-chunk-11-37.pdf  
+used on input line 1652.
+(pdftex.def)             Requested size: 469.76265pt x 268.43579pt.
+<modelagem_files/figure-latex/unnamed-chunk-11-38.pdf, id=998, 505.89pt x 289.0
+8pt>
+File: modelagem_files/figure-latex/unnamed-chunk-11-38.pdf Graphic file (type p
+df)
+<use modelagem_files/figure-latex/unnamed-chunk-11-38.pdf>
+Package pdftex.def Info: modelagem_files/figure-latex/unnamed-chunk-11-38.pdf  
+used on input line 1653.
+(pdftex.def)             Requested size: 469.76265pt x 268.43579pt.
+[59] [60 <./modelagem_files/figure-latex/unnamed-chunk-11-32.pdf> <./modelagem_
+files/figure-latex/unnamed-chunk-11-33.pdf>] [61 <./modelagem_files/figure-late
+x/unnamed-chunk-11-34.pdf> <./modelagem_files/figure-latex/unnamed-chunk-11-35.
+pdf>] [62 <./modelagem_files/figure-latex/unnamed-chunk-11-36.pdf> <./modelagem
+_files/figure-latex/unnamed-chunk-11-37.pdf>] [63 <./modelagem_files/figure-lat
+ex/unnamed-chunk-11-38.pdf>]
+<modelagem_files/figure-latex/unnamed-chunk-11-39.pdf, id=1065, 505.89pt x 289.
+08pt>
+File: modelagem_files/figure-latex/unnamed-chunk-11-39.pdf Graphic file (type p
+df)
+<use modelagem_files/figure-latex/unnamed-chunk-11-39.pdf>
+Package pdftex.def Info: modelagem_files/figure-latex/unnamed-chunk-11-39.pdf  
+used on input line 1740.
+(pdftex.def)             Requested size: 469.76265pt x 268.43579pt.
+<modelagem_files/figure-latex/unnamed-chunk-11-40.pdf, id=1066, 505.89pt x 289.
+08pt>
+File: modelagem_files/figure-latex/unnamed-chunk-11-40.pdf Graphic file (type p
+df)
+<use modelagem_files/figure-latex/unnamed-chunk-11-40.pdf>
+Package pdftex.def Info: modelagem_files/figure-latex/unnamed-chunk-11-40.pdf  
+used on input line 1741.
+(pdftex.def)             Requested size: 469.76265pt x 268.43579pt.
+<modelagem_files/figure-latex/unnamed-chunk-11-41.pdf, id=1067, 505.89pt x 289.
+08pt>
+File: modelagem_files/figure-latex/unnamed-chunk-11-41.pdf Graphic file (type p
+df)
+<use modelagem_files/figure-latex/unnamed-chunk-11-41.pdf>
+Package pdftex.def Info: modelagem_files/figure-latex/unnamed-chunk-11-41.pdf  
+used on input line 1742.
+(pdftex.def)             Requested size: 469.76265pt x 268.43579pt.
+<modelagem_files/figure-latex/unnamed-chunk-11-42.pdf, id=1068, 505.89pt x 289.
+08pt>
+File: modelagem_files/figure-latex/unnamed-chunk-11-42.pdf Graphic file (type p
+df)
+<use modelagem_files/figure-latex/unnamed-chunk-11-42.pdf>
+Package pdftex.def Info: modelagem_files/figure-latex/unnamed-chunk-11-42.pdf  
+used on input line 1743.
+(pdftex.def)             Requested size: 469.76265pt x 268.43579pt.
+<modelagem_files/figure-latex/unnamed-chunk-11-43.pdf, id=1069, 505.89pt x 289.
+08pt>
+File: modelagem_files/figure-latex/unnamed-chunk-11-43.pdf Graphic file (type p
+df)
+<use modelagem_files/figure-latex/unnamed-chunk-11-43.pdf>
+Package pdftex.def Info: modelagem_files/figure-latex/unnamed-chunk-11-43.pdf  
+used on input line 1744.
+(pdftex.def)             Requested size: 469.76265pt x 268.43579pt.
+<modelagem_files/figure-latex/unnamed-chunk-11-44.pdf, id=1070, 505.89pt x 289.
+08pt>
+File: modelagem_files/figure-latex/unnamed-chunk-11-44.pdf Graphic file (type p
+df)
+<use modelagem_files/figure-latex/unnamed-chunk-11-44.pdf>
+Package pdftex.def Info: modelagem_files/figure-latex/unnamed-chunk-11-44.pdf  
+used on input line 1745.
+(pdftex.def)             Requested size: 469.76265pt x 268.43579pt.
+<modelagem_files/figure-latex/unnamed-chunk-11-45.pdf, id=1071, 505.89pt x 289.
+08pt>
+File: modelagem_files/figure-latex/unnamed-chunk-11-45.pdf Graphic file (type p
+df)
+<use modelagem_files/figure-latex/unnamed-chunk-11-45.pdf>
+Package pdftex.def Info: modelagem_files/figure-latex/unnamed-chunk-11-45.pdf  
+used on input line 1746.
+(pdftex.def)             Requested size: 469.76265pt x 268.43579pt.
+<modelagem_files/figure-latex/unnamed-chunk-11-46.pdf, id=1072, 505.89pt x 289.
+08pt>
+File: modelagem_files/figure-latex/unnamed-chunk-11-46.pdf Graphic file (type p
+df)
+<use modelagem_files/figure-latex/unnamed-chunk-11-46.pdf>
+Package pdftex.def Info: modelagem_files/figure-latex/unnamed-chunk-11-46.pdf  
+used on input line 1747.
+(pdftex.def)             Requested size: 469.76265pt x 268.43579pt.
+[64] [65 <./modelagem_files/figure-latex/unnamed-chunk-11-39.pdf> <./modelagem_
+files/figure-latex/unnamed-chunk-11-40.pdf>] [66 <./modelagem_files/figure-late
+x/unnamed-chunk-11-41.pdf> <./modelagem_files/figure-latex/unnamed-chunk-11-42.
+pdf>] [67 <./modelagem_files/figure-latex/unnamed-chunk-11-43.pdf> <./modelagem
+_files/figure-latex/unnamed-chunk-11-44.pdf>] [68 <./modelagem_files/figure-lat
+ex/unnamed-chunk-11-45.pdf> <./modelagem_files/figure-latex/unnamed-chunk-11-46
+.pdf>] [69]
+<modelagem_files/figure-latex/unnamed-chunk-12-1.pdf, id=1158, 505.89pt x 289.0
 8pt>
 File: modelagem_files/figure-latex/unnamed-chunk-12-1.pdf Graphic file (type pd
 f)
 <use modelagem_files/figure-latex/unnamed-chunk-12-1.pdf>
 Package pdftex.def Info: modelagem_files/figure-latex/unnamed-chunk-12-1.pdf  u
-sed on input line 1775.
+sed on input line 1890.
 (pdftex.def)             Requested size: 469.76265pt x 268.43579pt.
-<modelagem_files/figure-latex/unnamed-chunk-12-2.pdf, id=1032, 505.89pt x 289.0
+<modelagem_files/figure-latex/unnamed-chunk-12-2.pdf, id=1159, 505.89pt x 289.0
 8pt>
 File: modelagem_files/figure-latex/unnamed-chunk-12-2.pdf Graphic file (type pd
 f)
 <use modelagem_files/figure-latex/unnamed-chunk-12-2.pdf>
 Package pdftex.def Info: modelagem_files/figure-latex/unnamed-chunk-12-2.pdf  u
-sed on input line 1776.
+sed on input line 1891.
 (pdftex.def)             Requested size: 469.76265pt x 268.43579pt.
-<modelagem_files/figure-latex/unnamed-chunk-12-3.pdf, id=1033, 505.89pt x 289.0
+<modelagem_files/figure-latex/unnamed-chunk-12-3.pdf, id=1160, 505.89pt x 289.0
 8pt>
 File: modelagem_files/figure-latex/unnamed-chunk-12-3.pdf Graphic file (type pd
 f)
 <use modelagem_files/figure-latex/unnamed-chunk-12-3.pdf>
 Package pdftex.def Info: modelagem_files/figure-latex/unnamed-chunk-12-3.pdf  u
-sed on input line 1777.
+sed on input line 1892.
 (pdftex.def)             Requested size: 469.76265pt x 268.43579pt.
-<modelagem_files/figure-latex/unnamed-chunk-12-4.pdf, id=1034, 505.89pt x 289.0
+<modelagem_files/figure-latex/unnamed-chunk-12-4.pdf, id=1161, 505.89pt x 289.0
 8pt>
 File: modelagem_files/figure-latex/unnamed-chunk-12-4.pdf Graphic file (type pd
 f)
 <use modelagem_files/figure-latex/unnamed-chunk-12-4.pdf>
 Package pdftex.def Info: modelagem_files/figure-latex/unnamed-chunk-12-4.pdf  u
-sed on input line 1778.
+sed on input line 1893.
 (pdftex.def)             Requested size: 469.76265pt x 268.43579pt.
-<modelagem_files/figure-latex/unnamed-chunk-12-5.pdf, id=1035, 505.89pt x 289.0
+<modelagem_files/figure-latex/unnamed-chunk-12-5.pdf, id=1162, 505.89pt x 289.0
 8pt>
 File: modelagem_files/figure-latex/unnamed-chunk-12-5.pdf Graphic file (type pd
 f)
 <use modelagem_files/figure-latex/unnamed-chunk-12-5.pdf>
 Package pdftex.def Info: modelagem_files/figure-latex/unnamed-chunk-12-5.pdf  u
-sed on input line 1779.
+sed on input line 1894.
 (pdftex.def)             Requested size: 469.76265pt x 268.43579pt.
-<modelagem_files/figure-latex/unnamed-chunk-12-6.pdf, id=1036, 505.89pt x 289.0
+<modelagem_files/figure-latex/unnamed-chunk-12-6.pdf, id=1163, 505.89pt x 289.0
 8pt>
 File: modelagem_files/figure-latex/unnamed-chunk-12-6.pdf Graphic file (type pd
 f)
 <use modelagem_files/figure-latex/unnamed-chunk-12-6.pdf>
 Package pdftex.def Info: modelagem_files/figure-latex/unnamed-chunk-12-6.pdf  u
-sed on input line 1780.
+sed on input line 1895.
 (pdftex.def)             Requested size: 469.76265pt x 268.43579pt.
-[62] [63 <./modelagem_files/figure-latex/unnamed-chunk-12-1.pdf> <./modelagem_f
-iles/figure-latex/unnamed-chunk-12-2.pdf>] [64 <./modelagem_files/figure-latex/
-unnamed-chunk-12-3.pdf> <./modelagem_files/figure-latex/unnamed-chunk-12-4.pdf>
-] [65 <./modelagem_files/figure-latex/unnamed-chunk-12-5.pdf> <./modelagem_file
-s/figure-latex/unnamed-chunk-12-6.pdf>] [66]
-<modelagem_files/figure-latex/unnamed-chunk-12-7.pdf, id=1100, 505.89pt x 289.0
+<modelagem_files/figure-latex/unnamed-chunk-12-7.pdf, id=1164, 505.89pt x 289.0
 8pt>
 File: modelagem_files/figure-latex/unnamed-chunk-12-7.pdf Graphic file (type pd
 f)
 <use modelagem_files/figure-latex/unnamed-chunk-12-7.pdf>
 Package pdftex.def Info: modelagem_files/figure-latex/unnamed-chunk-12-7.pdf  u
-sed on input line 1913.
+sed on input line 1896.
 (pdftex.def)             Requested size: 469.76265pt x 268.43579pt.
-<modelagem_files/figure-latex/unnamed-chunk-12-8.pdf, id=1101, 505.89pt x 289.0
+[70] [71 <./modelagem_files/figure-latex/unnamed-chunk-12-1.pdf> <./modelagem_f
+iles/figure-latex/unnamed-chunk-12-2.pdf>] [72 <./modelagem_files/figure-latex/
+unnamed-chunk-12-3.pdf> <./modelagem_files/figure-latex/unnamed-chunk-12-4.pdf>
+] [73 <./modelagem_files/figure-latex/unnamed-chunk-12-5.pdf> <./modelagem_file
+s/figure-latex/unnamed-chunk-12-6.pdf>] [74 <./modelagem_files/figure-latex/unn
+amed-chunk-12-7.pdf>]
+<modelagem_files/figure-latex/unnamed-chunk-12-8.pdf, id=1231, 505.89pt x 289.0
 8pt>
 File: modelagem_files/figure-latex/unnamed-chunk-12-8.pdf Graphic file (type pd
 f)
 <use modelagem_files/figure-latex/unnamed-chunk-12-8.pdf>
 Package pdftex.def Info: modelagem_files/figure-latex/unnamed-chunk-12-8.pdf  u
-sed on input line 1914.
+sed on input line 1983.
 (pdftex.def)             Requested size: 469.76265pt x 268.43579pt.
-<modelagem_files/figure-latex/unnamed-chunk-12-9.pdf, id=1102, 505.89pt x 289.0
+<modelagem_files/figure-latex/unnamed-chunk-12-9.pdf, id=1232, 505.89pt x 289.0
 8pt>
 File: modelagem_files/figure-latex/unnamed-chunk-12-9.pdf Graphic file (type pd
 f)
 <use modelagem_files/figure-latex/unnamed-chunk-12-9.pdf>
 Package pdftex.def Info: modelagem_files/figure-latex/unnamed-chunk-12-9.pdf  u
-sed on input line 1915.
+sed on input line 1984.
 (pdftex.def)             Requested size: 469.76265pt x 268.43579pt.
-<modelagem_files/figure-latex/unnamed-chunk-12-10.pdf, id=1103, 505.89pt x 289.
+<modelagem_files/figure-latex/unnamed-chunk-12-10.pdf, id=1233, 505.89pt x 289.
 08pt>
 File: modelagem_files/figure-latex/unnamed-chunk-12-10.pdf Graphic file (type p
 df)
 <use modelagem_files/figure-latex/unnamed-chunk-12-10.pdf>
 Package pdftex.def Info: modelagem_files/figure-latex/unnamed-chunk-12-10.pdf  
-used on input line 1916.
+used on input line 1985.
 (pdftex.def)             Requested size: 469.76265pt x 268.43579pt.
-<modelagem_files/figure-latex/unnamed-chunk-12-11.pdf, id=1104, 505.89pt x 289.
+<modelagem_files/figure-latex/unnamed-chunk-12-11.pdf, id=1234, 505.89pt x 289.
 08pt>
 File: modelagem_files/figure-latex/unnamed-chunk-12-11.pdf Graphic file (type p
 df)
 <use modelagem_files/figure-latex/unnamed-chunk-12-11.pdf>
 Package pdftex.def Info: modelagem_files/figure-latex/unnamed-chunk-12-11.pdf  
-used on input line 1917.
+used on input line 1986.
 (pdftex.def)             Requested size: 469.76265pt x 268.43579pt.
-<modelagem_files/figure-latex/unnamed-chunk-12-12.pdf, id=1105, 505.89pt x 289.
+<modelagem_files/figure-latex/unnamed-chunk-12-12.pdf, id=1235, 505.89pt x 289.
 08pt>
 File: modelagem_files/figure-latex/unnamed-chunk-12-12.pdf Graphic file (type p
 df)
 <use modelagem_files/figure-latex/unnamed-chunk-12-12.pdf>
 Package pdftex.def Info: modelagem_files/figure-latex/unnamed-chunk-12-12.pdf  
-used on input line 1918.
+used on input line 1987.
 (pdftex.def)             Requested size: 469.76265pt x 268.43579pt.
-<modelagem_files/figure-latex/unnamed-chunk-12-13.pdf, id=1106, 505.89pt x 289.
+<modelagem_files/figure-latex/unnamed-chunk-12-13.pdf, id=1236, 505.89pt x 289.
 08pt>
 File: modelagem_files/figure-latex/unnamed-chunk-12-13.pdf Graphic file (type p
 df)
 <use modelagem_files/figure-latex/unnamed-chunk-12-13.pdf>
 Package pdftex.def Info: modelagem_files/figure-latex/unnamed-chunk-12-13.pdf  
-used on input line 1919.
+used on input line 1988.
 (pdftex.def)             Requested size: 469.76265pt x 268.43579pt.
-[67] [68 <./modelagem_files/figure-latex/unnamed-chunk-12-7.pdf> <./modelagem_f
-iles/figure-latex/unnamed-chunk-12-8.pdf>] [69 <./modelagem_files/figure-latex/
-unnamed-chunk-12-9.pdf> <./modelagem_files/figure-latex/unnamed-chunk-12-10.pdf
->] [70 <./modelagem_files/figure-latex/unnamed-chunk-12-11.pdf> <./modelagem_fi
-les/figure-latex/unnamed-chunk-12-12.pdf>] [71 <./modelagem_files/figure-latex/
-unnamed-chunk-12-13.pdf>]
-<modelagem_files/figure-latex/unnamed-chunk-12-14.pdf, id=1170, 505.89pt x 289.
+<modelagem_files/figure-latex/unnamed-chunk-12-14.pdf, id=1237, 505.89pt x 289.
 08pt>
 File: modelagem_files/figure-latex/unnamed-chunk-12-14.pdf Graphic file (type p
 df)
 <use modelagem_files/figure-latex/unnamed-chunk-12-14.pdf>
 Package pdftex.def Info: modelagem_files/figure-latex/unnamed-chunk-12-14.pdf  
-used on input line 2021.
+used on input line 1989.
 (pdftex.def)             Requested size: 469.76265pt x 268.43579pt.
-<modelagem_files/figure-latex/unnamed-chunk-12-15.pdf, id=1171, 505.89pt x 289.
+<modelagem_files/figure-latex/unnamed-chunk-12-15.pdf, id=1238, 505.89pt x 289.
 08pt>
 File: modelagem_files/figure-latex/unnamed-chunk-12-15.pdf Graphic file (type p
 df)
 <use modelagem_files/figure-latex/unnamed-chunk-12-15.pdf>
 Package pdftex.def Info: modelagem_files/figure-latex/unnamed-chunk-12-15.pdf  
-used on input line 2022.
+used on input line 1990.
 (pdftex.def)             Requested size: 469.76265pt x 268.43579pt.
-<modelagem_files/figure-latex/unnamed-chunk-12-16.pdf, id=1172, 505.89pt x 289.
+[75] [76 <./modelagem_files/figure-latex/unnamed-chunk-12-8.pdf> <./modelagem_f
+iles/figure-latex/unnamed-chunk-12-9.pdf>] [77 <./modelagem_files/figure-latex/
+unnamed-chunk-12-10.pdf> <./modelagem_files/figure-latex/unnamed-chunk-12-11.pd
+f>] [78 <./modelagem_files/figure-latex/unnamed-chunk-12-12.pdf> <./modelagem_f
+iles/figure-latex/unnamed-chunk-12-13.pdf>] [79 <./modelagem_files/figure-latex
+/unnamed-chunk-12-14.pdf> <./modelagem_files/figure-latex/unnamed-chunk-12-15.p
+df>]
+<modelagem_files/figure-latex/unnamed-chunk-12-16.pdf, id=1315, 505.89pt x 289.
 08pt>
 File: modelagem_files/figure-latex/unnamed-chunk-12-16.pdf Graphic file (type p
 df)
 <use modelagem_files/figure-latex/unnamed-chunk-12-16.pdf>
 Package pdftex.def Info: modelagem_files/figure-latex/unnamed-chunk-12-16.pdf  
-used on input line 2023.
+used on input line 2077.
 (pdftex.def)             Requested size: 469.76265pt x 268.43579pt.
-<modelagem_files/figure-latex/unnamed-chunk-12-17.pdf, id=1173, 505.89pt x 289.
+<modelagem_files/figure-latex/unnamed-chunk-12-17.pdf, id=1316, 505.89pt x 289.
 08pt>
 File: modelagem_files/figure-latex/unnamed-chunk-12-17.pdf Graphic file (type p
 df)
 <use modelagem_files/figure-latex/unnamed-chunk-12-17.pdf>
 Package pdftex.def Info: modelagem_files/figure-latex/unnamed-chunk-12-17.pdf  
-used on input line 2024.
+used on input line 2078.
 (pdftex.def)             Requested size: 469.76265pt x 268.43579pt.
-<modelagem_files/figure-latex/unnamed-chunk-12-18.pdf, id=1174, 505.89pt x 289.
+<modelagem_files/figure-latex/unnamed-chunk-12-18.pdf, id=1317, 505.89pt x 289.
 08pt>
 File: modelagem_files/figure-latex/unnamed-chunk-12-18.pdf Graphic file (type p
 df)
 <use modelagem_files/figure-latex/unnamed-chunk-12-18.pdf>
 Package pdftex.def Info: modelagem_files/figure-latex/unnamed-chunk-12-18.pdf  
-used on input line 2025.
+used on input line 2079.
 (pdftex.def)             Requested size: 469.76265pt x 268.43579pt.
-<modelagem_files/figure-latex/unnamed-chunk-12-19.pdf, id=1175, 505.89pt x 289.
+<modelagem_files/figure-latex/unnamed-chunk-12-19.pdf, id=1318, 505.89pt x 289.
 08pt>
 File: modelagem_files/figure-latex/unnamed-chunk-12-19.pdf Graphic file (type p
 df)
 <use modelagem_files/figure-latex/unnamed-chunk-12-19.pdf>
 Package pdftex.def Info: modelagem_files/figure-latex/unnamed-chunk-12-19.pdf  
-used on input line 2026.
+used on input line 2080.
 (pdftex.def)             Requested size: 469.76265pt x 268.43579pt.
-<modelagem_files/figure-latex/unnamed-chunk-12-20.pdf, id=1176, 505.89pt x 289.
+<modelagem_files/figure-latex/unnamed-chunk-12-20.pdf, id=1319, 505.89pt x 289.
 08pt>
 File: modelagem_files/figure-latex/unnamed-chunk-12-20.pdf Graphic file (type p
 df)
 <use modelagem_files/figure-latex/unnamed-chunk-12-20.pdf>
 Package pdftex.def Info: modelagem_files/figure-latex/unnamed-chunk-12-20.pdf  
-used on input line 2027.
+used on input line 2081.
 (pdftex.def)             Requested size: 469.76265pt x 268.43579pt.
-[72] [73 <./modelagem_files/figure-latex/unnamed-chunk-12-14.pdf> <./modelagem_
-files/figure-latex/unnamed-chunk-12-15.pdf>] [74 <./modelagem_files/figure-late
-x/unnamed-chunk-12-16.pdf> <./modelagem_files/figure-latex/unnamed-chunk-12-17.
-pdf>] [75 <./modelagem_files/figure-latex/unnamed-chunk-12-18.pdf> <./modelagem
-_files/figure-latex/unnamed-chunk-12-19.pdf>] [76 <./modelagem_files/figure-lat
-ex/unnamed-chunk-12-20.pdf>]
-<modelagem_files/figure-latex/unnamed-chunk-12-21.pdf, id=1244, 505.89pt x 289.
+<modelagem_files/figure-latex/unnamed-chunk-12-21.pdf, id=1320, 505.89pt x 289.
 08pt>
 File: modelagem_files/figure-latex/unnamed-chunk-12-21.pdf Graphic file (type p
 df)
 <use modelagem_files/figure-latex/unnamed-chunk-12-21.pdf>
 Package pdftex.def Info: modelagem_files/figure-latex/unnamed-chunk-12-21.pdf  
-used on input line 2129.
+used on input line 2082.
 (pdftex.def)             Requested size: 469.76265pt x 268.43579pt.
-<modelagem_files/figure-latex/unnamed-chunk-12-22.pdf, id=1245, 505.89pt x 289.
+<modelagem_files/figure-latex/unnamed-chunk-12-22.pdf, id=1321, 505.89pt x 289.
 08pt>
 File: modelagem_files/figure-latex/unnamed-chunk-12-22.pdf Graphic file (type p
 df)
 <use modelagem_files/figure-latex/unnamed-chunk-12-22.pdf>
 Package pdftex.def Info: modelagem_files/figure-latex/unnamed-chunk-12-22.pdf  
-used on input line 2130.
+used on input line 2083.
 (pdftex.def)             Requested size: 469.76265pt x 268.43579pt.
-<modelagem_files/figure-latex/unnamed-chunk-12-23.pdf, id=1246, 505.89pt x 289.
+<modelagem_files/figure-latex/unnamed-chunk-12-23.pdf, id=1322, 505.89pt x 289.
 08pt>
 File: modelagem_files/figure-latex/unnamed-chunk-12-23.pdf Graphic file (type p
 df)
 <use modelagem_files/figure-latex/unnamed-chunk-12-23.pdf>
 Package pdftex.def Info: modelagem_files/figure-latex/unnamed-chunk-12-23.pdf  
-used on input line 2131.
+used on input line 2084.
 (pdftex.def)             Requested size: 469.76265pt x 268.43579pt.
-<modelagem_files/figure-latex/unnamed-chunk-12-24.pdf, id=1247, 505.89pt x 289.
+[80] [81 <./modelagem_files/figure-latex/unnamed-chunk-12-16.pdf> <./modelagem_
+files/figure-latex/unnamed-chunk-12-17.pdf>] [82 <./modelagem_files/figure-late
+x/unnamed-chunk-12-18.pdf> <./modelagem_files/figure-latex/unnamed-chunk-12-19.
+pdf>] [83 <./modelagem_files/figure-latex/unnamed-chunk-12-20.pdf> <./modelagem
+_files/figure-latex/unnamed-chunk-12-21.pdf>] [84 <./modelagem_files/figure-lat
+ex/unnamed-chunk-12-22.pdf> <./modelagem_files/figure-latex/unnamed-chunk-12-23
+.pdf>]
+<modelagem_files/figure-latex/unnamed-chunk-12-24.pdf, id=1398, 505.89pt x 289.
 08pt>
 File: modelagem_files/figure-latex/unnamed-chunk-12-24.pdf Graphic file (type p
 df)
 <use modelagem_files/figure-latex/unnamed-chunk-12-24.pdf>
 Package pdftex.def Info: modelagem_files/figure-latex/unnamed-chunk-12-24.pdf  
-used on input line 2132.
+used on input line 2171.
 (pdftex.def)             Requested size: 469.76265pt x 268.43579pt.
-<modelagem_files/figure-latex/unnamed-chunk-12-25.pdf, id=1248, 505.89pt x 289.
+<modelagem_files/figure-latex/unnamed-chunk-12-25.pdf, id=1399, 505.89pt x 289.
 08pt>
 File: modelagem_files/figure-latex/unnamed-chunk-12-25.pdf Graphic file (type p
 df)
 <use modelagem_files/figure-latex/unnamed-chunk-12-25.pdf>
 Package pdftex.def Info: modelagem_files/figure-latex/unnamed-chunk-12-25.pdf  
-used on input line 2133.
+used on input line 2172.
 (pdftex.def)             Requested size: 469.76265pt x 268.43579pt.
-<modelagem_files/figure-latex/unnamed-chunk-12-26.pdf, id=1249, 505.89pt x 289.
+<modelagem_files/figure-latex/unnamed-chunk-12-26.pdf, id=1400, 505.89pt x 289.
 08pt>
 File: modelagem_files/figure-latex/unnamed-chunk-12-26.pdf Graphic file (type p
 df)
 <use modelagem_files/figure-latex/unnamed-chunk-12-26.pdf>
 Package pdftex.def Info: modelagem_files/figure-latex/unnamed-chunk-12-26.pdf  
-used on input line 2134.
+used on input line 2173.
 (pdftex.def)             Requested size: 469.76265pt x 268.43579pt.
-<modelagem_files/figure-latex/unnamed-chunk-12-27.pdf, id=1250, 505.89pt x 289.
+<modelagem_files/figure-latex/unnamed-chunk-12-27.pdf, id=1401, 505.89pt x 289.
 08pt>
 File: modelagem_files/figure-latex/unnamed-chunk-12-27.pdf Graphic file (type p
 df)
 <use modelagem_files/figure-latex/unnamed-chunk-12-27.pdf>
 Package pdftex.def Info: modelagem_files/figure-latex/unnamed-chunk-12-27.pdf  
-used on input line 2135.
+used on input line 2174.
 (pdftex.def)             Requested size: 469.76265pt x 268.43579pt.
-[77] [78 <./modelagem_files/figure-latex/unnamed-chunk-12-21.pdf> <./modelagem_
-files/figure-latex/unnamed-chunk-12-22.pdf>] [79 <./modelagem_files/figure-late
-x/unnamed-chunk-12-23.pdf> <./modelagem_files/figure-latex/unnamed-chunk-12-24.
-pdf>] [80 <./modelagem_files/figure-latex/unnamed-chunk-12-25.pdf> <./modelagem
-_files/figure-latex/unnamed-chunk-12-26.pdf>] [81 <./modelagem_files/figure-lat
-ex/unnamed-chunk-12-27.pdf>] [82]
-<modelagem_files/figure-latex/unnamed-chunk-12-28.pdf, id=1328, 505.89pt x 289.
+<modelagem_files/figure-latex/unnamed-chunk-12-28.pdf, id=1402, 505.89pt x 289.
 08pt>
 File: modelagem_files/figure-latex/unnamed-chunk-12-28.pdf Graphic file (type p
 df)
 <use modelagem_files/figure-latex/unnamed-chunk-12-28.pdf>
 Package pdftex.def Info: modelagem_files/figure-latex/unnamed-chunk-12-28.pdf  
-used on input line 2268.
+used on input line 2175.
 (pdftex.def)             Requested size: 469.76265pt x 268.43579pt.
-<modelagem_files/figure-latex/unnamed-chunk-12-29.pdf, id=1329, 505.89pt x 289.
+<modelagem_files/figure-latex/unnamed-chunk-12-29.pdf, id=1403, 505.89pt x 289.
 08pt>
 File: modelagem_files/figure-latex/unnamed-chunk-12-29.pdf Graphic file (type p
 df)
 <use modelagem_files/figure-latex/unnamed-chunk-12-29.pdf>
 Package pdftex.def Info: modelagem_files/figure-latex/unnamed-chunk-12-29.pdf  
-used on input line 2269.
+used on input line 2176.
 (pdftex.def)             Requested size: 469.76265pt x 268.43579pt.
-<modelagem_files/figure-latex/unnamed-chunk-12-30.pdf, id=1330, 505.89pt x 289.
+<modelagem_files/figure-latex/unnamed-chunk-12-30.pdf, id=1404, 505.89pt x 289.
 08pt>
 File: modelagem_files/figure-latex/unnamed-chunk-12-30.pdf Graphic file (type p
 df)
 <use modelagem_files/figure-latex/unnamed-chunk-12-30.pdf>
 Package pdftex.def Info: modelagem_files/figure-latex/unnamed-chunk-12-30.pdf  
-used on input line 2270.
+used on input line 2177.
 (pdftex.def)             Requested size: 469.76265pt x 268.43579pt.
-<modelagem_files/figure-latex/unnamed-chunk-12-31.pdf, id=1331, 505.89pt x 289.
+<modelagem_files/figure-latex/unnamed-chunk-12-31.pdf, id=1405, 505.89pt x 289.
 08pt>
 File: modelagem_files/figure-latex/unnamed-chunk-12-31.pdf Graphic file (type p
 df)
 <use modelagem_files/figure-latex/unnamed-chunk-12-31.pdf>
 Package pdftex.def Info: modelagem_files/figure-latex/unnamed-chunk-12-31.pdf  
-used on input line 2271.
+used on input line 2178.
 (pdftex.def)             Requested size: 469.76265pt x 268.43579pt.
-<modelagem_files/figure-latex/unnamed-chunk-12-32.pdf, id=1332, 505.89pt x 289.
+[85] [86 <./modelagem_files/figure-latex/unnamed-chunk-12-24.pdf> <./modelagem_
+files/figure-latex/unnamed-chunk-12-25.pdf>] [87 <./modelagem_files/figure-late
+x/unnamed-chunk-12-26.pdf> <./modelagem_files/figure-latex/unnamed-chunk-12-27.
+pdf>] [88 <./modelagem_files/figure-latex/unnamed-chunk-12-28.pdf> <./modelagem
+_files/figure-latex/unnamed-chunk-12-29.pdf>] [89 <./modelagem_files/figure-lat
+ex/unnamed-chunk-12-30.pdf> <./modelagem_files/figure-latex/unnamed-chunk-12-31
+.pdf>]
+<modelagem_files/figure-latex/unnamed-chunk-12-32.pdf, id=1481, 505.89pt x 289.
 08pt>
 File: modelagem_files/figure-latex/unnamed-chunk-12-32.pdf Graphic file (type p
 df)
 <use modelagem_files/figure-latex/unnamed-chunk-12-32.pdf>
 Package pdftex.def Info: modelagem_files/figure-latex/unnamed-chunk-12-32.pdf  
-used on input line 2272.
+used on input line 2268.
 (pdftex.def)             Requested size: 469.76265pt x 268.43579pt.
-<modelagem_files/figure-latex/unnamed-chunk-12-33.pdf, id=1333, 505.89pt x 289.
+<modelagem_files/figure-latex/unnamed-chunk-12-33.pdf, id=1482, 505.89pt x 289.
 08pt>
 File: modelagem_files/figure-latex/unnamed-chunk-12-33.pdf Graphic file (type p
 df)
 <use modelagem_files/figure-latex/unnamed-chunk-12-33.pdf>
 Package pdftex.def Info: modelagem_files/figure-latex/unnamed-chunk-12-33.pdf  
-used on input line 2273.
+used on input line 2269.
 (pdftex.def)             Requested size: 469.76265pt x 268.43579pt.
-[83] [84 <./modelagem_files/figure-latex/unnamed-chunk-12-28.pdf> <./modelagem_
-files/figure-latex/unnamed-chunk-12-29.pdf>] [85 <./modelagem_files/figure-late
-x/unnamed-chunk-12-30.pdf> <./modelagem_files/figure-latex/unnamed-chunk-12-31.
-pdf>] [86 <./modelagem_files/figure-latex/unnamed-chunk-12-32.pdf> <./modelagem
-_files/figure-latex/unnamed-chunk-12-33.pdf>]
-<modelagem_files/figure-latex/unnamed-chunk-12-34.pdf, id=1387, 505.89pt x 289.
+<modelagem_files/figure-latex/unnamed-chunk-12-34.pdf, id=1483, 505.89pt x 289.
 08pt>
 File: modelagem_files/figure-latex/unnamed-chunk-12-34.pdf Graphic file (type p
 df)
 <use modelagem_files/figure-latex/unnamed-chunk-12-34.pdf>
 Package pdftex.def Info: modelagem_files/figure-latex/unnamed-chunk-12-34.pdf  
-used on input line 2375.
+used on input line 2270.
 (pdftex.def)             Requested size: 469.76265pt x 268.43579pt.
-<modelagem_files/figure-latex/unnamed-chunk-12-35.pdf, id=1388, 505.89pt x 289.
+<modelagem_files/figure-latex/unnamed-chunk-12-35.pdf, id=1484, 505.89pt x 289.
 08pt>
 File: modelagem_files/figure-latex/unnamed-chunk-12-35.pdf Graphic file (type p
 df)
 <use modelagem_files/figure-latex/unnamed-chunk-12-35.pdf>
 Package pdftex.def Info: modelagem_files/figure-latex/unnamed-chunk-12-35.pdf  
-used on input line 2376.
+used on input line 2271.
 (pdftex.def)             Requested size: 469.76265pt x 268.43579pt.
-<modelagem_files/figure-latex/unnamed-chunk-12-36.pdf, id=1389, 505.89pt x 289.
+<modelagem_files/figure-latex/unnamed-chunk-12-36.pdf, id=1485, 505.89pt x 289.
 08pt>
 File: modelagem_files/figure-latex/unnamed-chunk-12-36.pdf Graphic file (type p
 df)
 <use modelagem_files/figure-latex/unnamed-chunk-12-36.pdf>
 Package pdftex.def Info: modelagem_files/figure-latex/unnamed-chunk-12-36.pdf  
-used on input line 2377.
+used on input line 2272.
 (pdftex.def)             Requested size: 469.76265pt x 268.43579pt.
-<modelagem_files/figure-latex/unnamed-chunk-12-37.pdf, id=1390, 505.89pt x 289.
+<modelagem_files/figure-latex/unnamed-chunk-12-37.pdf, id=1486, 505.89pt x 289.
 08pt>
 File: modelagem_files/figure-latex/unnamed-chunk-12-37.pdf Graphic file (type p
 df)
 <use modelagem_files/figure-latex/unnamed-chunk-12-37.pdf>
 Package pdftex.def Info: modelagem_files/figure-latex/unnamed-chunk-12-37.pdf  
-used on input line 2378.
+used on input line 2273.
 (pdftex.def)             Requested size: 469.76265pt x 268.43579pt.
-<modelagem_files/figure-latex/unnamed-chunk-12-38.pdf, id=1391, 505.89pt x 289.
+<modelagem_files/figure-latex/unnamed-chunk-12-38.pdf, id=1487, 505.89pt x 289.
 08pt>
 File: modelagem_files/figure-latex/unnamed-chunk-12-38.pdf Graphic file (type p
 df)
 <use modelagem_files/figure-latex/unnamed-chunk-12-38.pdf>
 Package pdftex.def Info: modelagem_files/figure-latex/unnamed-chunk-12-38.pdf  
-used on input line 2379.
+used on input line 2274.
 (pdftex.def)             Requested size: 469.76265pt x 268.43579pt.
-<modelagem_files/figure-latex/unnamed-chunk-12-39.pdf, id=1392, 505.89pt x 289.
+[90] [91 <./modelagem_files/figure-latex/unnamed-chunk-12-32.pdf> <./modelagem_
+files/figure-latex/unnamed-chunk-12-33.pdf>] [92 <./modelagem_files/figure-late
+x/unnamed-chunk-12-34.pdf> <./modelagem_files/figure-latex/unnamed-chunk-12-35.
+pdf>] [93 <./modelagem_files/figure-latex/unnamed-chunk-12-36.pdf> <./modelagem
+_files/figure-latex/unnamed-chunk-12-37.pdf>] [94 <./modelagem_files/figure-lat
+ex/unnamed-chunk-12-38.pdf>]
+<modelagem_files/figure-latex/unnamed-chunk-12-39.pdf, id=1559, 505.89pt x 289.
 08pt>
 File: modelagem_files/figure-latex/unnamed-chunk-12-39.pdf Graphic file (type p
 df)
 <use modelagem_files/figure-latex/unnamed-chunk-12-39.pdf>
 Package pdftex.def Info: modelagem_files/figure-latex/unnamed-chunk-12-39.pdf  
-used on input line 2380.
+used on input line 2358.
 (pdftex.def)             Requested size: 469.76265pt x 268.43579pt.
-<modelagem_files/figure-latex/unnamed-chunk-12-40.pdf, id=1393, 505.89pt x 289.
+<modelagem_files/figure-latex/unnamed-chunk-12-40.pdf, id=1560, 505.89pt x 289.
 08pt>
 File: modelagem_files/figure-latex/unnamed-chunk-12-40.pdf Graphic file (type p
 df)
 <use modelagem_files/figure-latex/unnamed-chunk-12-40.pdf>
 Package pdftex.def Info: modelagem_files/figure-latex/unnamed-chunk-12-40.pdf  
-used on input line 2381.
+used on input line 2359.
 (pdftex.def)             Requested size: 469.76265pt x 268.43579pt.
-[87] [88 <./modelagem_files/figure-latex/unnamed-chunk-12-34.pdf> <./modelagem_
-files/figure-latex/unnamed-chunk-12-35.pdf>] [89 <./modelagem_files/figure-late
-x/unnamed-chunk-12-36.pdf> <./modelagem_files/figure-latex/unnamed-chunk-12-37.
-pdf>] [90 <./modelagem_files/figure-latex/unnamed-chunk-12-38.pdf> <./modelagem
-_files/figure-latex/unnamed-chunk-12-39.pdf>] [91 <./modelagem_files/figure-lat
-ex/unnamed-chunk-12-40.pdf>] [92]
-<modelagem_files/figure-latex/unnamed-chunk-13-1.pdf, id=1471, 505.89pt x 289.0
-8pt>
+<modelagem_files/figure-latex/unnamed-chunk-12-41.pdf, id=1561, 505.89pt x 289.
+08pt>
+File: modelagem_files/figure-latex/unnamed-chunk-12-41.pdf Graphic file (type p
+df)
+<use modelagem_files/figure-latex/unnamed-chunk-12-41.pdf>
+Package pdftex.def Info: modelagem_files/figure-latex/unnamed-chunk-12-41.pdf  
+used on input line 2360.
+(pdftex.def)             Requested size: 469.76265pt x 268.43579pt.
+<modelagem_files/figure-latex/unnamed-chunk-12-42.pdf, id=1562, 505.89pt x 289.
+08pt>
+File: modelagem_files/figure-latex/unnamed-chunk-12-42.pdf Graphic file (type p
+df)
+<use modelagem_files/figure-latex/unnamed-chunk-12-42.pdf>
+Package pdftex.def Info: modelagem_files/figure-latex/unnamed-chunk-12-42.pdf  
+used on input line 2361.
+(pdftex.def)             Requested size: 469.76265pt x 268.43579pt.
+<modelagem_files/figure-latex/unnamed-chunk-12-43.pdf, id=1563, 505.89pt x 289.
+08pt>
+File: modelagem_files/figure-latex/unnamed-chunk-12-43.pdf Graphic file (type p
+df)
+<use modelagem_files/figure-latex/unnamed-chunk-12-43.pdf>
+Package pdftex.def Info: modelagem_files/figure-latex/unnamed-chunk-12-43.pdf  
+used on input line 2362.
+(pdftex.def)             Requested size: 469.76265pt x 268.43579pt.
+<modelagem_files/figure-latex/unnamed-chunk-12-44.pdf, id=1564, 505.89pt x 289.
+08pt>
+File: modelagem_files/figure-latex/unnamed-chunk-12-44.pdf Graphic file (type p
+df)
+<use modelagem_files/figure-latex/unnamed-chunk-12-44.pdf>
+Package pdftex.def Info: modelagem_files/figure-latex/unnamed-chunk-12-44.pdf  
+used on input line 2363.
+(pdftex.def)             Requested size: 469.76265pt x 268.43579pt.
+<modelagem_files/figure-latex/unnamed-chunk-12-45.pdf, id=1565, 505.89pt x 289.
+08pt>
+File: modelagem_files/figure-latex/unnamed-chunk-12-45.pdf Graphic file (type p
+df)
+<use modelagem_files/figure-latex/unnamed-chunk-12-45.pdf>
+Package pdftex.def Info: modelagem_files/figure-latex/unnamed-chunk-12-45.pdf  
+used on input line 2364.
+(pdftex.def)             Requested size: 469.76265pt x 268.43579pt.
+<modelagem_files/figure-latex/unnamed-chunk-12-46.pdf, id=1566, 505.89pt x 289.
+08pt>
+File: modelagem_files/figure-latex/unnamed-chunk-12-46.pdf Graphic file (type p
+df)
+<use modelagem_files/figure-latex/unnamed-chunk-12-46.pdf>
+Package pdftex.def Info: modelagem_files/figure-latex/unnamed-chunk-12-46.pdf  
+used on input line 2365.
+(pdftex.def)             Requested size: 469.76265pt x 268.43579pt.
+[95] [96 <./modelagem_files/figure-latex/unnamed-chunk-12-39.pdf> <./modelagem_
+files/figure-latex/unnamed-chunk-12-40.pdf>] [97 <./modelagem_files/figure-late
+x/unnamed-chunk-12-41.pdf> <./modelagem_files/figure-latex/unnamed-chunk-12-42.
+pdf>] [98 <./modelagem_files/figure-latex/unnamed-chunk-12-43.pdf> <./modelagem
+_files/figure-latex/unnamed-chunk-12-44.pdf>] [99 <./modelagem_files/figure-lat
+ex/unnamed-chunk-12-45.pdf> <./modelagem_files/figure-latex/unnamed-chunk-12-46
+.pdf>]
+Overfull \hbox (12.5835pt too wide) in alignment at lines 2379--2384
+ [] [] [] [] [] [] [] 
+ []
+
+
+Overfull \hbox (12.5835pt too wide) in alignment at lines 2384--2389
+ [] [] [] [] [] [] [] 
+ []
+
+
+Overfull \hbox (12.5835pt too wide) in alignment at lines 2389--2391
+ [] [] [] [] [] [] [] 
+ []
+
+
+Overfull \hbox (12.5835pt too wide) in alignment at lines 2391--2393
+ [] [] [] [] [] [] [] 
+ []
+
+
+Overfull \hbox (12.5835pt too wide) in alignment at lines 2393--2417
+ [] [] [] [] [] [] [] 
+ []
+
+
+Overfull \hbox (12.5835pt too wide) in alignment at lines 2417--2441
+ [] [] [] [] [] [] [] 
+ []
+
+
+Overfull \hbox (12.5835pt too wide) in alignment at lines 2441--2456
+ [] [] [] [] [] [] [] 
+ []
+
+<modelagem_files/figure-latex/unnamed-chunk-13-1.pdf, id=1642, 469.755pt x 325.
+215pt>
 File: modelagem_files/figure-latex/unnamed-chunk-13-1.pdf Graphic file (type pd
 f)
 <use modelagem_files/figure-latex/unnamed-chunk-13-1.pdf>
 Package pdftex.def Info: modelagem_files/figure-latex/unnamed-chunk-13-1.pdf  u
-sed on input line 2532.
-(pdftex.def)             Requested size: 469.76265pt x 268.43579pt.
-<modelagem_files/figure-latex/unnamed-chunk-13-2.pdf, id=1472, 505.89pt x 289.0
-8pt>
-File: modelagem_files/figure-latex/unnamed-chunk-13-2.pdf Graphic file (type pd
-f)
-<use modelagem_files/figure-latex/unnamed-chunk-13-2.pdf>
-Package pdftex.def Info: modelagem_files/figure-latex/unnamed-chunk-13-2.pdf  u
-sed on input line 2533.
-(pdftex.def)             Requested size: 469.76265pt x 268.43579pt.
-<modelagem_files/figure-latex/unnamed-chunk-13-3.pdf, id=1473, 505.89pt x 289.0
-8pt>
-File: modelagem_files/figure-latex/unnamed-chunk-13-3.pdf Graphic file (type pd
-f)
-<use modelagem_files/figure-latex/unnamed-chunk-13-3.pdf>
-Package pdftex.def Info: modelagem_files/figure-latex/unnamed-chunk-13-3.pdf  u
-sed on input line 2534.
-(pdftex.def)             Requested size: 469.76265pt x 268.43579pt.
-<modelagem_files/figure-latex/unnamed-chunk-13-4.pdf, id=1474, 505.89pt x 289.0
-8pt>
-File: modelagem_files/figure-latex/unnamed-chunk-13-4.pdf Graphic file (type pd
-f)
-<use modelagem_files/figure-latex/unnamed-chunk-13-4.pdf>
-Package pdftex.def Info: modelagem_files/figure-latex/unnamed-chunk-13-4.pdf  u
-sed on input line 2535.
-(pdftex.def)             Requested size: 469.76265pt x 268.43579pt.
-<modelagem_files/figure-latex/unnamed-chunk-13-5.pdf, id=1475, 505.89pt x 289.0
-8pt>
-File: modelagem_files/figure-latex/unnamed-chunk-13-5.pdf Graphic file (type pd
-f)
-<use modelagem_files/figure-latex/unnamed-chunk-13-5.pdf>
-Package pdftex.def Info: modelagem_files/figure-latex/unnamed-chunk-13-5.pdf  u
-sed on input line 2536.
-(pdftex.def)             Requested size: 469.76265pt x 268.43579pt.
-<modelagem_files/figure-latex/unnamed-chunk-13-6.pdf, id=1476, 505.89pt x 289.0
-8pt>
-File: modelagem_files/figure-latex/unnamed-chunk-13-6.pdf Graphic file (type pd
-f)
-<use modelagem_files/figure-latex/unnamed-chunk-13-6.pdf>
-Package pdftex.def Info: modelagem_files/figure-latex/unnamed-chunk-13-6.pdf  u
-sed on input line 2537.
-(pdftex.def)             Requested size: 469.76265pt x 268.43579pt.
-[93] [94 <./modelagem_files/figure-latex/unnamed-chunk-13-1.pdf> <./modelagem_f
-iles/figure-latex/unnamed-chunk-13-2.pdf>] [95 <./modelagem_files/figure-latex/
-unnamed-chunk-13-3.pdf> <./modelagem_files/figure-latex/unnamed-chunk-13-4.pdf>
-] [96 <./modelagem_files/figure-latex/unnamed-chunk-13-5.pdf> <./modelagem_file
-s/figure-latex/unnamed-chunk-13-6.pdf>]
-<modelagem_files/figure-latex/unnamed-chunk-13-7.pdf, id=1531, 505.89pt x 289.0
-8pt>
-File: modelagem_files/figure-latex/unnamed-chunk-13-7.pdf Graphic file (type pd
-f)
-<use modelagem_files/figure-latex/unnamed-chunk-13-7.pdf>
-Package pdftex.def Info: modelagem_files/figure-latex/unnamed-chunk-13-7.pdf  u
-sed on input line 2642.
-(pdftex.def)             Requested size: 469.76265pt x 268.43579pt.
-<modelagem_files/figure-latex/unnamed-chunk-13-8.pdf, id=1532, 505.89pt x 289.0
-8pt>
-File: modelagem_files/figure-latex/unnamed-chunk-13-8.pdf Graphic file (type pd
-f)
-<use modelagem_files/figure-latex/unnamed-chunk-13-8.pdf>
-Package pdftex.def Info: modelagem_files/figure-latex/unnamed-chunk-13-8.pdf  u
-sed on input line 2643.
-(pdftex.def)             Requested size: 469.76265pt x 268.43579pt.
-<modelagem_files/figure-latex/unnamed-chunk-13-9.pdf, id=1533, 505.89pt x 289.0
-8pt>
-File: modelagem_files/figure-latex/unnamed-chunk-13-9.pdf Graphic file (type pd
-f)
-<use modelagem_files/figure-latex/unnamed-chunk-13-9.pdf>
-Package pdftex.def Info: modelagem_files/figure-latex/unnamed-chunk-13-9.pdf  u
-sed on input line 2644.
-(pdftex.def)             Requested size: 469.76265pt x 268.43579pt.
-<modelagem_files/figure-latex/unnamed-chunk-13-10.pdf, id=1534, 505.89pt x 289.
-08pt>
-File: modelagem_files/figure-latex/unnamed-chunk-13-10.pdf Graphic file (type p
-df)
-<use modelagem_files/figure-latex/unnamed-chunk-13-10.pdf>
-Package pdftex.def Info: modelagem_files/figure-latex/unnamed-chunk-13-10.pdf  
-used on input line 2645.
-(pdftex.def)             Requested size: 469.76265pt x 268.43579pt.
-<modelagem_files/figure-latex/unnamed-chunk-13-11.pdf, id=1535, 505.89pt x 289.
-08pt>
-File: modelagem_files/figure-latex/unnamed-chunk-13-11.pdf Graphic file (type p
-df)
-<use modelagem_files/figure-latex/unnamed-chunk-13-11.pdf>
-Package pdftex.def Info: modelagem_files/figure-latex/unnamed-chunk-13-11.pdf  
-used on input line 2646.
-(pdftex.def)             Requested size: 469.76265pt x 268.43579pt.
-<modelagem_files/figure-latex/unnamed-chunk-13-12.pdf, id=1536, 505.89pt x 289.
-08pt>
-File: modelagem_files/figure-latex/unnamed-chunk-13-12.pdf Graphic file (type p
-df)
-<use modelagem_files/figure-latex/unnamed-chunk-13-12.pdf>
-Package pdftex.def Info: modelagem_files/figure-latex/unnamed-chunk-13-12.pdf  
-used on input line 2647.
-(pdftex.def)             Requested size: 469.76265pt x 268.43579pt.
-<modelagem_files/figure-latex/unnamed-chunk-13-13.pdf, id=1537, 505.89pt x 289.
-08pt>
-File: modelagem_files/figure-latex/unnamed-chunk-13-13.pdf Graphic file (type p
-df)
-<use modelagem_files/figure-latex/unnamed-chunk-13-13.pdf>
-Package pdftex.def Info: modelagem_files/figure-latex/unnamed-chunk-13-13.pdf  
-used on input line 2648.
-(pdftex.def)             Requested size: 469.76265pt x 268.43579pt.
-[97] [98 <./modelagem_files/figure-latex/unnamed-chunk-13-7.pdf> <./modelagem_f
-iles/figure-latex/unnamed-chunk-13-8.pdf>] [99 <./modelagem_files/figure-latex/
-unnamed-chunk-13-9.pdf> <./modelagem_files/figure-latex/unnamed-chunk-13-10.pdf
->] [100 <./modelagem_files/figure-latex/unnamed-chunk-13-11.pdf> <./modelagem_f
-iles/figure-latex/unnamed-chunk-13-12.pdf>] [101 <./modelagem_files/figure-late
-x/unnamed-chunk-13-13.pdf>]
-<modelagem_files/figure-latex/unnamed-chunk-13-14.pdf, id=1605, 505.89pt x 289.
-08pt>
-File: modelagem_files/figure-latex/unnamed-chunk-13-14.pdf Graphic file (type p
-df)
-<use modelagem_files/figure-latex/unnamed-chunk-13-14.pdf>
-Package pdftex.def Info: modelagem_files/figure-latex/unnamed-chunk-13-14.pdf  
-used on input line 2753.
-(pdftex.def)             Requested size: 469.76265pt x 268.43579pt.
-<modelagem_files/figure-latex/unnamed-chunk-13-15.pdf, id=1606, 505.89pt x 289.
-08pt>
-File: modelagem_files/figure-latex/unnamed-chunk-13-15.pdf Graphic file (type p
-df)
-<use modelagem_files/figure-latex/unnamed-chunk-13-15.pdf>
-Package pdftex.def Info: modelagem_files/figure-latex/unnamed-chunk-13-15.pdf  
-used on input line 2754.
-(pdftex.def)             Requested size: 469.76265pt x 268.43579pt.
-<modelagem_files/figure-latex/unnamed-chunk-13-16.pdf, id=1607, 505.89pt x 289.
-08pt>
-File: modelagem_files/figure-latex/unnamed-chunk-13-16.pdf Graphic file (type p
-df)
-<use modelagem_files/figure-latex/unnamed-chunk-13-16.pdf>
-Package pdftex.def Info: modelagem_files/figure-latex/unnamed-chunk-13-16.pdf  
-used on input line 2755.
-(pdftex.def)             Requested size: 469.76265pt x 268.43579pt.
-<modelagem_files/figure-latex/unnamed-chunk-13-17.pdf, id=1608, 505.89pt x 289.
-08pt>
-File: modelagem_files/figure-latex/unnamed-chunk-13-17.pdf Graphic file (type p
-df)
-<use modelagem_files/figure-latex/unnamed-chunk-13-17.pdf>
-Package pdftex.def Info: modelagem_files/figure-latex/unnamed-chunk-13-17.pdf  
-used on input line 2756.
-(pdftex.def)             Requested size: 469.76265pt x 268.43579pt.
-<modelagem_files/figure-latex/unnamed-chunk-13-18.pdf, id=1609, 505.89pt x 289.
-08pt>
-File: modelagem_files/figure-latex/unnamed-chunk-13-18.pdf Graphic file (type p
-df)
-<use modelagem_files/figure-latex/unnamed-chunk-13-18.pdf>
-Package pdftex.def Info: modelagem_files/figure-latex/unnamed-chunk-13-18.pdf  
-used on input line 2757.
-(pdftex.def)             Requested size: 469.76265pt x 268.43579pt.
-<modelagem_files/figure-latex/unnamed-chunk-13-19.pdf, id=1610, 505.89pt x 289.
-08pt>
-File: modelagem_files/figure-latex/unnamed-chunk-13-19.pdf Graphic file (type p
-df)
-<use modelagem_files/figure-latex/unnamed-chunk-13-19.pdf>
-Package pdftex.def Info: modelagem_files/figure-latex/unnamed-chunk-13-19.pdf  
-used on input line 2758.
-(pdftex.def)             Requested size: 469.76265pt x 268.43579pt.
-<modelagem_files/figure-latex/unnamed-chunk-13-20.pdf, id=1611, 505.89pt x 289.
-08pt>
-File: modelagem_files/figure-latex/unnamed-chunk-13-20.pdf Graphic file (type p
-df)
-<use modelagem_files/figure-latex/unnamed-chunk-13-20.pdf>
-Package pdftex.def Info: modelagem_files/figure-latex/unnamed-chunk-13-20.pdf  
-used on input line 2759.
-(pdftex.def)             Requested size: 469.76265pt x 268.43579pt.
-[102] [103 <./modelagem_files/figure-latex/unnamed-chunk-13-14.pdf> <./modelage
-m_files/figure-latex/unnamed-chunk-13-15.pdf>] [104 <./modelagem_files/figure-l
-atex/unnamed-chunk-13-16.pdf> <./modelagem_files/figure-latex/unnamed-chunk-13-
-17.pdf>] [105 <./modelagem_files/figure-latex/unnamed-chunk-13-18.pdf> <./model
-agem_files/figure-latex/unnamed-chunk-13-19.pdf>] [106 <./modelagem_files/figur
-e-latex/unnamed-chunk-13-20.pdf>]
-<modelagem_files/figure-latex/unnamed-chunk-13-21.pdf, id=1680, 505.89pt x 289.
-08pt>
-File: modelagem_files/figure-latex/unnamed-chunk-13-21.pdf Graphic file (type p
-df)
-<use modelagem_files/figure-latex/unnamed-chunk-13-21.pdf>
-Package pdftex.def Info: modelagem_files/figure-latex/unnamed-chunk-13-21.pdf  
-used on input line 2864.
-(pdftex.def)             Requested size: 469.76265pt x 268.43579pt.
-<modelagem_files/figure-latex/unnamed-chunk-13-22.pdf, id=1681, 505.89pt x 289.
-08pt>
-File: modelagem_files/figure-latex/unnamed-chunk-13-22.pdf Graphic file (type p
-df)
-<use modelagem_files/figure-latex/unnamed-chunk-13-22.pdf>
-Package pdftex.def Info: modelagem_files/figure-latex/unnamed-chunk-13-22.pdf  
-used on input line 2865.
-(pdftex.def)             Requested size: 469.76265pt x 268.43579pt.
-<modelagem_files/figure-latex/unnamed-chunk-13-23.pdf, id=1682, 505.89pt x 289.
-08pt>
-File: modelagem_files/figure-latex/unnamed-chunk-13-23.pdf Graphic file (type p
-df)
-<use modelagem_files/figure-latex/unnamed-chunk-13-23.pdf>
-Package pdftex.def Info: modelagem_files/figure-latex/unnamed-chunk-13-23.pdf  
-used on input line 2866.
-(pdftex.def)             Requested size: 469.76265pt x 268.43579pt.
-<modelagem_files/figure-latex/unnamed-chunk-13-24.pdf, id=1683, 505.89pt x 289.
-08pt>
-File: modelagem_files/figure-latex/unnamed-chunk-13-24.pdf Graphic file (type p
-df)
-<use modelagem_files/figure-latex/unnamed-chunk-13-24.pdf>
-Package pdftex.def Info: modelagem_files/figure-latex/unnamed-chunk-13-24.pdf  
-used on input line 2867.
-(pdftex.def)             Requested size: 469.76265pt x 268.43579pt.
-<modelagem_files/figure-latex/unnamed-chunk-13-25.pdf, id=1684, 505.89pt x 289.
-08pt>
-File: modelagem_files/figure-latex/unnamed-chunk-13-25.pdf Graphic file (type p
-df)
-<use modelagem_files/figure-latex/unnamed-chunk-13-25.pdf>
-Package pdftex.def Info: modelagem_files/figure-latex/unnamed-chunk-13-25.pdf  
-used on input line 2868.
-(pdftex.def)             Requested size: 469.76265pt x 268.43579pt.
-<modelagem_files/figure-latex/unnamed-chunk-13-26.pdf, id=1685, 505.89pt x 289.
-08pt>
-File: modelagem_files/figure-latex/unnamed-chunk-13-26.pdf Graphic file (type p
-df)
-<use modelagem_files/figure-latex/unnamed-chunk-13-26.pdf>
-Package pdftex.def Info: modelagem_files/figure-latex/unnamed-chunk-13-26.pdf  
-used on input line 2869.
-(pdftex.def)             Requested size: 469.76265pt x 268.43579pt.
-<modelagem_files/figure-latex/unnamed-chunk-13-27.pdf, id=1686, 505.89pt x 289.
-08pt>
-File: modelagem_files/figure-latex/unnamed-chunk-13-27.pdf Graphic file (type p
-df)
-<use modelagem_files/figure-latex/unnamed-chunk-13-27.pdf>
-Package pdftex.def Info: modelagem_files/figure-latex/unnamed-chunk-13-27.pdf  
-used on input line 2870.
-(pdftex.def)             Requested size: 469.76265pt x 268.43579pt.
-[107] [108 <./modelagem_files/figure-latex/unnamed-chunk-13-21.pdf> <./modelage
-m_files/figure-latex/unnamed-chunk-13-22.pdf>] [109 <./modelagem_files/figure-l
-atex/unnamed-chunk-13-23.pdf> <./modelagem_files/figure-latex/unnamed-chunk-13-
-24.pdf>] [110 <./modelagem_files/figure-latex/unnamed-chunk-13-25.pdf> <./model
-agem_files/figure-latex/unnamed-chunk-13-26.pdf>] [111 <./modelagem_files/figur
-e-latex/unnamed-chunk-13-27.pdf>]
-<modelagem_files/figure-latex/unnamed-chunk-13-28.pdf, id=1754, 505.89pt x 289.
-08pt>
-File: modelagem_files/figure-latex/unnamed-chunk-13-28.pdf Graphic file (type p
-df)
-<use modelagem_files/figure-latex/unnamed-chunk-13-28.pdf>
-Package pdftex.def Info: modelagem_files/figure-latex/unnamed-chunk-13-28.pdf  
-used on input line 2978.
-(pdftex.def)             Requested size: 469.76265pt x 268.43579pt.
-<modelagem_files/figure-latex/unnamed-chunk-13-29.pdf, id=1755, 505.89pt x 289.
-08pt>
-File: modelagem_files/figure-latex/unnamed-chunk-13-29.pdf Graphic file (type p
-df)
-<use modelagem_files/figure-latex/unnamed-chunk-13-29.pdf>
-Package pdftex.def Info: modelagem_files/figure-latex/unnamed-chunk-13-29.pdf  
-used on input line 2979.
-(pdftex.def)             Requested size: 469.76265pt x 268.43579pt.
-<modelagem_files/figure-latex/unnamed-chunk-13-30.pdf, id=1756, 505.89pt x 289.
-08pt>
-File: modelagem_files/figure-latex/unnamed-chunk-13-30.pdf Graphic file (type p
-df)
-<use modelagem_files/figure-latex/unnamed-chunk-13-30.pdf>
-Package pdftex.def Info: modelagem_files/figure-latex/unnamed-chunk-13-30.pdf  
-used on input line 2980.
-(pdftex.def)             Requested size: 469.76265pt x 268.43579pt.
-<modelagem_files/figure-latex/unnamed-chunk-13-31.pdf, id=1757, 505.89pt x 289.
-08pt>
-File: modelagem_files/figure-latex/unnamed-chunk-13-31.pdf Graphic file (type p
-df)
-<use modelagem_files/figure-latex/unnamed-chunk-13-31.pdf>
-Package pdftex.def Info: modelagem_files/figure-latex/unnamed-chunk-13-31.pdf  
-used on input line 2981.
-(pdftex.def)             Requested size: 469.76265pt x 268.43579pt.
-<modelagem_files/figure-latex/unnamed-chunk-13-32.pdf, id=1758, 505.89pt x 289.
-08pt>
-File: modelagem_files/figure-latex/unnamed-chunk-13-32.pdf Graphic file (type p
-df)
-<use modelagem_files/figure-latex/unnamed-chunk-13-32.pdf>
-Package pdftex.def Info: modelagem_files/figure-latex/unnamed-chunk-13-32.pdf  
-used on input line 2982.
-(pdftex.def)             Requested size: 469.76265pt x 268.43579pt.
-<modelagem_files/figure-latex/unnamed-chunk-13-33.pdf, id=1759, 505.89pt x 289.
-08pt>
-File: modelagem_files/figure-latex/unnamed-chunk-13-33.pdf Graphic file (type p
-df)
-<use modelagem_files/figure-latex/unnamed-chunk-13-33.pdf>
-Package pdftex.def Info: modelagem_files/figure-latex/unnamed-chunk-13-33.pdf  
-used on input line 2983.
-(pdftex.def)             Requested size: 469.76265pt x 268.43579pt.
-[112] [113 <./modelagem_files/figure-latex/unnamed-chunk-13-28.pdf> <./modelage
-m_files/figure-latex/unnamed-chunk-13-29.pdf>] [114 <./modelagem_files/figure-l
-atex/unnamed-chunk-13-30.pdf> <./modelagem_files/figure-latex/unnamed-chunk-13-
-31.pdf>] [115 <./modelagem_files/figure-latex/unnamed-chunk-13-32.pdf> <./model
-agem_files/figure-latex/unnamed-chunk-13-33.pdf>]
-<modelagem_files/figure-latex/unnamed-chunk-13-34.pdf, id=1819, 505.89pt x 289.
-08pt>
-File: modelagem_files/figure-latex/unnamed-chunk-13-34.pdf Graphic file (type p
-df)
-<use modelagem_files/figure-latex/unnamed-chunk-13-34.pdf>
-Package pdftex.def Info: modelagem_files/figure-latex/unnamed-chunk-13-34.pdf  
-used on input line 3085.
-(pdftex.def)             Requested size: 469.76265pt x 268.43579pt.
-<modelagem_files/figure-latex/unnamed-chunk-13-35.pdf, id=1820, 505.89pt x 289.
-08pt>
-File: modelagem_files/figure-latex/unnamed-chunk-13-35.pdf Graphic file (type p
-df)
-<use modelagem_files/figure-latex/unnamed-chunk-13-35.pdf>
-Package pdftex.def Info: modelagem_files/figure-latex/unnamed-chunk-13-35.pdf  
-used on input line 3086.
-(pdftex.def)             Requested size: 469.76265pt x 268.43579pt.
-<modelagem_files/figure-latex/unnamed-chunk-13-36.pdf, id=1821, 505.89pt x 289.
-08pt>
-File: modelagem_files/figure-latex/unnamed-chunk-13-36.pdf Graphic file (type p
-df)
-<use modelagem_files/figure-latex/unnamed-chunk-13-36.pdf>
-Package pdftex.def Info: modelagem_files/figure-latex/unnamed-chunk-13-36.pdf  
-used on input line 3087.
-(pdftex.def)             Requested size: 469.76265pt x 268.43579pt.
-<modelagem_files/figure-latex/unnamed-chunk-13-37.pdf, id=1822, 505.89pt x 289.
-08pt>
-File: modelagem_files/figure-latex/unnamed-chunk-13-37.pdf Graphic file (type p
-df)
-<use modelagem_files/figure-latex/unnamed-chunk-13-37.pdf>
-Package pdftex.def Info: modelagem_files/figure-latex/unnamed-chunk-13-37.pdf  
-used on input line 3088.
-(pdftex.def)             Requested size: 469.76265pt x 268.43579pt.
-<modelagem_files/figure-latex/unnamed-chunk-13-38.pdf, id=1823, 505.89pt x 289.
-08pt>
-File: modelagem_files/figure-latex/unnamed-chunk-13-38.pdf Graphic file (type p
-df)
-<use modelagem_files/figure-latex/unnamed-chunk-13-38.pdf>
-Package pdftex.def Info: modelagem_files/figure-latex/unnamed-chunk-13-38.pdf  
-used on input line 3089.
-(pdftex.def)             Requested size: 469.76265pt x 268.43579pt.
-<modelagem_files/figure-latex/unnamed-chunk-13-39.pdf, id=1824, 505.89pt x 289.
-08pt>
-File: modelagem_files/figure-latex/unnamed-chunk-13-39.pdf Graphic file (type p
-df)
-<use modelagem_files/figure-latex/unnamed-chunk-13-39.pdf>
-Package pdftex.def Info: modelagem_files/figure-latex/unnamed-chunk-13-39.pdf  
-used on input line 3090.
-(pdftex.def)             Requested size: 469.76265pt x 268.43579pt.
-<modelagem_files/figure-latex/unnamed-chunk-13-40.pdf, id=1825, 505.89pt x 289.
-08pt>
-File: modelagem_files/figure-latex/unnamed-chunk-13-40.pdf Graphic file (type p
-df)
-<use modelagem_files/figure-latex/unnamed-chunk-13-40.pdf>
-Package pdftex.def Info: modelagem_files/figure-latex/unnamed-chunk-13-40.pdf  
-used on input line 3091.
-(pdftex.def)             Requested size: 469.76265pt x 268.43579pt.
-[116] [117 <./modelagem_files/figure-latex/unnamed-chunk-13-34.pdf> <./modelage
-m_files/figure-latex/unnamed-chunk-13-35.pdf>] [118 <./modelagem_files/figure-l
-atex/unnamed-chunk-13-36.pdf> <./modelagem_files/figure-latex/unnamed-chunk-13-
-37.pdf>] [119 <./modelagem_files/figure-latex/unnamed-chunk-13-38.pdf> <./model
-agem_files/figure-latex/unnamed-chunk-13-39.pdf>] [120 <./modelagem_files/figur
-e-latex/unnamed-chunk-13-40.pdf>] [121]
-<modelagem_files/figure-latex/unnamed-chunk-14-1.pdf, id=1900, 469.755pt x 325.
+sed on input line 2459.
+(pdftex.def)             Requested size: 469.75386pt x 325.2142pt.
+[100]
+Overfull \hbox (12.5835pt too wide) in alignment at lines 2467--2472
+ [] [] [] [] [] [] [] 
+ []
+
+
+Overfull \hbox (12.5835pt too wide) in alignment at lines 2472--2477
+ [] [] [] [] [] [] [] 
+ []
+
+
+Overfull \hbox (12.5835pt too wide) in alignment at lines 2477--2479
+ [] [] [] [] [] [] [] 
+ []
+
+
+Overfull \hbox (12.5835pt too wide) in alignment at lines 2479--2481
+ [] [] [] [] [] [] [] 
+ []
+
+
+Overfull \hbox (12.5835pt too wide) in alignment at lines 2481--2505
+ [] [] [] [] [] [] [] 
+ []
+
+
+Overfull \hbox (12.5835pt too wide) in alignment at lines 2505--2529
+ [] [] [] [] [] [] [] 
+ []
+
+
+Overfull \hbox (12.5835pt too wide) in alignment at lines 2529--2544
+ [] [] [] [] [] [] [] 
+ []
+
+[101 <./modelagem_files/figure-latex/unnamed-chunk-13-1.pdf>]
+<modelagem_files/figure-latex/unnamed-chunk-14-1.pdf, id=1668, 469.755pt x 325.
 215pt>
 File: modelagem_files/figure-latex/unnamed-chunk-14-1.pdf Graphic file (type pd
 f)
 <use modelagem_files/figure-latex/unnamed-chunk-14-1.pdf>
 Package pdftex.def Info: modelagem_files/figure-latex/unnamed-chunk-14-1.pdf  u
-sed on input line 3181.
+sed on input line 2547.
 (pdftex.def)             Requested size: 469.75386pt x 325.2142pt.
-[122 <./modelagem_files/figure-latex/unnamed-chunk-14-1.pdf>]
-<modelagem_files/figure-latex/unnamed-chunk-15-1.pdf, id=1916, 469.755pt x 325.
+[102]
+Overfull \hbox (12.5835pt too wide) in alignment at lines 2555--2560
+ [] [] [] [] [] [] [] 
+ []
+
+
+Overfull \hbox (12.5835pt too wide) in alignment at lines 2560--2565
+ [] [] [] [] [] [] [] 
+ []
+
+
+Overfull \hbox (12.5835pt too wide) in alignment at lines 2565--2567
+ [] [] [] [] [] [] [] 
+ []
+
+
+Overfull \hbox (12.5835pt too wide) in alignment at lines 2567--2569
+ [] [] [] [] [] [] [] 
+ []
+
+
+Overfull \hbox (12.5835pt too wide) in alignment at lines 2569--2593
+ [] [] [] [] [] [] [] 
+ []
+
+
+Overfull \hbox (12.5835pt too wide) in alignment at lines 2593--2617
+ [] [] [] [] [] [] [] 
+ []
+
+
+Overfull \hbox (12.5835pt too wide) in alignment at lines 2617--2631
+ [] [] [] [] [] [] [] 
+ []
+
+[103 <./modelagem_files/figure-latex/unnamed-chunk-14-1.pdf>]
+<modelagem_files/figure-latex/unnamed-chunk-15-1.pdf, id=1690, 469.755pt x 325.
 215pt>
 File: modelagem_files/figure-latex/unnamed-chunk-15-1.pdf Graphic file (type pd
 f)
 <use modelagem_files/figure-latex/unnamed-chunk-15-1.pdf>
 Package pdftex.def Info: modelagem_files/figure-latex/unnamed-chunk-15-1.pdf  u
-sed on input line 3266.
+sed on input line 2634.
 (pdftex.def)             Requested size: 469.75386pt x 325.2142pt.
-[123] [124 <./modelagem_files/figure-latex/unnamed-chunk-15-1.pdf>]
-<modelagem_files/figure-latex/unnamed-chunk-16-1.pdf, id=1937, 469.755pt x 325.
+
+Overfull \hbox (12.5835pt too wide) in alignment at lines 2641--2646
+ [] [] [] [] [] [] [] 
+ []
+
+
+Overfull \hbox (12.5835pt too wide) in alignment at lines 2646--2651
+ [] [] [] [] [] [] [] 
+ []
+
+
+Overfull \hbox (12.5835pt too wide) in alignment at lines 2651--2653
+ [] [] [] [] [] [] [] 
+ []
+
+
+Overfull \hbox (12.5835pt too wide) in alignment at lines 2653--2655
+ [] [] [] [] [] [] [] 
+ []
+
+
+Overfull \hbox (12.5835pt too wide) in alignment at lines 2655--2679
+ [] [] [] [] [] [] [] 
+ []
+
+[104 <./modelagem_files/figure-latex/unnamed-chunk-15-1.pdf>]
+Overfull \hbox (12.5835pt too wide) in alignment at lines 2679--2703
+ [] [] [] [] [] [] [] 
+ []
+
+
+Overfull \hbox (12.5835pt too wide) in alignment at lines 2703--2717
+ [] [] [] [] [] [] [] 
+ []
+
+<modelagem_files/figure-latex/unnamed-chunk-16-1.pdf, id=1705, 469.755pt x 325.
 215pt>
 File: modelagem_files/figure-latex/unnamed-chunk-16-1.pdf Graphic file (type pd
 f)
 <use modelagem_files/figure-latex/unnamed-chunk-16-1.pdf>
 Package pdftex.def Info: modelagem_files/figure-latex/unnamed-chunk-16-1.pdf  u
-sed on input line 3350.
+sed on input line 2720.
 (pdftex.def)             Requested size: 469.75386pt x 325.2142pt.
-[125] [126 <./modelagem_files/figure-latex/unnamed-chunk-16-1.pdf>]
-<modelagem_files/figure-latex/unnamed-chunk-17-1.pdf, id=1957, 469.755pt x 325.
-215pt>
-File: modelagem_files/figure-latex/unnamed-chunk-17-1.pdf Graphic file (type pd
-f)
-<use modelagem_files/figure-latex/unnamed-chunk-17-1.pdf>
-Package pdftex.def Info: modelagem_files/figure-latex/unnamed-chunk-17-1.pdf  u
-sed on input line 3433.
-(pdftex.def)             Requested size: 469.75386pt x 325.2142pt.
-[127] [128 <./modelagem_files/figure-latex/unnamed-chunk-17-1.pdf>] (./modelage
+[105] [106 <./modelagem_files/figure-latex/unnamed-chunk-16-1.pdf>] (./modelage
 m.aux)
 Package rerunfilecheck Info: File `modelagem.out' has not changed.
-(rerunfilecheck)             Checksum: 63190DE42D1AF28DFCEBE0BF8181F2A8;4341.
+(rerunfilecheck)             Checksum: 99859CE2B4A0E2D6E86D17233B017D17;4239.
 
 LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 15250 strings out of 481364
- 262451 string characters out of 5917579
- 581361 words of memory out of 5000000
- 31296 multiletter control sequences out of 15000+600000
- 443111 words of font info for 74 fonts, out of 8000000 for 9000
+ 15499 strings out of 481364
+ 262485 string characters out of 5917579
+ 646192 words of memory out of 5000000
+ 31622 multiletter control sequences out of 15000+600000
+ 451439 words of font info for 82 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
- 66i,7n,72p,514b,443s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 66i,7n,72p,514b,469s stack positions out of 5000i,500n,10000p,200000b,80000s
 {c:/Users/eduar/AppData/Roaming/TinyTeX/texmf-dist/fonts/enc/dvips/lm/lm-ec.e
 nc}<c:/Users/eduar/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/lm/lmb
-x10.pfb><c:/Users/eduar/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/l
-m/lmbx12.pfb><c:/Users/eduar/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/pub
-lic/lm/lmr10.pfb><c:/Users/eduar/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1
-/public/lm/lmr17.pfb><c:/Users/eduar/AppData/Roaming/TinyTeX/texmf-dist/fonts/t
-ype1/public/lm/lmri10.pfb>
-Output written on modelagem.pdf (128 pages, 1612190 bytes).
+x12.pfb><c:/Users/eduar/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/l
+m/lmbx7.pfb><c:/Users/eduar/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/publ
+ic/lm/lmr10.pfb><c:/Users/eduar/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/
+public/lm/lmr17.pfb><c:/Users/eduar/AppData/Roaming/TinyTeX/texmf-dist/fonts/ty
+pe1/public/lm/lmr7.pfb><c:/Users/eduar/AppData/Roaming/TinyTeX/texmf-dist/fonts
+/type1/public/lm/lmri10.pfb><c:/Users/eduar/AppData/Roaming/TinyTeX/texmf-dist/
+fonts/type1/public/lm/lmri7.pfb><c:/Users/eduar/AppData/Roaming/TinyTeX/texmf-d
+ist/fonts/type1/public/lm/lmtk10.pfb><c:/Users/eduar/AppData/Roaming/TinyTeX/te
+xmf-dist/fonts/type1/public/lm/lmtt10.pfb>
+Output written on modelagem.pdf (106 pages, 1587240 bytes).
 PDF statistics:
- 2068 PDF objects out of 2073 (max. 8388607)
- 1589 compressed objects within 16 object streams
- 323 named destinations out of 1000 (max. 500000)
- 23629 words of extra memory for PDF output out of 24883 (max. 10000000)
+ 1812 PDF objects out of 2073 (max. 8388607)
+ 1397 compressed objects within 14 object streams
+ 244 named destinations out of 1000 (max. 500000)
+ 27575 words of extra memory for PDF output out of 29859 (max. 10000000)
 

@@ -28,6 +28,8 @@ daily_columns = constants$daily_columns
 
 # Processamento dos dados
 
+Calculando as médias das variáveis medidas diariamentes para os pacientes que não desenvolveram IRA e o último valor para os pacientes que desenvolveram IRA.
+
 ```{r}
 df = df_raw %>%
     mutate_at(categorical_columns, list(~factor(.))) %>%
@@ -53,6 +55,8 @@ dim(df)
 ```{r}
 df[rowSums(is.na(df %>% select(-criterio_ira))) > 0,]$numero
 ```
+
+Removendo 3 pacientes com excesso de variáveis faltantes.
 
 ```{r}
 df_2 = df %>%
